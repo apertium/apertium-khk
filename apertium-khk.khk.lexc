@@ -1,0 +1,182 @@
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!  M O R P H O L O G I C A L · T R A N S D U C E R · F O R · K H A L K H A  !!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+! See http://wiki.apertium.org/wiki/Turkic_lexicon
+
+Multichar_Symbols
+! Followed http://wiki.apertium.org/wiki/Turkic_languages
+
+! Part of speech categories
+%<n%>         ! Noun                       ! Зат есім
+%<np%>        ! Proper noun
+%<adj%>       ! Adjective                  ! Сын есім
+%<num%>       ! Numeral                    ! Сан есім
+%<prn%>       ! Pronoun
+%<det%>       ! Determiner
+%<v%>         ! Verb
+%<vaux%>      ! Auxilary verb
+%<adv%>       ! Adverb                     ! Үстеу            ! Наречие
+%<post%>      ! Postposition               ! Септеулік шылау
+%<postadv%>   ! Postadverb                 ! "Артүстеу"
+%<cnjcoo%>    ! Co-ordinating conjunction  ! жалғаулық шылау
+%<cnjsub%>    ! Sub-ordinating conjunction ! жалғаулық шылау
+%<cnjadv%>    ! Adverbial conjunction      ! жалғаулық шылау
+%<part%>      ! Particle
+%<ij%>        ! Interjection               ! Одағай
+%<abbr%>      ! Abbreviation
+%<cop%>       ! Copula
+
+! Proper noun types
+%<top%>       ! Toponym
+%<ant%>       ! Anthroponym
+%<cog%>       ! Cognomen
+%<pat%>       ! Patronym     ! Отчество
+%<org%>       ! Organization
+%<al%>        ! Other
+
+!! gender of anthroponyms and cognoms
+%<m%>         ! Masculine
+%<f%>         ! Feminine
+%<mf%>        ! Masculine/feminine !# basically cognoms without -ов/-ова,
+              ! -ин/-ина endings
+
+! "Syntactic" tags. Attributive use of non-adjectives etc.
+%<attr%>      ! Attributive
+%<subst%>     ! Substantive
+%<advl%>      ! Adverbial
+
+! Number
+%<sg%>        ! Singular
+%<pl%>        ! Plural
+
+! Possessives
+%<px1sg%>     ! First person singular
+%<px2sg%>     ! Second person singular
+%<px3sp%>     ! Third person singular/plural
+%<px1pl%>     ! First person plural
+%<px2pl%>     ! Second person plural
+%<px%>        ! General possessive          !# -нікі
+
+! Cases
+%<nom%>       ! Nominative
+%<gen%>       ! Genitive
+%<dat%>       ! Dative
+%<acc%>       ! Accusative
+%<abl%>       ! Ablative
+%<loc%>       ! Locative
+%<ins%>       ! Instrumental
+
+!! some additional ~cases
+%<sim%>       ! Similative (<apprx> in kymorph)
+              !# DAй
+%<abe%>       ! Abessive=Privative ! Лишительный
+              !# -сыз/-сез (not used after posessives and cases)
+%<reas%>      ! Reason
+
+! Levels of comparison of adjectives
+%<comp%>      ! Comparative
+%<sup%>       ! Superlative
+
+! Pronoun types
+%<pers%>      ! Personal
+%<recip%>     ! Reciprocal
+! Pronoun and determiner types
+%<dem%>       ! Demonstrative
+%<ind%>       ! Indefinite
+%<itg%>       ! Interrogative
+%<qnt%>       ! Quantifier
+%<neg%>       ! Negative       !# еш нерсе
+              ! (NOTE: also used to denote negation in verbs, i.e for м{A})
+%<ref%>       ! Reflexive
+
+! Numeral types
+%<ord%>       ! Ordinal
+%<coll%>      ! Collective
+%<dist%>      ! Distributive
+
+! Verbal features
+
+!! Mood
+%<imp%>       ! Imperative
+%<opt%>       ! Optative/jussive
+
+!! Derivation
+%<caus%>      ! Causative
+%<pass%>      ! Passive
+%<coop%>      ! Cooperative
+
+!! Tense / finite forms
+%<pres%>      ! for "жатыр", "тұр", "отыр" and "жүр"
+%<aor%>       ! -{E}                    ! non-past (afaik /IS/)
+%<past%>      ! -{G}{A}н                ! past
+%<ifi%>       ! -{D}{I}                 ! eyewitness past
+%<ifi_evid%>  ! -{I}пт{I}               ! "reported past" (afaik /IS/)
+%<fut%>       ! -{I}р                   ! future
+%<fut_plan%>  ! -{M}{A}{K}              ! future plan
+
+%<evid%>      ! evidential
+              ! Was used for -ган екен and -ыпты. The former is not handled here
+              ! in lexc anymore, the latter was renamed from <ifi><evid> to
+              ! <ifi_evid>
+
+!! Non-Finite verb forms
+
+!!! Participles
+
+!! Transitivity
+%<tv%>        ! Transitive
+%<iv%>        ! Intransitive
+%<TD%>        ! Temporary tag
+
+! Person
+%<p1%>        ! First person
+%<p2%>        ! Second person
+%<p3%>        ! Third person
+%<frm%>       ! Formality
+
+! Modal particles
+%<qst%>       ! Modal question particle
+%<mod_foc%>   ! "Particles of politeness and ardent desire"
+              ! (as in [N. Poppe. Tatar Manual]) or
+              ! "what about ..." question particles" :)
+              ! (as in kir.lexc)
+%<mod_ass%>   ! Assertive modal particle
+%<mod%>       ! Modal verbs (шығар, сияқты etc)
+
+! Punctuation
+%<sent%>      ! Sentence marker
+%<guio%>      ! Hyphen
+%<cm%>        ! Comma
+%<apos%>      ! Apostrophe
+%<rquot%>     ! Quote marker (right hand side)
+%<lquot%>     ! Quote marker (left hand side)
+%<rpar%>      ! Parenthetical marker (right hand side)
+%<lpar%>      ! Parenthetical marker (left hand side)
+
+%{г%}
+%{й%}
+%{а%}
+%{А%}
+%{I%}
+
+%>            ! Morpheme boundary
+%             ! Space
+%-            !
+%,            !
+%.            !
+%%            !
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!                       M O R P H O T A C T I C S                         !!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+LEXICON Root
+
+Nouns ;
+
+
+LEXICON Nouns
+
+цаг:цаг #;
+гар:гар #;
