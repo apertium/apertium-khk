@@ -175,17 +175,24 @@ LEXICON Root
 
 Nouns ;
 
-LEXICON Ninfl
+LEXICON Cases
 
 %<nom%>: # ;
 %<acc%>:%{I%}%{й%}г # ;
+%<gen%>:%{г%}%{I%}%{й%}н # ;
+%<abl%>:%{г%}%{A%}%{A%}с # ;
+%<dat%>:%{а%}д # ;               ! (with exceptional forms in т)
 
+LEXICON Ninfl
+
+Cases ;
+%<pl%>:%{н%}%{U%}%{U%}д Cases ;  ! (with exceptional forms)
 
 LEXICON Nouns
 
-цаг:цаг Ninfl ; "time/hour"
-гар:гар Ninfl ; "hand"
-нас:нас Ninfl ; "age"
+цаг:цаг Ninfl ; ! "time/hour"
+гар:гар Ninfl ; ! "hand"
+нас:нас Ninfl ; ! "age"
 байр Ninfl ; ! "apartment"
 банк Ninfl ; ! "bank"
 ном Ninfl ; ! "book"
