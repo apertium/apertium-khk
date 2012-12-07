@@ -172,6 +172,7 @@ Multichar_Symbols
 %{В%}
 %{Т%}
 %{У%}
+%{Д%}
 
 %>            ! Morpheme boundary
 %             ! Space
@@ -195,6 +196,7 @@ Adjectives ;
 Postpos ;
 PostAdv ;
 Determiners ;
+Numbers ;
 
 LEXICON Clit
 ! Sentence-final clitics
@@ -222,7 +224,7 @@ LEXICON Cases
 %<inst%>:%{г%}%{А%}%{А%}р Clit ;
 %<inst%>%<refl%>:%{г%}%{А%}%{А%}р%{А%}%{А%} Clit ;
 
-%<dat%>:%{а%}д Clit ;               ! (with exceptional forms in т)
+%<dat%>:%{а%}%{Д%} Clit ;               ! (with exceptional forms in т)
 %<dat%>%<refl%>:д%{А%}%{А%} Clit ;  ! (with exceptional forms in т)
 
 %<dat%>%<attr%>:% д%{А%}х%{ь%} Clit ;
@@ -318,11 +320,30 @@ LEXICON Pronouns
 
 хэн Cases ; ! "who"
 юу Cases ; ! "what"
+өөр Cases ; ! "oneself"
 
 LEXICON Determiners
 
-энэ:энэ%<det%>%<nom%> # ;
-энэ:эн%<det%> Cases ;
+энэ%<det%>%<nom%>:энэ # ;
+эн%<det%>:эн Cases ;
+
+LEXICON Num
+
+%<num%>: Cases ;
+
+LEXICON Numbers
+
+нэг Num ;
+хоёр Num ;
+гурав Num ;
+дөрөв Num ;
+тав Num ;
+зургаа Num ;
+долоо Num ;
+найм Num ;
+ёс Num ;
+арав Num ;
+зүн Num ;
 
 LEXICON Conj
 
@@ -480,6 +501,8 @@ LEXICON Nouns
 зам Ninfl ; ! "road"
 дунд Ninfl ; ! "middle"
 ухаан Ninfl ; ! "intellect"
+ус Ninfl ; ! "water"
+сүү Ninfl ; ! "milk"
 
 
 LEXICON Verbs
@@ -495,6 +518,7 @@ LEXICON Verbs
 оч Vinfl-TV ; ! "go"
 өг Vinfl-TV ; ! "give"
 тэг Vinfl-IV ; ! "do such"
+инг Vinfl-IV ; ! "do thus"
 барь Vinfl-TV ; ! "grab"
 сонс Vinfl-IV ; ! "listen"  FIXME: IV/TV?
 бос Vinfl-IV ; ! "stand"
@@ -506,6 +530,7 @@ LEXICON Verbs
 март Vinfl-TV ; ! "forget"
 тавь Vinfl-TV ; ! "put"
 хий Vinfl-TV ; ! "do/make/put in"
+хэл Vinfl-IV ; ! "say"
 
 
 LEXICON Conjunctions
