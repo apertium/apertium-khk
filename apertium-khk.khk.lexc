@@ -124,6 +124,8 @@ Multichar_Symbols
               ! <ifi_evid>
 
 !! Non-Finite verb forms
+%<gna_prf%>   ! perfective verbal adverb
+%<gna_imp%>   ! imperfective verbal adverb
 
 !!! Participles
 
@@ -208,7 +210,12 @@ LEXICON Vinfl-Common
 
 %<aor%>:н%{А%} # ;
 %<past%>:с%{А%}н # ;
+%<past%>:в # ;
 %<ifi%>:л%{А%}%{А%} # ;
+
+%<inf%>:%{а%}х # ;
+%<gna_imp%>:%{а%}ж # ;
+%<gna_prf%>:%{г%}%{А%}%{А%}д # ;
 
 LEXICON Vinfl-TV
 
@@ -257,6 +264,15 @@ LEXICON Pronouns
 %тэр%<prn%>%<p3%>%<sg%>%<inst%>:тэр # ;  ! FIXME: check
 тэр%<prn%>%<p3%>%<sg%>%<px%>:түүнийх # ;   ! FIXME: check
 тэр%<prn%>%<p3%>%<sg%>%<gens%>:нь # ;
+
+тэд%<prn%>%<p3%>%<pl%>%<nom%>:тэд # ;
+тэд%<prn%>%<p3%>%<pl%>%<acc%>:тэднийг # ;
+тэд%<prn%>%<p3%>%<pl%>%<gen%>:тэдний # ;
+тэд%<prn%>%<p3%>%<pl%>%<abl%>:тэднээс # ;
+тэд%<prn%>%<p3%>%<pl%>%<dat%>:тэдэнд # ;   ! FIXME: check
+тэд%<prn%>%<p3%>%<pl%>%<inst%>:тэднээр # ; ! FIXME: check
+тэд%<prn%>%<p3%>%<pl%>%<px%>:тэднийх # ;   ! FIXME: check
+тэд%<prn%>%<p3%>%<pl%>%<gens%>:нь # ;
 
 
 LEXICON Nouns
@@ -358,7 +374,7 @@ LEXICON Nouns
 эхнэр Ninfl ; ! "wife"
 цонх Ninfl ; ! "window"
 үг Ninfl ; ! "word"
-Ажил Ninfl ; ! "work"
+ажил Ninfl ; ! "work"
 жил Ninfl ; ! "year"
 дүү Ninfl ; ! "younger sibling"
 тэмээ Ninfl ; ! "camel"
@@ -367,6 +383,9 @@ LEXICON Nouns
 заан Ninfl ; ! "elephant"
 хулан Ninfl ; ! "wild asian ass"
 цаас Ninfl ; ! "paper"
+эзэн Ninfl ; ! "master/lord"
+газар Ninfl ; ! "place, land"
+
 
 LEXICON Verbs
 
@@ -374,4 +393,5 @@ LEXICON Verbs
 бай Vinfl-IV ; ! "be"
 үз Vinfl-TV ; ! "see"
 хар Vinfl-TV ; ! "look at"
+гэ Vinfl-IV ; ! "say" / quotative marker
 
