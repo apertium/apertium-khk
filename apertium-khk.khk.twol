@@ -31,3 +31,45 @@ Rules
 "G epenthesis"
 %{г%}:г <=> [ [ :Vow :Vow ] | %{ң%}: ]/:0 _ ;        ! дүүгийн, (нохойн), санг
                                     :й/:0 _ %{А%}: ; ! дүүгээс, нохойгоос
+
+
+!!!! I stuff !!!!
+
+"{I} as и instead of ы"
+%{I%}:и <=> :FrontVow [ :NonVow/:0 ]* _ ;
+                          :PalCons/:0 _ ;
+
+"{I} deletion after diphthongs, longvowels, and {ң}"
+%{I%}:0 <=>   :й/:0 _ ; ! нохойг, далайг
+            :Vow/:0 _ ; ! хүүг, дүүг
+          %{ң%}:/:0 _ ; ! үзэсгэлэнг, санг
+
+"I forget what this is for"
+н:0 <=> :й/:0 _ %{I%}: ;
+
+"{й} should surface after {I} as и"
+%{й%}:й <=> %{I%}:и _ ;
+
+
+!!!! {A} stuff !!!!
+
+"{A} vowel harmony"
+%{А%}:Vy <=> :Vx [ :NonVow/:0 ]* _ ;
+             where Vx in ( ү э ө о )
+                   Vy in ( э э ө о )
+             matched ;
+
+"{A} harmony for 2nd element of long vowels"
+%{А%}:э <=> .#. [ :NonVow/:0 ]* :и [ :NonVow/:0 ]* _ ;
+
+
+!!!! {a} stuff !!!!
+
+"{a} harmony"
+%{а%}:Vy <=> :Vx [ :NonVow/:0 ]* [ :т | :д | :с ]/:0 _ ;
+             where Vx in ( ү э ө а о у )
+                   Vy in ( э э ө а о а )
+             matched ;
+
+"I forgot what this {a} rule is for"
+%{а%}:э <=> .#. [ :NonVow/:0 ]* :и [ :NonVow/:0 ]* [ :т | :д | :с ]/:0 _ ;
