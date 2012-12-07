@@ -2,7 +2,7 @@ Alphabet
  А Б В Г Д Е Ё Ж З И Й К Л М Н О Ө П Р С Т У Ү Ф Х Ц Ч Ш Ь Ы Ъ Э Ю Я
  а б в г д е ё ж з и й к л м н о ө п р с т у ү ф х ц ч ш ь ы ъ э ю я
  %0 1 2 3 4 5 6 7 8 9
- %{ң%}:ң %{В%}:в %{Т%}:т
+ %{ң%}:ң %{В%}:в %{Т%}:т %{Д%}:д
  %{г%}:0 %{й%}:0 %{а%}:0 %{ь%}:0 ! disappearing stuff
  %{А%}:а %{I%}:ы %{У%}:у  ! Vow
  ° %% %, %. %- %>:0 %    ! punctuation and boundaries
@@ -22,10 +22,10 @@ FrontVow = ү э ө
 BackVow = у а о
           У А О ;
 
-NonVow = Б В Г Д Ж З Й К Л М Н П Р С Т Ф Х Ц Ч Ш Ь Ъ 
-         б в г д ж з й к л м н п р с т ф х ц ч ш ь ъ ; ! This is for surface forms only, so no archiphonemes
+NonVow = Б В Г Д Ж З К Л М Н П Р С Т Ф Х Ц Ч Ш Ь Ъ 
+         б в г д ж з к л м н п р с т ф х ц ч ш ь ъ ; ! This is for surface forms only, so no archiphonemes
 
-%PalCons =  г ж ш ;
+!PalCons =  г ж ш ;
 PalCons =  ч ж ш ;
 
 Nasal = н м ;
@@ -97,11 +97,12 @@ Rules
 %{а%}:Vy <=> :Vx [ :NonVow/:0 ]* [ :т | :д | :с | :х ]/:0 _ :д ;  ! улсад, байхад
                             :Vx [ :NonVow/:0 ]* [ :л ]/:0 _ :х ;  ! болох
                        :Vx [ :NonVow/:0 ]* [ :NonVow ]/:0 _ :в ;  ! болов, ирэв, etc.
+                       :Vx [ :NonVow/:0 ]* [ :NonVow ]/:0 _ :н ;  ! нэгэн
          except
              :PalCons/[ :0 - ь: ] _ ;   ! avoid conflict with after palcons
              ь: _ :NonVow/:0 [ :Vow | .#. ] ;
          where Vx in ( ү э ө а о у )
-              Vy in ( э э ө а о а )
+               Vy in ( э э ө а о а )
          matched ;
 
 "{a} is front unrounded after first-initial [non-transparent] и"
@@ -123,3 +124,6 @@ Rules
 
 "{В} surfaces as б after л, nasals, and в"
 %{В%}:б <=> [ :в | :Nasal | :л ]/[ :0 | %  ] _ ;
+
+"{Д} devoices after some stuff"
+%{Д%}:т <=> [ :г | :р ]/:0 _ ;
