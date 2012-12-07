@@ -2,8 +2,8 @@ Alphabet
  А Б В Г Д Е Ё Ж З И Й К Л М Н О Ө П Р С Т У Ү Ф Х Ц Ч Ш Ь Ы Ъ Э Ю Я
  а б в г д е ё ж з и й к л м н о ө п р с т у ү ф х ц ч ш ь ы ъ э ю я
  %0 1 2 3 4 5 6 7 8 9
- %{ң%}:ң
- %{г%}:0 %{й%}:0 %{а%}:0 ! disappearing stuff
+ %{ң%}:ң %{В%}:в
+ %{г%}:0 %{й%}:0 %{а%}:0 %{ь%}:0 ! disappearing stuff
  %{А%}:а %{I%}:ы ! Vow
  ° %% %, %. %- %>:0 %    ! punctuation and boundaries
  ;
@@ -19,10 +19,16 @@ Vow =      и ү э ө а о у ы
 FrontVow = ү э ө
            Ү Э Ө ;
 
+BackVow = у а о
+          У А О ;
+
 NonVow = Б В Г Д Ж З Й К Л М Н П Р С Т Ф Х Ц Ч Ш Ь Ъ 
          б в г д ж з й к л м н п р с т ф х ц ч ш ь ъ ; ! This is for surface forms only, so no archiphonemes
 
-PalCons =  г ж ш ;
+%PalCons =  г ж ш ;
+PalCons =  ч ж ш ;
+
+Nasal = н м ;
 
 Rules 
 
@@ -54,27 +60,62 @@ Rules
 !!!! {A} stuff !!!!
 
 "{A} vowel harmony"
-%{А%}:Vy <=> :Vx [ :NonVow/:0 ]* _ ;
+%{А%}:Vy <=> :Vx [ :NonVow/[ :0 | %  ] ]* _ ;
+         except
+             _ %{А%}: ;  ! if {A}{A}, only do second {A}
+             ь:/:0 _ ;
          where Vx in ( ү э ө о )
-             Vy in ( э э ө о )
+               Vy in ( э э ө о )
          matched ;
 
-"{A} harmony for 2nd element of long vowels"
+"{А} vowel harmony for first {А} in {A}{A}"
+%{А%}:Vy <=> _ %{А%}:Vx ;
+         except
+             ь:/:0 _ %{А%}: ;
+         where Vx in ( ү э ө о )
+               Vy in ( э э ө о )
+         matched ;
+
+"{А} becomes и after palatalised cons"
+%{А%}:и <=> ь:/:0 _ ;
+
+"{A} is э after [non-transparent] и in first syllable"
 %{А%}:э <=> .#. [ :NonVow/:0 ]* :и [ :NonVow/:0 ]* _ ;
+         except
+             _ %{А%}: ;
+             ь:/:0 _ ;
+
 
 
 !!!! {a} stuff !!!!
 
 "{a} harmony"
-%{а%}:Vy <=> :Vx [ :NonVow/:0 ]* [ :т | :д | :с ]/:0 _ ;
+%{а%}:Vy <=> :Vx [ :NonVow/:0 ]* [ :т | :д | :с | :х ]/:0 _ :д ;  ! улсад, байхад
+                            :Vx [ :NonVow/:0 ]* [ :л ]/:0 _ :х ;  ! болох
+                       :Vx [ :NonVow/:0 ]* [ :NonVow ]/:0 _ :в ;  ! болов, ирэв, etc.
          except
-             :PalCons/:0 _ ;   ! avoid conflict with after palcons
+             :PalCons/[ :0 - ь: ] _ ;   ! avoid conflict with after palcons
+             ь: _ :NonVow/:0 [ :Vow | .#. ] ;
          where Vx in ( ү э ө а о у )
               Vy in ( э э ө а о а )
          matched ;
 
-"I forgot what this {a} rule is for"
+"{a} is front unrounded after first-initial [non-transparent] и"
 %{а%}:э <=> .#. [ :NonVow/:0 ]* :и [ :NonVow/:0 ]* [ :т | :д | :с ]/:0 _ ;
 
 "{а} after palatal cons"
-%{а%}:и <=> :PalCons/:0 _ ;
+%{а%}:и <=> :PalCons/[ :0 - ь: ] _ ;
+            ь: _ :NonVow/:0 [ :Vow | .#. ] ;
+
+"ь deletion before {а}"
+ь:0 <=> _ %{а%}:и/:0 ;
+        _ %{А%}:и/:0 ;
+
+
+!!!! MISC !!!!
+
+"{ь} appears with back-vowels"
+%{ь%}:ь <=> %{А%}:BackVow :NonVow* _ ;
+
+"{В} surfaces as б after л, nasals, and в"
+%{В%}:б <=> [ :в | :Nasal | :л ]/:0 _ ;
