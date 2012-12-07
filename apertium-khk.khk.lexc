@@ -126,6 +126,7 @@ Multichar_Symbols
 !! Non-Finite verb forms
 %<gna_prf%>   ! perfective verbal adverb
 %<gna_imp%>   ! imperfective verbal adverb
+%<ger%>       ! gerund
 
 !!! Participles
 
@@ -181,6 +182,7 @@ LEXICON Root
 Nouns ;
 Verbs ;
 Pronouns ;
+Conjunctions ;
 
 LEXICON Cases
 
@@ -201,6 +203,8 @@ LEXICON Cases
 %<dat%>:%{а%}д # ;               ! (with exceptional forms in т)
 %<dat%>%<refl%>:д%{А%}%{А%} # ;  ! (with exceptional forms in т)
 
+%<gens%>:%{а%}н # ;
+
 LEXICON Ninfl
 
 %<n%>: Cases ;
@@ -213,7 +217,8 @@ LEXICON Vinfl-Common
 %<past%>:в # ;
 %<ifi%>:л%{А%}%{А%} # ;
 
-%<inf%>:%{а%}х # ;
+%<ger%>:%{а%}х Cases ;
+
 %<gna_imp%>:%{а%}ж # ;
 %<gna_prf%>:%{г%}%{А%}%{А%}д # ;
 
@@ -231,8 +236,8 @@ LEXICON Pronouns
 би%<prn%>%<p1%>%<sg%>%<acc%>:намайг # ;
 би%<prn%>%<p1%>%<sg%>%<gen%>:миний # ;
 би%<prn%>%<p1%>%<sg%>%<abl%>:надаас # ;
-би%<prn%>%<p1%>%<sg%>%<dat%>:надаар # ;
-би%<prn%>%<p1%>%<sg%>%<inst%>:би # ;
+би%<prn%>%<p1%>%<sg%>%<dat%>:надад # ;
+би%<prn%>%<p1%>%<sg%>%<inst%>:надаар # ;
 би%<prn%>%<p1%>%<sg%>%<px%>:минийх # ;    ! FIXME: check
 би%<prn%>%<p1%>%<sg%>%<gens%>:минь # ;
 
@@ -260,7 +265,8 @@ LEXICON Pronouns
 тэр%<prn%>%<p3%>%<sg%>%<acc%>:түүнийг # ;
 тэр%<prn%>%<p3%>%<sg%>%<gen%>:түүний # ;
 тэр%<prn%>%<p3%>%<sg%>%<abl%>:түүнээс # ;
-тэр%<prn%>%<p3%>%<sg%>%<dat%>:тэнд # ;
+тэр%<dem%>%<p3%>%<sg%>%<dat%>:тэнд # ;     ! loc
+тэр%<prn%>%<p3%>%<sg%>%<dat%>:түүнд # ;    ! dat/loc
 %тэр%<prn%>%<p3%>%<sg%>%<inst%>:тэр # ;  ! FIXME: check
 тэр%<prn%>%<p3%>%<sg%>%<px%>:түүнийх # ;   ! FIXME: check
 тэр%<prn%>%<p3%>%<sg%>%<gens%>:нь # ;
@@ -385,6 +391,7 @@ LEXICON Nouns
 цаас Ninfl ; ! "paper"
 эзэн Ninfl ; ! "master/lord"
 газар Ninfl ; ! "place, land"
+хүн Ninfl ; ! "person"
 
 
 LEXICON Verbs
@@ -394,4 +401,15 @@ LEXICON Verbs
 үз Vinfl-TV ; ! "see"
 хар Vinfl-TV ; ! "look at"
 гэ Vinfl-IV ; ! "say" / quotative marker
+ав Vinfl-TV ; ! "take"
+ир Vinfl-IV ; ! "come"
+яв Vinfl-TV ; ! "go"
+оч Vinfl-TV ; ! "go"
 
+
+LEXICON Conjunctions
+
+бөгөөд # ;
+ба # ;
+бас # ;
+харин # ;
