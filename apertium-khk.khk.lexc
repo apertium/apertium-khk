@@ -128,6 +128,7 @@ Multichar_Symbols
 %<gna_prf%>   ! perfective verbal adverb
 %<gna_imp%>   ! imperfective verbal adverb
 %<gna_cnd%>   ! conditional verbal adverb
+%<gna2%>      ! "until" verbal adverb
 %<ger%>       ! gerund
 
 !!! Participles
@@ -169,6 +170,8 @@ Multichar_Symbols
 %{I%}
 %{ь%}
 %{В%}
+%{Т%}
+%{У%}
 
 %>            ! Morpheme boundary
 %             ! Space
@@ -191,27 +194,38 @@ Adverbs ;
 Adjectives ;
 Postpos ;
 PostAdv ;
+Determiners ;
+
+LEXICON Clit
+! Sentence-final clitics
+
+# ;
++вэ%<qst%>:% %{В%}э # ;         ! wh-question
++уу%<qst%>:% %{У%}%{У%} # ;     ! yes/no-question
++даа%<qst%>:% д%{А%}%{А%} # ;   !
++аа%<qst%>:% %{А%}%{А%} # ;     !
+
 
 LEXICON Cases
 
-%<nom%>: # ;
-%<acc%>:%{I%}%{й%}г # ;
+%<nom%>: Clit ;
+%<acc%>:%{I%}%{й%}г Clit ;
 
-%<refl%>:%{г%}%{А%}%{А%} # ;  ! this is both nom and acc
+%<refl%>:%{г%}%{А%}%{А%} Clit ;  ! this is both nom and acc
 
-%<gen%>:%{г%}%{I%}%{й%}н # ;
-%<gen%>:%{г%}%{I%}%{й%}нх%{А%}%{А%} # ;
+%<gen%>:%{г%}%{I%}%{й%}н Clit ;
+%<gen%>:%{г%}%{I%}%{й%}нх%{А%}%{А%} Clit ;
 
-%<abl%>:%{г%}%{А%}%{А%}с # ;
-%<abl%>%<refl%>:%{г%}%{А%}%{А%}с%{А%}%{А%} # ;
+%<abl%>:%{г%}%{А%}%{А%}с Clit ;
+%<abl%>%<refl%>:%{г%}%{А%}%{А%}с%{А%}%{А%} Clit ;
 
-%<inst%>:%{г%}%{А%}%{А%}р # ;
-%<inst%>%<refl%>:%{г%}%{А%}%{А%}р%{А%}%{А%} # ;
+%<inst%>:%{г%}%{А%}%{А%}р Clit ;
+%<inst%>%<refl%>:%{г%}%{А%}%{А%}р%{А%}%{А%} Clit ;
 
-%<dat%>:%{а%}д # ;               ! (with exceptional forms in т)
-%<dat%>%<refl%>:д%{А%}%{А%} # ;  ! (with exceptional forms in т)
+%<dat%>:%{а%}д Clit ;               ! (with exceptional forms in т)
+%<dat%>%<refl%>:д%{А%}%{А%} Clit ;  ! (with exceptional forms in т)
 
-%<dat%>%<attr%>:% д%{А%}х%{ь%} # ;
+%<dat%>%<attr%>:% д%{А%}х%{ь%} Clit ;
 
 %<gens%>:%{а%}н # ;
 
@@ -223,22 +237,23 @@ LEXICON Ninfl
 LEXICON Vinfl-Common
 
 %<aor%>:н%{А%} # ;
-%<aor%>%<neg%>:%{а%}хгүй # ;
+%<aor%>%<neg%>:%{а%}хгүй Clit ;
 
-%<past%>:с%{А%}н # ;
-%<past%>%<neg%>:%{г%}%{А%}%{А%}гүй # ;
+%<past%>:с%{А%}н Clit ;
+%<past%>%<neg%>:%{г%}%{А%}%{А%}гүй Clit ;
 %<past%>:%{а%}в # ;  ! FIXME: figure this out
 
 %<past%>%<evid%>:жээ # ;
 
 %<ifi%>:л%{А%}%{А%} # ;
-%<hab%>:д%{А%}г # ;
+%<hab%>:д%{А%}г Clit ;
 
 %<ger%>:%{а%}х Cases ;
 
 %<gna_imp%>:%{а%}ж # ;
 %<gna_prf%>:%{г%}%{А%}%{А%}д # ;
 %<gna_cnd%>:%{В%}%{А%}л # ;
+%<gna_cnd%>:%{Т%}%{А%}л # ;
 
 LEXICON Vinfl-TV
 
@@ -250,57 +265,64 @@ LEXICON Vinfl-IV
 
 LEXICON Pronouns
 
-би%<prn%>%<p1%>%<sg%>%<nom%>:би # ;
-би%<prn%>%<p1%>%<sg%>%<acc%>:намайг # ;
-би%<prn%>%<p1%>%<sg%>%<gen%>:миний # ;
-би%<prn%>%<p1%>%<sg%>%<abl%>:надаас # ;
-би%<prn%>%<p1%>%<sg%>%<dat%>:надад # ;
-би%<prn%>%<p1%>%<sg%>%<inst%>:надаар # ;
-би%<prn%>%<p1%>%<sg%>%<px%>:минийх # ;    ! FIXME: check
-би%<prn%>%<p1%>%<sg%>%<gens%>:минь # ;
+би%<prn%>%<p1%>%<sg%>%<nom%>:би Clit ;
+би%<prn%>%<p1%>%<sg%>%<acc%>:намайг Clit ;
+би%<prn%>%<p1%>%<sg%>%<gen%>:миний Clit ;
+би%<prn%>%<p1%>%<sg%>%<abl%>:надаас Clit ;
+би%<prn%>%<p1%>%<sg%>%<dat%>:надад Clit ;
+би%<prn%>%<p1%>%<sg%>%<inst%>:надаар Clit ;
+би%<prn%>%<p1%>%<sg%>%<px%>:минийх Clit ;    ! FIXME: check
+би%<prn%>%<p1%>%<sg%>%<gens%>:минь Clit ;
 
-бид%<prn%>%<p1%>%<pl%>%<nom%>:бид # ;
-бид%<prn%>%<p1%>%<pl%>%<gen%>:бидний # ;
-бид%<prn%>%<p1%>%<pl%>%<dat%>:бидэнд # ;
-бид%<prn%>%<p1%>%<pl%>%<nom%>:бид # ;
+бид%<prn%>%<p1%>%<pl%>%<nom%>:бид Clit ;
+бид%<prn%>%<p1%>%<pl%>%<gen%>:бидний Clit ;
+бид%<prn%>%<p1%>%<pl%>%<dat%>:бидэнд Clit ;
+бид%<prn%>%<p1%>%<pl%>%<nom%>:бид Clit ;
 
-чи%<prn%>%<p2%>%<sg%>%<nom%>:чи # ;
-чи%<prn%>%<p2%>%<sg%>%<acc%>:чамайг # ;
-чи%<prn%>%<p2%>%<sg%>%<gen%>:чиний # ;
-чи%<prn%>%<p2%>%<sg%>%<abl%>:чамаас # ;
-чи%<prn%>%<p2%>%<sg%>%<dat%>:чамд # ;
-чи%<prn%>%<p2%>%<sg%>%<inst%>:чамаар # ;  ! FIXME: check
-чи%<prn%>%<p2%>%<sg%>%<px%>:чинийх # ;    ! FIXME: check
-чи%<prn%>%<p2%>%<sg%>%<gens%>:чинь # ;
+чи%<prn%>%<p2%>%<sg%>%<nom%>:чи Clit ;
+чи%<prn%>%<p2%>%<sg%>%<acc%>:чамайг Clit ;
+чи%<prn%>%<p2%>%<sg%>%<gen%>:чиний Clit ;
+чи%<prn%>%<p2%>%<sg%>%<abl%>:чамаас Clit ;
+чи%<prn%>%<p2%>%<sg%>%<dat%>:чамд Clit ;
+чи%<prn%>%<p2%>%<sg%>%<inst%>:чамаар Clit ;  ! FIXME: check
+чи%<prn%>%<p2%>%<sg%>%<px%>:чинийх Clit ;    ! FIXME: check
+чи%<prn%>%<p2%>%<sg%>%<gens%>:чинь Clit ;
 
-та%<prn%>%<p2%>%<frm%>%<nom%>:та # ;
-та%<prn%>%<p2%>%<frm%>%<acc%>:таныг # ;
-та%<prn%>%<p2%>%<frm%>%<gen%>:таны # ;
-%та%<prn%>%<p2%>%<frm%>%<abl%>:та # ;    ! FIXME: check
-та%<prn%>%<p2%>%<frm%>%<dat%>:танд # ;
-%та%<prn%>%<p2%>%<frm%>%<inst%>:та # ;  ! FIXME: check
-та%<prn%>%<p2%>%<frm%>%<px%>:таных # ;   ! FIXME: check
-та%<prn%>%<p2%>%<frm%>%<gens%>:тань # ;
+та%<prn%>%<p2%>%<frm%>%<nom%>:та Clit ;
+та%<prn%>%<p2%>%<frm%>%<acc%>:таныг Clit ;
+та%<prn%>%<p2%>%<frm%>%<gen%>:таны Clit ;
+%та%<prn%>%<p2%>%<frm%>%<abl%>:та Clit ;    ! FIXME: check
+та%<prn%>%<p2%>%<frm%>%<dat%>:танд Clit ;
+%та%<prn%>%<p2%>%<frm%>%<inst%>:та Clit ;  ! FIXME: check
+та%<prn%>%<p2%>%<frm%>%<px%>:таных Clit ;   ! FIXME: check
+та%<prn%>%<p2%>%<frm%>%<gens%>:тань Clit ;
 
-тэр%<prn%>%<p3%>%<sg%>%<nom%>:тэр # ;
-тэр%<prn%>%<p3%>%<sg%>%<acc%>:түүнийг # ;
-тэр%<prn%>%<p3%>%<sg%>%<gen%>:түүний # ;
-тэр%<prn%>%<p3%>%<sg%>%<abl%>:түүнээс # ;
-тэр%<dem%>%<p3%>%<sg%>%<dat%>:тэнд # ;     ! loc
-тэр%<prn%>%<p3%>%<sg%>%<dat%>:түүнд # ;    ! dat/loc
-тэр%<prn%>%<p3%>%<sg%>%<inst%>:тэрээр # ;  ! FIXME: check
-тэр%<prn%>%<p3%>%<sg%>%<px%>:түүнийх # ;   ! FIXME: check
-тэр%<prn%>%<p3%>%<sg%>%<gens%>:нь # ;
+тэр%<prn%>%<p3%>%<sg%>%<nom%>:тэр Clit ;
+тэр%<prn%>%<p3%>%<sg%>%<acc%>:түүнийг Clit ;
+тэр%<prn%>%<p3%>%<sg%>%<gen%>:түүний Clit ;
+тэр%<prn%>%<p3%>%<sg%>%<abl%>:түүнээс Clit ;
+тэр%<dem%>%<p3%>%<sg%>%<dat%>:тэнд Clit ;     ! loc
+тэр%<prn%>%<p3%>%<sg%>%<dat%>:түүнд Clit ;    ! dat/loc
+тэр%<prn%>%<p3%>%<sg%>%<inst%>:тэрээр Clit ;  ! FIXME: check
+тэр%<prn%>%<p3%>%<sg%>%<px%>:түүнийх Clit ;   ! FIXME: check
+тэр%<prn%>%<p3%>%<sg%>%<gens%>:нь Clit ;
 
-тэд%<prn%>%<p3%>%<pl%>%<nom%>:тэд # ;
-тэд%<prn%>%<p3%>%<pl%>%<acc%>:тэднийг # ;
-тэд%<prn%>%<p3%>%<pl%>%<gen%>:тэдний # ;
-тэд%<prn%>%<p3%>%<pl%>%<abl%>:тэднээс # ;
-тэд%<prn%>%<p3%>%<pl%>%<dat%>:тэдэнд # ;   ! FIXME: check
-тэд%<prn%>%<p3%>%<pl%>%<inst%>:тэднээр # ; ! FIXME: check
-тэд%<prn%>%<p3%>%<pl%>%<px%>:тэднийх # ;   ! FIXME: check
-тэд%<prn%>%<p3%>%<pl%>%<gens%>:нь # ;
+тэд%<prn%>%<p3%>%<pl%>%<nom%>:тэд Clit ;
+тэд%<prn%>%<p3%>%<pl%>%<acc%>:тэднийг Clit ;
+тэд%<prn%>%<p3%>%<pl%>%<gen%>:тэдний Clit ;
+тэд%<prn%>%<p3%>%<pl%>%<abl%>:тэднээс Clit ;
+тэд%<prn%>%<p3%>%<pl%>%<dat%>:тэдэнд Clit ;   ! FIXME: check
+тэд%<prn%>%<p3%>%<pl%>%<inst%>:тэднээр Clit ; ! FIXME: check
+тэд%<prn%>%<p3%>%<pl%>%<px%>:тэднийх Clit ;   ! FIXME: check
+тэд%<prn%>%<p3%>%<pl%>%<gens%>:нь Clit ;
 
+хэн Cases ; ! "who"
+юу Cases ; ! "what"
+
+LEXICON Determiners
+
+энэ:энэ%<det%>%<nom%> # ;
+энэ:эн%<det%> Cases ;
 
 LEXICON Conj
 
@@ -448,6 +470,16 @@ LEXICON Nouns
 бие Ninfl ; ! "body"
 хэл Ninfl ; ! "tongue, language"
 толгой Ninfl ; ! "head"
+юм Ninfl ; ! "thing"
+учир Ninfl ; ! "cause, reason"
+ёс Ninfl ; ! "culture"?
+баяр Ninfl ; ! "happiness/luck/fortune"
+мах Ninfl ; ! "meat"
+үнэн Ninfl ; ! "truth"
+дэлхий Ninfl ; ! "world"
+зам Ninfl ; ! "road"
+дунд Ninfl ; ! "middle"
+ухаан Ninfl ; ! "intellect"
 
 
 LEXICON Verbs
@@ -464,6 +496,16 @@ LEXICON Verbs
 өг Vinfl-TV ; ! "give"
 тэг Vinfl-IV ; ! "do such"
 барь Vinfl-TV ; ! "grab"
+сонс Vinfl-IV ; ! "listen"  FIXME: IV/TV?
+бос Vinfl-IV ; ! "stand"
+чад Vinfl-IV ; ! "be able to" FIXME: IV/TV?
+ярь Vinfl-IV ; ! "speak"
+гар Vinfl-IV ; ! "leave"
+ол Vinfl-TV ; ! "find"
+хай Vinfl-TV ; ! "look for"
+март Vinfl-TV ; ! "forget"
+тавь Vinfl-TV ; ! "put"
+хий Vinfl-TV ; ! "do/make/put in"
 
 
 LEXICON Conjunctions
@@ -476,6 +518,7 @@ LEXICON Conjunctions
 болон Conj ;
 гэвч Conj ; ! "but"
 буюу Conj ;
+хэрвээ Conj ; ! ~"if"
 
 
 LEXICON Postpos
@@ -490,6 +533,9 @@ LEXICON Postpos
 дотор Postp ;   ! "in(side of)"   ! FIXME: takes attr
 доор Postp ;    ! "under"         ! FIXME: takes attr
 тухай Postp ;   ! "about"
+гадна Postp ;   ! "outside"
+төлөө Postp ;   !
+тулд Postp ;    ! 
 
 LEXICON PostAdv
 
