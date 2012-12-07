@@ -67,6 +67,8 @@ Multichar_Symbols
 %<loc%>       ! Locative
 %<ins%>       ! Instrumental
 
+%<refl%>      ! Reflexive
+
 !! some additional ~cases
 %<sim%>       ! Similative (<apprx> in kymorph)
               !# DAй
@@ -179,14 +181,25 @@ LEXICON Cases
 
 %<nom%>: # ;
 %<acc%>:%{I%}%{й%}г # ;
+
+%<refl%>:%{г%}%{А%}%{А%} # ;  ! this is both nom and acc
+
 %<gen%>:%{г%}%{I%}%{й%}н # ;
-%<abl%>:%{г%}%{A%}%{A%}с # ;
+%<gen%>:%{г%}%{I%}%{й%}нх%{А%}%{А%} # ;
+
+%<abl%>:%{г%}%{А%}%{А%}с # ;
+%<abl%>%<refl%>:%{г%}%{А%}%{А%}с%{А%}%{А%} # ;
+
+%<inst%>:%{г%}%{А%}%{А%}р # ;
+%<inst%>%<refl%>:%{г%}%{А%}%{А%}р%{А%}%{А%} # ;
+
 %<dat%>:%{а%}д # ;               ! (with exceptional forms in т)
+%<dat%>%<refl%>:д%{А%}%{А%} # ;  ! (with exceptional forms in т)
 
 LEXICON Ninfl
 
-Cases ;
-%<pl%>:%{н%}%{U%}%{U%}д Cases ;  ! (with exceptional forms)
+%<n%>: Cases ;
+%<n%>%<pl%>:%{н%}%{U%}%{U%}д Cases ;  ! (with exceptional forms)
 
 LEXICON Nouns
 
