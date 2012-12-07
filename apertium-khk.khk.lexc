@@ -61,6 +61,7 @@ Multichar_Symbols
 ! Cases
 %<nom%>       ! Nominative
 %<gen%>       ! Genitive
+%<gens%>      ! Short/clitic Genitive (used with nouns)
 %<dat%>       ! Dative
 %<acc%>       ! Accusative
 %<abl%>       ! Ablative
@@ -176,6 +177,8 @@ Multichar_Symbols
 LEXICON Root
 
 Nouns ;
+Verbs ;
+Pronouns ;
 
 LEXICON Cases
 
@@ -200,6 +203,61 @@ LEXICON Ninfl
 
 %<n%>: Cases ;
 %<n%>%<pl%>:%{н%}%{U%}%{U%}д Cases ;  ! (with exceptional forms)
+
+LEXICON Vinfl-Common
+
+%<aor%>:н%{А%} # ;
+%<past%>:с%{А%}н # ;
+%<ifi%>:л%{А%}%{А%} # ;
+
+LEXICON Vinfl-TV
+
+%<v%>%<tv%>: Vinfl-Common ;
+
+LEXICON Vinfl-IV
+
+%<v%>%<iv%>: Vinfl-Common ;
+
+LEXICON Pronouns
+
+би%<prn%>%<p1%>%<sg%>%<nom%>:би # ;
+би%<prn%>%<p1%>%<sg%>%<acc%>:намайг # ;
+би%<prn%>%<p1%>%<sg%>%<gen%>:миний # ;
+би%<prn%>%<p1%>%<sg%>%<abl%>:надаас # ;
+би%<prn%>%<p1%>%<sg%>%<dat%>:надаар # ;
+би%<prn%>%<p1%>%<sg%>%<inst%>:би # ;
+би%<prn%>%<p1%>%<sg%>%<px%>:минийх # ;    ! FIXME: check
+би%<prn%>%<p1%>%<sg%>%<gens%>:минь # ;
+
+бид%<prn%>%<p1%>%<pl%>%<nom%>:бид # ;
+
+чи%<prn%>%<p2%>%<sg%>%<nom%>:чи # ;
+чи%<prn%>%<p2%>%<sg%>%<acc%>:чамайг # ;
+чи%<prn%>%<p2%>%<sg%>%<gen%>:чиний # ;
+чи%<prn%>%<p2%>%<sg%>%<abl%>:чамаас # ;
+чи%<prn%>%<p2%>%<sg%>%<dat%>:чамд # ;
+чи%<prn%>%<p2%>%<sg%>%<inst%>:чамаар # ;  ! FIXME: check
+чи%<prn%>%<p2%>%<sg%>%<px%>:чинийх # ;    ! FIXME: check
+чи%<prn%>%<p2%>%<sg%>%<gens%>:чинь # ;
+
+та%<prn%>%<p2%>%<frm%>%<nom%>:та # ;
+та%<prn%>%<p2%>%<frm%>%<acc%>:таныг # ;
+та%<prn%>%<p2%>%<frm%>%<gen%>:таны # ;
+%та%<prn%>%<p2%>%<frm%>%<abl%>:та # ;    ! FIXME: check
+та%<prn%>%<p2%>%<frm%>%<dat%>:танд # ;
+%та%<prn%>%<p2%>%<frm%>%<inst%>:та # ;  ! FIXME: check
+та%<prn%>%<p2%>%<frm%>%<px%>:таных # ;   ! FIXME: check
+та%<prn%>%<p2%>%<frm%>%<gens%>:тань # ;
+
+тэр%<prn%>%<p3%>%<sg%>%<nom%>:тэр # ;
+тэр%<prn%>%<p3%>%<sg%>%<acc%>:түүнийг # ;
+тэр%<prn%>%<p3%>%<sg%>%<gen%>:түүний # ;
+тэр%<prn%>%<p3%>%<sg%>%<abl%>:түүнээс # ;
+тэр%<prn%>%<p3%>%<sg%>%<dat%>:тэнд # ;
+%тэр%<prn%>%<p3%>%<sg%>%<inst%>:тэр # ;  ! FIXME: check
+тэр%<prn%>%<p3%>%<sg%>%<px%>:түүнийх # ;   ! FIXME: check
+тэр%<prn%>%<p3%>%<sg%>%<gens%>:нь # ;
+
 
 LEXICON Nouns
 
@@ -310,4 +368,10 @@ LEXICON Nouns
 хулан Ninfl ; ! "wild asian ass"
 цаас Ninfl ; ! "paper"
 
+LEXICON Verbs
+
+бол Vinfl-IV ; ! "be"
+бай Vinfl-IV ; ! "be"
+үз Vinfl-TV ; ! "see"
+хар Vinfl-TV ; ! "look at"
 
