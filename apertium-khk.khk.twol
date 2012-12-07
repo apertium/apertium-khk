@@ -55,9 +55,9 @@ Rules
 
 "{A} vowel harmony"
 %{А%}:Vy <=> :Vx [ :NonVow/:0 ]* _ ;
-             where Vx in ( ү э ө о )
-                   Vy in ( э э ө о )
-             matched ;
+         where Vx in ( ү э ө о )
+             Vy in ( э э ө о )
+         matched ;
 
 "{A} harmony for 2nd element of long vowels"
 %{А%}:э <=> .#. [ :NonVow/:0 ]* :и [ :NonVow/:0 ]* _ ;
@@ -67,9 +67,14 @@ Rules
 
 "{a} harmony"
 %{а%}:Vy <=> :Vx [ :NonVow/:0 ]* [ :т | :д | :с ]/:0 _ ;
-             where Vx in ( ү э ө а о у )
-                   Vy in ( э э ө а о а )
-             matched ;
+         except
+             :PalCons/:0 _ ;   ! avoid conflict with after palcons
+         where Vx in ( ү э ө а о у )
+              Vy in ( э э ө а о а )
+         matched ;
 
 "I forgot what this {a} rule is for"
 %{а%}:э <=> .#. [ :NonVow/:0 ]* :и [ :NonVow/:0 ]* [ :т | :д | :с ]/:0 _ ;
+
+"{а} after palatal cons"
+%{а%}:и <=> :PalCons/:0 _ ;
