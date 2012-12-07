@@ -95,7 +95,7 @@ Rules
 
 "{a} harmony"
 %{а%}:Vy <=> :Vx [ :NonVow/:0 ]* [ :т | :д | :с | :х ]/:0 _ :д ;  ! улсад, байхад
-                            :Vx [ :NonVow/:0 ]* [ :л ]/:0 _ :х ;  ! болох
+                       :Vx [ :NonVow/:0 ]* [ :NonVow ]/:0 _ :х ;  ! болох
                        :Vx [ :NonVow/:0 ]* [ :NonVow ]/:0 _ :в ;  ! болов, ирэв, etc.
                        :Vx [ :NonVow/:0 ]* [ :NonVow ]/:0 _ :н ;  ! нэгэн
          except

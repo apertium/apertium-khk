@@ -503,6 +503,8 @@ LEXICON Nouns
 ухаан Ninfl ; ! "intellect"
 ус Ninfl ; ! "water"
 сүү Ninfl ; ! "milk"
+тал Ninfl ; ! "field, area"
+гал Ninfl ; ! "fire"
 
 
 LEXICON Verbs
@@ -518,7 +520,7 @@ LEXICON Verbs
 оч Vinfl-TV ; ! "go"
 өг Vinfl-TV ; ! "give"
 тэг Vinfl-IV ; ! "do such"
-инг Vinfl-IV ; ! "do thus"
+ингэ Vinfl-IV ; ! "do thus"
 барь Vinfl-TV ; ! "grab"
 сонс Vinfl-IV ; ! "listen"  FIXME: IV/TV?
 бос Vinfl-IV ; ! "stand"
@@ -531,6 +533,7 @@ LEXICON Verbs
 тавь Vinfl-TV ; ! "put"
 хий Vinfl-TV ; ! "do/make/put in"
 хэл Vinfl-IV ; ! "say"
+хүр Vinfl-TV ; ! "reach"
 
 
 LEXICON Conjunctions
@@ -561,6 +564,7 @@ LEXICON Postpos
 гадна Postp ;   ! "outside"
 төлөө Postp ;   !
 тулд Postp ;    ! 
+хүртэл Postp ;  ! "until"
 
 LEXICON PostAdv
 
