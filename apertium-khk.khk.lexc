@@ -114,6 +114,7 @@ Multichar_Symbols
 %<aor%>       ! -{E}                    ! non-past (afaik /IS/)
 %<past%>      ! -{G}{A}н                ! past
 %<ifi%>       ! -{D}{I}                 ! eyewitness past
+%<hab%>       ! habitual
 %<ifi_evid%>  ! -{I}пт{I}               ! "reported past" (afaik /IS/)
 %<fut%>       ! -{I}р                   ! future
 %<fut_plan%>  ! -{M}{A}{K}              ! future plan
@@ -126,6 +127,7 @@ Multichar_Symbols
 !! Non-Finite verb forms
 %<gna_prf%>   ! perfective verbal adverb
 %<gna_imp%>   ! imperfective verbal adverb
+%<gna_cnd%>   ! conditional verbal adverb
 %<ger%>       ! gerund
 
 !!! Participles
@@ -165,6 +167,8 @@ Multichar_Symbols
 %{а%}
 %{А%}
 %{I%}
+%{ь%}
+%{В%}
 
 %>            ! Morpheme boundary
 %             ! Space
@@ -183,6 +187,10 @@ Nouns ;
 Verbs ;
 Pronouns ;
 Conjunctions ;
+Adverbs ;
+Adjectives ;
+Postpos ;
+PostAdv ;
 
 LEXICON Cases
 
@@ -203,6 +211,8 @@ LEXICON Cases
 %<dat%>:%{а%}д # ;               ! (with exceptional forms in т)
 %<dat%>%<refl%>:д%{А%}%{А%} # ;  ! (with exceptional forms in т)
 
+%<dat%>%<attr%>:% д%{А%}х%{ь%} # ;
+
 %<gens%>:%{а%}н # ;
 
 LEXICON Ninfl
@@ -213,14 +223,22 @@ LEXICON Ninfl
 LEXICON Vinfl-Common
 
 %<aor%>:н%{А%} # ;
+%<aor%>%<neg%>:%{а%}хгүй # ;
+
 %<past%>:с%{А%}н # ;
-%<past%>:в # ;
+%<past%>%<neg%>:%{г%}%{А%}%{А%}гүй # ;
+%<past%>:%{а%}в # ;  ! FIXME: figure this out
+
+%<past%>%<evid%>:жээ # ;
+
 %<ifi%>:л%{А%}%{А%} # ;
+%<hab%>:д%{А%}г # ;
 
 %<ger%>:%{а%}х Cases ;
 
 %<gna_imp%>:%{а%}ж # ;
 %<gna_prf%>:%{г%}%{А%}%{А%}д # ;
+%<gna_cnd%>:%{В%}%{А%}л # ;
 
 LEXICON Vinfl-TV
 
@@ -241,6 +259,9 @@ LEXICON Pronouns
 би%<prn%>%<p1%>%<sg%>%<px%>:минийх # ;    ! FIXME: check
 би%<prn%>%<p1%>%<sg%>%<gens%>:минь # ;
 
+бид%<prn%>%<p1%>%<pl%>%<nom%>:бид # ;
+бид%<prn%>%<p1%>%<pl%>%<gen%>:бидний # ;
+бид%<prn%>%<p1%>%<pl%>%<dat%>:бидэнд # ;
 бид%<prn%>%<p1%>%<pl%>%<nom%>:бид # ;
 
 чи%<prn%>%<p2%>%<sg%>%<nom%>:чи # ;
@@ -267,7 +288,7 @@ LEXICON Pronouns
 тэр%<prn%>%<p3%>%<sg%>%<abl%>:түүнээс # ;
 тэр%<dem%>%<p3%>%<sg%>%<dat%>:тэнд # ;     ! loc
 тэр%<prn%>%<p3%>%<sg%>%<dat%>:түүнд # ;    ! dat/loc
-%тэр%<prn%>%<p3%>%<sg%>%<inst%>:тэр # ;  ! FIXME: check
+тэр%<prn%>%<p3%>%<sg%>%<inst%>:тэрээр # ;  ! FIXME: check
 тэр%<prn%>%<p3%>%<sg%>%<px%>:түүнийх # ;   ! FIXME: check
 тэр%<prn%>%<p3%>%<sg%>%<gens%>:нь # ;
 
@@ -279,6 +300,31 @@ LEXICON Pronouns
 тэд%<prn%>%<p3%>%<pl%>%<inst%>:тэднээр # ; ! FIXME: check
 тэд%<prn%>%<p3%>%<pl%>%<px%>:тэднийх # ;   ! FIXME: check
 тэд%<prn%>%<p3%>%<pl%>%<gens%>:нь # ;
+
+
+LEXICON Conj
+
+%<cnj%>: # ;
+
+
+LEXICON Postp
+
+%<post%>: # ;
+
+
+LEXICON PostAdv-Infl
+
+%<postadv%>: # ;
+
+
+LEXICON Adj
+
+%<adj%>: # ;
+
+
+LEXICON Adv
+
+%<adv%>: # ;
 
 
 LEXICON Nouns
@@ -392,6 +438,16 @@ LEXICON Nouns
 эзэн Ninfl ; ! "master/lord"
 газар Ninfl ; ! "place, land"
 хүн Ninfl ; ! "person"
+үе Ninfl ; ! "time"
+дуу Ninfl ; ! "song"
+нутаг Ninfl ; ! "homeland"
+гэр Ninfl ; ! "home"
+хот Ninfl ; ! "city"
+зүрх Ninfl ; ! "heart"
+ам Ninfl ; ! "mouth"
+бие Ninfl ; ! "body"
+хэл Ninfl ; ! "tongue, language"
+толгой Ninfl ; ! "head"
 
 
 LEXICON Verbs
@@ -405,11 +461,54 @@ LEXICON Verbs
 ир Vinfl-IV ; ! "come"
 яв Vinfl-TV ; ! "go"
 оч Vinfl-TV ; ! "go"
+өг Vinfl-TV ; ! "give"
+тэг Vinfl-IV ; ! "do such"
+барь Vinfl-TV ; ! "grab"
 
 
 LEXICON Conjunctions
 
-бөгөөд # ;
-ба # ;
-бас # ;
-харин # ;
+бөгөөд Conj ; ! "along with" ?
+ба Conj ; ! "and"
+бас Conj ; ! "and"
+харин Conj ; ! ~"but"
+эсвэл Conj ; ! "if"
+болон Conj ;
+гэвч Conj ; ! "but"
+буюу Conj ;
+
+
+LEXICON Postpos
+
+бол Postp ;     ! topicaliser
+шиг Postp ;     ! "like"
+бүр Postp ;     ! "each"
+өмнө Postp ;    ! "before, until" ! FIXME: takes attr
+дараа Postp ;   ! "after"         ! FIXME: takes attr
+гэвэл Postp ;   ! CHECK
+дээр Postp ;    ! "on (top of)"   ! FIXME: takes attr
+дотор Postp ;   ! "in(side of)"   ! FIXME: takes attr
+доор Postp ;    ! "under"         ! FIXME: takes attr
+тухай Postp ;   ! "about"
+
+LEXICON PostAdv
+
+ч PostAdv-Infl ; ! "not any"
+хамт PostAdv-Infl ; ! "together"
+
+
+LEXICON Adverbs
+
+сайн Adv ; ! "well"
+их Adv ; ! "very"
+дахин Adv ; ! "again"
+одоо Adv ; ! "now"
+сая Adv ; ! "just now"
+
+
+LEXICON Adjectives
+
+ариун Adj ; ! "pure"
+сайхан Adj ; ! "good"
+муу Adj ; ! "bad"
+зөв Adj ; ! "correct"
