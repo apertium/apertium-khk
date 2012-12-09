@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#! /usr/bin/python
 #GCI 2012 - Apertium - rptynan
 
 import urllib.request
@@ -38,7 +38,7 @@ def tosorttime():
 		parsenext("td")
 		name = fromstring(pagestr).find(".//td")
 		name = firsttrans(fromstring(re.sub("<.*?>",'',str(tostring(name),"utf-8"))).text)
-		filen.write("\n  "+name.strip()+' = '+noun[1].strip()+":\n")
+		filen.write('\n "'+name.strip()+' = '+noun[1].strip()+'":\n')
 #Different cases of the noun
 		while(True):
 			check=fromstring(pagestr).find(".//td")
@@ -119,7 +119,7 @@ while(True):
 				parsenext("td")
 				name = fromstring(pagestr).find(".//td")
 				name = firsttrans(fromstring(re.sub("<.*?>",'',str(tostring(name),"utf-8"))).text)
-				filen.write("\n  "+name.strip()+' = '+noun[1].strip()+":\n")
+				filen.write('\n "'+name.strip()+' = '+noun[1].strip()+'":\n')
 
 
 	#Different cases of the noun
@@ -189,7 +189,7 @@ while(True):
 				parsenext("td")
 				name = fromstring(pagestr).find(".//td")
 				name = firsttrans(fromstring(re.sub("<.*?>",'',str(tostring(name),"utf-8"))).text)
-				filen.write("\n  "+name.strip()+' = '+noun[1].strip()+":\n")
+				filen.write('\n "'+name.strip()+' = '+noun[1].strip()+'":\n')
 
 
 	#Different cases of the noun
