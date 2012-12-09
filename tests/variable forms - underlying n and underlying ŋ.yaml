@@ -1,0 +1,27 @@
+Config:
+  hfst:
+      App: hfst-optimised-lookup
+      Gen: ../khk.autogen.hfst
+      Morph: ../khk.automorf.hfst
+
+Tests:
+
+ "сонин = news":
+    сонин<n><nom> : сонин
+    сонин<n><acc> : сонинг
+    сонин<n><gen> : сонингийн
+    сонин<n><gen> : сонины
+    сонин<n><abl> : сонингоос
+    сонин<n><abl> : сониноос
+    сонин<n><dat> : сонинд
+    сонин<n><pl><nom> : сониннгууд
+    сонин<n><pl><nom> : сониннууд
+
+ "үнэн = truth":
+    үнэн<n><nom> : үнэн
+    үнэн<n><acc> : үнэнг
+    үнэн<n><acc> : үнэнийг
+    үнэн<n><gen> : үнэний
+    үнэн<n><abl> : үнэнээс
+    үнэн<n><dat> : үнэнд
+    үнэн<n><pl><nom> : үнэнүүд

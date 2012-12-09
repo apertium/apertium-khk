@@ -1,0 +1,14 @@
+Config:
+  hfst:
+      App: hfst-optimised-lookup
+      Gen: ../khk.autogen.hfst
+      Morph: ../khk.automorf.hfst
+
+Tests:
+
+ "Куба = Cuba":
+    Куба<n><nom> : Куба
+    Куба<n><acc> : Кубыг
+    Куба<n><gen> : Кубын
+    Куба<n><abl> : Кубаас
+    Куба<n><dat> : Кубад

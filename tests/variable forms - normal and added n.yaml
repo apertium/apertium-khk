@@ -1,0 +1,55 @@
+Config:
+  hfst:
+      App: hfst-optimised-lookup
+      Gen: ../khk.autogen.hfst
+      Morph: ../khk.automorf.hfst
+
+Tests:
+
+ "үнэ = price":
+    үнэ<n><nom> : үнэ
+    үнэ<n><acc> : үнийг
+    үнэ<n><gen> : үнийн
+    үнэ<n><abl> : үнээс
+    үнэ<n><abl> : үнэнээс
+    үнэ<n><dat> : үнэд
+    үнэ<n><dat> : үнэнд
+    үнэ<n><pl><nom> : үнүүд
+    үнэ<n><pl><nom> : үнэнүүд
+
+ "хот = herd animal pen":
+    хот<n><nom> : хот
+    хот<n><acc> : хотыг
+    хот<n><gen> : хотны
+    хот<n><abl> : хотноос
+    хот<n><dat> : хотонд
+    хот<n><pl><nom> : хотууд
+    хот<n><pl><nom> : хотнууд
+
+ "хэл = tongue/language":
+    хэл<n><nom> : хэл
+    хэл<n><acc> : хэлийг
+    хэл<n><gen> : хэлний
+    хэл<n><abl> : хэлнээс
+    хэл<n><dat> : хэлэнд
+    хэл<n><pl><nom> : хэлүүд
+    хэл<n><pl><nom> : хэлнүүд
+
+ "юм = thing":
+    юм<n><nom> : юм
+    юм<n><acc> : юмыг
+    юм<n><gen> : юмны
+    юм<n><abl> : юмнаас
+    юм<n><dat> : юманд
+    юм<n><pl><nom> : юмс
+    юм<n><pl><nom> : юмнууд
+
+ "өнгө = colour":
+    өнгө<n><nom> : өнгө
+    өнгө<n><acc> : өнгийг
+    өнгө<n><gen> : өнгийн
+    өнгө<n><gen> : өнгөний
+    өнгө<n><abl> : өнгөөс
+    өнгө<n><abl> : өнгөнөөс
+    өнгө<n><dat> : өнгөнд
+    өнгө<n><pl><nom> : өнгөнүүд

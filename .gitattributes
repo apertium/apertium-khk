@@ -2,4 +2,13 @@
 /Makefile -text
 /apertium-khk.khk.lexc -text
 /apertium-khk.khk.twol -text
+tests/added-n[!!-~]forms[!!-~]-[!!-~]full[!!-~]added-n[!!-~]forms.yaml -text
+tests/added-n[!!-~]forms[!!-~]-[!!-~]partial[!!-~]added-n[!!-~]forms.yaml -text
+tests/normal[!!-~]nouns[!!-~]-[!!-~]ending[!!-~]with[!!-~]"vowels".yaml -text
+tests/normal[!!-~]nouns[!!-~]-[!!-~]ending[!!-~]with[!!-~]consonants.yaml -text
+tests/normal[!!-~]nouns[!!-~]-[!!-~]ending[!!-~]with[!!-~]n.yaml -text
+tests/normal[!!-~]nouns[!!-~]-[!!-~]ending[!!-~]with[!!-~]vowels.yaml -text
+tests/normal[!!-~]nouns[!!-~]-[!!-~]ending[!!-~]with[!!-~]ŋ.yaml -text
 tests/scraper.py -text
+tests/variable[!!-~]forms[!!-~]-[!!-~]normal[!!-~]and[!!-~]added[!!-~]n.yaml -text
+tests/variable[!!-~]forms[!!-~]-[!!-~]underlying[!!-~]n[!!-~]and[!!-~]underlying[!!-~]ŋ.yaml -text
