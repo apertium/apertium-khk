@@ -322,9 +322,12 @@ LEXICON Pronouns
 би%<prn%>%<p1%>%<sg%>%<gens%>:минь Clit ;
 
 бид%<prn%>%<p1%>%<pl%>%<nom%>:бид Clit ;
+бид%<prn%>%<p1%>%<pl%>%<acc%>:биднийг Clit ;
 бид%<prn%>%<p1%>%<pl%>%<gen%>:бидний Clit ;
+бид%<prn%>%<p1%>%<pl%>%<abl%>:биднээс Clit ;
 бид%<prn%>%<p1%>%<pl%>%<dat%>:бидэнд Clit ;
-бид%<prn%>%<p1%>%<pl%>%<nom%>:бид Clit ;
+бид%<prn%>%<p1%>%<pl%>%<inst%>:биднээр Clit ;
+бид%<prn%>%<p1%>%<pl%>%<px%>:биднийх Clit ; ! FIXME: Check
 
 чи%<prn%>%<p2%>%<sg%>%<nom%>:чи Clit ;
 чи%<prn%>%<p2%>%<sg%>%<acc%>:чамайг Clit ;
@@ -561,6 +564,7 @@ LEXICON Nouns
 сар Ninfl ; ! "month"
 сар Ninfl-ExtraN ; ! "moon"
 мэлхий Ninfl-ExtraN ; ! "turtle"
+ажил Ninfl ; ! "work"
 
 
 LEXICON Verbs
@@ -590,6 +594,10 @@ LEXICON Verbs
 хий Vinfl-TV ; ! "do/make/put in"
 хэл Vinfl-IV ; ! "say"
 хүр Vinfl-TV ; ! "reach"
+амьдар Vinfl-IV ; ! "live"
+ажилла Vinfl-IV ; ! "work"
+эхэл Vinfl-IV ; ! "begin"
+дуус Vinfl-IV ; ! "finish"
 
 
 LEXICON Conjunctions
