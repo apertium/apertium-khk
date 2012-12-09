@@ -444,7 +444,7 @@ LEXICON Nouns
 машин Ninfl ; ! "car"
 муур Ninfl ; ! "cat"
 сандал Ninfl ; ! "chair"
-хүүхэд Ninfl ; ! "child"
+хүүхэд:хүүх%{а%}д Ninfl ; ! "child"
 анги Ninfl ; ! "classroom"
 пальто Ninfl ; ! "coat"
 сав Ninfl ; ! "container"
@@ -661,4 +661,4 @@ LEXICON Adjectives
 
 LEXICON Particles
 
-бүү%<imp%>%<neg%>:бүү ;   ! negative imperative particle ≈ "don't ___ !"
+бүү%<imp%>%<neg%>:бүү # ;   ! negative imperative particle ≈ "don't ___ !"
