@@ -1,0 +1,37 @@
+Config:
+  hfst:
+      App: hfst-optimised-lookup
+      Gen: ../khk.autogen.hfst
+      Morph: ../khk.automorf.hfst
+
+Tests:
+
+ "далай = sea":
+    далай<n><nom> : далай
+    далай<n><acc> : далайг
+    далай<n><abl> : далайгаас
+    далай<n><dat> : далайд
+    далай<n><pl><nom> : далайнууд
+
+ "нохой = dog":
+    нохой<n><nom> : нохой
+    нохой<n><acc> : нохойг
+    нохой<n><gen> : нохойн
+    нохой<n><abl> : нохойгоос
+    нохой<n><dat> : нохойд
+
+ "хүү = child":
+    хүү<n><nom> : хүү
+    хүү<n><acc> : хүүг
+    хүү<n><gen> : хүүгийн
+    хүү<n><abl> : хүүгээс
+    хүү<n><dat> : хүүд
+    хүү<n><pl><nom> : хүүхдүүд
+
+ "дүү = younger sibling":
+    дүү<n><nom> : дүү
+    дүү<n><acc> : дүүг
+    дүү<n><gen> : дүүгийн
+    дүү<n><abl> : дүүгээс
+    дүү<n><dat> : дүүд
+    дүү<n><pl><nom> : дүү
