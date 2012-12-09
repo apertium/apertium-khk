@@ -61,7 +61,7 @@ def tosorttime():
 
 			if(noun[1].strip()!="[]" and noun[1].strip()!="" and noun[1].strip()!="—"):
 				if(noun[0].lower().strip()=="pl"):
-					filen.write("    "+name.strip()+"<n><nom><pl> : "+firsttrans(noun[1]).strip()+'\n')
+					filen.write("    "+name.strip()+"<n><pl><nom> : "+firsttrans(noun[1]).strip()+'\n')
 				else:
 					filen.write("    "+name.strip()+"<n><"+noun[0].lower().strip()+"> : "+firsttrans(noun[1]).strip()+'\n')
 
@@ -148,7 +148,7 @@ while(True):
 
 					if(noun[1].strip()!="[]" and noun[1].strip()!="" and noun[1].strip()!="—"):
 						if(noun[0].lower().strip()=="pl"):
-							filen.write("    "+name.strip()+"<n><nom><pl> : "+firsttrans(noun[1]).strip()+'\n')
+							filen.write("    "+name.strip()+"<n><pl><nom> : "+firsttrans(noun[1]).strip()+'\n')
 						else:
 							filen.write("    "+name.strip()+"<n><"+noun[0].lower().strip()+"> : "+firsttrans(noun[1]).strip()+'\n')
 
@@ -171,7 +171,7 @@ while(True):
 
 						if(noun[1].strip()!="[]" and noun[1].strip()!="" and noun[1].strip()!="—"):
 							if(noun[0].lower().strip()=="pl"):
-								filen.write("    "+name.strip()+"<n><nom><pl> : "+firsttrans(noun[1]).strip()+'\n')
+								filen.write("    "+name.strip()+"<n><pl><nom> : "+firsttrans(noun[1]).strip()+'\n')
 							else:
 								filen.write("    "+name.strip()+"<n><"+noun[0].lower().strip()+"> : "+firsttrans(noun[1]).strip()+'\n')
 						
@@ -216,7 +216,7 @@ while(True):
 
 					if(noun[1].strip()!="[]" and noun[1].strip()!="" and noun[1].strip()!="—"):
 						if(noun[0].lower().strip()=="pl"):
-							filen.write("    "+name.strip()+"<n><nom><pl> : "+firsttrans(noun[1]).strip()+'\n')
+							filen.write("    "+name.strip()+"<n><pl><nom> : "+firsttrans(noun[1]).strip()+'\n')
 						else:
 							filen.write("    "+name.strip()+"<n><"+noun[0].lower().strip()+"> : "+firsttrans(noun[1]).strip()+'\n')
 
