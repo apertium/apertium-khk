@@ -263,7 +263,7 @@ LEXICON Cases-ExtraN
 LEXICON Ninfl
 
 %<n%>: Cases-Normal ;
-%<n%>%<pl%>:%{н%}%{U%}%{U%}д Cases-Normal ;  ! (with exceptional forms)
+%<n%>%<pl%>:%{н%}%{У%}%{У%}д Cases-Normal ;  ! (with exceptional forms)
 
 LEXICON Ninfl-NoPl
 
@@ -277,7 +277,7 @@ LEXICON Ninfl-Pl
 LEXICON Ninfl-ExtraN
 
 %<n%>: Cases-ExtraN ;
-%<n%>%<pl%>:н%{U%}%{U%}д Cases-Normal ;  ! (with exceptional forms)
+%<n%>%<pl%>:н%{У%}%{У%}д Cases-Normal ;  ! (with exceptional forms)
 
 LEXICON Ninfl-ExtraN-NoPl
 
@@ -571,6 +571,7 @@ LEXICON Nouns
 сар Ninfl-ExtraN ; ! "moon"
 мэлхий Ninfl-ExtraN ; ! "turtle"
 ажил Ninfl ; ! "work"
+далай Ninfl ; ! "sea"
 
 
 LEXICON Verbs
