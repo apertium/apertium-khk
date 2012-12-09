@@ -130,7 +130,9 @@ Multichar_Symbols
 %<gna_imp%>   ! imperfective verbal adverb
 %<gna_cnd%>   ! conditional verbal adverb
 %<gna2%>      ! "until" verbal adverb
-%<ger%>       ! gerund
+%<ger%>       ! future gerund
+%<ger_imp%>   ! imperfective gerund
+%<ger_prf%>   ! perfective gerund
 
 !!! Participles
 
@@ -299,6 +301,8 @@ LEXICON Vinfl-Common
 %<hab%>:д%{А%}г Clit ;
 
 %<ger%>:%{а%}х Cases-Normal ;
+%<ger_imp%>:д%{А%}г Cases-Normal ;
+%<ger_prf%>:с%{А%}н Cases-Normal ;
 
 %<gna_imp%>:%{а%}ж # ;
 %<gna_prf%>:%{г%}%{А%}%{А%}д # ;
