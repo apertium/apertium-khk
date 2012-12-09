@@ -2,10 +2,10 @@ Alphabet
  А Б В Г Д Е Ё Ж З И Й К Л М Н О Ө П Р С Т У Ү Ф Х Ц Ч Ш Ь Ы Ъ Э Ю Я
  а б в г д е ё ж з и й к л м н о ө п р с т у ү ф х ц ч ш ь ы ъ э ю я
  %0 1 2 3 4 5 6 7 8 9
- %{ң%}:ң %{В%}:в %{Т%}:т %{Д%}:д
- %{г%}:0 %{й%}:0 %{а%}:0 %{ь%}:0 ! disappearing stuff
- %{А%}:а %{I%}:ы %{У%}:у  ! Vow
- ° %% %, %. %- %>:0 %    ! punctuation and boundaries
+ %{ң%}:ң %{В%}:в %{Т%}:т %{Д%}:д %{Н%}:н ! consonants
+ %{г%}:0 %{й%}:0 %{а%}:0 %{ь%}:0 %{н%}:0 ! disappearing stuff
+ %{А%}:а %{I%}:ы %{У%}:у                 ! Vowels
+ ° %% %, %. %- %>:0 %                    ! punctuation and boundaries
  ;
 
 Sets
@@ -45,13 +45,14 @@ Rules
 %{I%}:и <=> :FrontVow [ :NonVow/:0 ]* _ ;
                           :PalCons/:0 _ ;
 
-"{I} deletion after diphthongs, longvowels, and {ң}"
+"{I} deletion after diphthongs, longvowels, {ң}, and [ExtraN after diphthong]"
 %{I%}:0 <=>   :й/:0 _ ; ! нохойг, далайг
             :Vow/:0 _ ; ! хүүг, дүүг
           %{ң%}:/:0 _ ; ! үзэсгэлэнг, санг
+ :Vow :й/:0 %{Н%}:н _ ; ! толгойн, мэлхийн, гахайн
 
-"I forget what this is for"
-н:0 <=> :й/:0 _ %{I%}: ;
+!"I forget what this is for"
+!н:0 <=> :й/:0 _ %{I%}: ;
 
 "{й} should surface after {I} as и"
 %{й%}:й <=> %{I%}:и _ ;
@@ -127,3 +128,12 @@ Rules
 
 "{Д} devoices after some stuff"
 %{Д%}:т <=> [ :г | :р ]/:0 _ ;
+
+"{н} surfaces after diphthongs"
+%{н%}:н <=> :Vow :й/:0 _ %{U%} ;
+
+
+!!!! ExtraN noun phonology !!!!
+
+"{Н} deletes in dative after diphthongs"
+%{Н%}:0 <=> :Vow :й %>: %{а%}: _ д ; 
