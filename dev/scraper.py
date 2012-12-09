@@ -1,4 +1,4 @@
-#! /usr/bin/python
+#!/usr/bin/env python3
 #GCI 2012 - Apertium - rptynan
 
 import urllib.request
