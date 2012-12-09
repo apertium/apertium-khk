@@ -103,6 +103,7 @@ Multichar_Symbols
 !! Mood
 %<imp%>       ! Imperative
 %<opt%>       ! Optative/jussive
+%<sug%>       ! Suggestion
 
 !! Derivation
 %<caus%>      ! Causative
@@ -198,6 +199,8 @@ Postpos ;
 PostAdv ;
 Determiners ;
 Numbers ;
+Particles ;     ! UGH
+
 
 LEXICON Clit
 ! Sentence-final clitics
@@ -301,6 +304,9 @@ LEXICON Vinfl-Common
 %<gna_prf%>:%{г%}%{А%}%{А%}д # ;
 %<gna_cnd%>:%{В%}%{А%}л # ;
 %<gna_cnd%>:%{Т%}%{А%}л # ;
+
+%<imp%>:%{А%}%{А%}р%{А%}й # ;     ! simple imperative
+%<sug%>:%{А%}%{А%}ч # ;           ! suggestion
 
 LEXICON Vinfl-TV
 
@@ -651,3 +657,8 @@ LEXICON Adjectives
 сайхан Adj ; ! "good"
 муу Adj ; ! "bad"
 зөв Adj ; ! "correct"
+
+
+LEXICON Particles
+
+бүү%<imp%>%<neg%>:бүү ;   ! negative imperative particle ≈ "don't ___ !"
