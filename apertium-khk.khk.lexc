@@ -217,7 +217,7 @@ LEXICON Cases-Normal
 %<refl%>:%{г%}%{А%}%{А%} Clit ;  ! this is both nom and acc
 
 %<gen%>:%{г%}%{I%}%{й%}н Clit ;
-%<gen%>:%{г%}%{I%}%{й%}нх%{А%}%{А%} Clit ;
+%<gen%>%<refl%>:%{г%}%{I%}%{й%}нх%{А%}%{А%} Clit ;
 
 %<abl%>:%{г%}%{А%}%{А%}с Clit ;
 %<abl%>%<refl%>:%{г%}%{А%}%{А%}с%{А%}%{А%} Clit ;
@@ -241,7 +241,7 @@ LEXICON Cases-ExtraN
 %<refl%>:%{г%}%{А%}%{А%} Clit ;  ! this is both nom and acc
 
 %<gen%>:%{Н%}%{I%}%{й%} Clit ;
-%<gen%>:%{Н%}%{I%}%{й%}нх%{А%}%{А%} Clit ;
+%<gen%>%<refl%>:%{Н%}%{I%}%{й%}нх%{А%}%{А%} Clit ;
 
 %<abl%>:%{Н%}%{А%}%{А%}с Clit ;
 %<abl%>%<refl%>:%{Н%}%{А%}%{А%}с%{А%}%{А%} Clit ;
@@ -262,10 +262,24 @@ LEXICON Ninfl
 %<n%>: Cases-Normal ;
 %<n%>%<pl%>:%{н%}%{U%}%{U%}д Cases-Normal ;  ! (with exceptional forms)
 
+LEXICON Ninfl-NoPl
+
+%<n%>: Cases-Normal ;
+
+LEXICON Ninfl-Pl
+
+%<n%>%<pl%>: Cases-Normal ;
+
+
 LEXICON Ninfl-ExtraN
 
 %<n%>: Cases-ExtraN ;
 %<n%>%<pl%>:н%{U%}%{U%}д Cases-Normal ;  ! (with exceptional forms)
+
+LEXICON Ninfl-ExtraN-NoPl
+
+%<n%>: Cases-ExtraN ;
+
 
 LEXICON Vinfl-Common
 
@@ -473,7 +487,7 @@ LEXICON Nouns
 харандаа Ninfl ; ! "pencil"
 утас Ninfl ; ! "phone"
 зураг Ninfl ; ! "picture"
-гахай Ninfl ; ! "pig"
+гахай Ninfl-ExtraN ; ! "pig"
 табаг Ninfl ; ! "plate"
 аймаг Ninfl ; ! "province"
 асуулт Ninfl ; ! "question"
@@ -514,7 +528,8 @@ LEXICON Nouns
 цаас Ninfl ; ! "paper"
 эзэн Ninfl ; ! "master/lord"
 газар Ninfl ; ! "place, land"
-хүн Ninfl ; ! "person"
+хүн:хүн Ninfl-NoPl ; ! "person"
+хүн:хүмүүс Ninfl-Pl ; ! "person"
 үе Ninfl ; ! "time"
 үе Ninfl-ExtraN ; ! "joint"
 дуу Ninfl ; ! "song"
@@ -545,7 +560,7 @@ LEXICON Nouns
 өрөө Ninfl-ExtraN ; ! "room"
 сар Ninfl ; ! "month"
 сар Ninfl-ExtraN ; ! "moon"
-
+мэлхий Ninfl-ExtraN ; ! "turtle"
 
 
 LEXICON Verbs
