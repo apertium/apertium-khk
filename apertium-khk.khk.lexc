@@ -281,7 +281,7 @@ LEXICON Vinfl-Common
 %<ifi%>:л%{А%}%{А%} # ;
 %<hab%>:д%{А%}г Clit ;
 
-%<ger%>:%{а%}х Cases ;
+%<ger%>:%{а%}х Cases-Normal ;
 
 %<gna_imp%>:%{а%}ж # ;
 %<gna_prf%>:%{г%}%{А%}%{А%}д # ;
@@ -349,18 +349,18 @@ LEXICON Pronouns
 тэд%<prn%>%<p3%>%<pl%>%<px%>:тэднийх Clit ;   ! FIXME: check
 тэд%<prn%>%<p3%>%<pl%>%<gens%>:нь Clit ;
 
-хэн Cases ; ! "who"
-юу Cases ; ! "what"
-өөр Cases ; ! "oneself"
+хэн Cases-Normal ; ! "who"
+юу Cases-Normal ; ! "what"
+өөр Cases-Normal ; ! "oneself"
 
 LEXICON Determiners
 
 энэ%<det%>%<nom%>:энэ # ;
-эн%<det%>:эн Cases ;
+эн%<det%>:эн Cases-Normal ;
 
 LEXICON Num
 
-%<num%>: Cases ;
+%<num%>: Cases-Normal ;
 
 LEXICON Numbers
 
