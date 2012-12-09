@@ -22,8 +22,8 @@ FrontVow = ү э ө
 BackVow = у а о
           У А О ;
 
-NonVow = Б В Г Д Ж З К Л М Н П Р С Т Ф Х Ц Ч Ш Ь Ъ 
-         б в г д ж з к л м н п р с т ф х ц ч ш ь ъ ; ! This is for surface forms only, so no archiphonemes
+NonVow = Б В Г Д Е Ж З К Л М Н П Р С Т Ф Х Ц Ч Ш Ь Ъ Я
+         б в г д е ж з к л м н п р с т ф х ц ч ш ь ъ я ; ! This is for surface forms only, so no archiphonemes
 
 !PalCons =  г ж ш ;
 PalConsA =  ч ж ш ;
@@ -48,7 +48,7 @@ Rules
 
 "{I} deletion after diphthongs, longvowels, {ң}, and [ExtraN after diphthong]"
 %{I%}:0 <=>   :й/:0 _ ; ! нохойг, далайг
-            :Vow/:0 _ ; ! хүүг, дүүг
+            :Vow/:0 _ ; ! хүүг, дүүг, not ангийг
           %{ң%}:/:0 _ ; ! үзэсгэлэнг, санг
  :Vow :й/:0 %{Н%}:н _ ; ! толгойн, мэлхийн, гахайн
 
@@ -57,9 +57,10 @@ Rules
 
 "{й} should surface after {I} as и"
 %{й%}:й <=> %{I%}:и _ ;
+      :и/:0 %{I%}:0 _ ;   ! ангийг
 
-"final short vowel deletion before vowel-initial morpheme"
-Vow:0 <=> _ %>: [ %{I%}: | %{А%}: ] ;
+!"final short vowel deletion before vowel-initial morpheme"
+!Vow:0 <=> _ %>: [ %{I%}: | %{А%}: ] ;
 
 
 !!!! {A} stuff !!!!
@@ -107,7 +108,7 @@ Vow:0 <=> _ %>: [ %{I%}: | %{А%}: ] ;
             :PalConsA/[ :0 - ь: ] _ ;   ! avoid conflict with after palcons
              ь: _ :NonVow/:0 [ :Vow | .#. ] ;
              :н %>: _ :н :д ;            ! хүнд, шашинд, оронд
-             _ :NonVow/:0 :Vow ;         ! хүүхдийг
+             _ :NonVow/:0 :Vow ;         ! хүүхдийг, but хүүхэд
          where Vx in ( ү э ө а о у )
                Vy in ( э э ө а о а )
          matched ;
