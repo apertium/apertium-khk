@@ -58,6 +58,9 @@ Rules
 "{й} should surface after {I} as и"
 %{й%}:й <=> %{I%}:и _ ;
 
+"final short vowel deletion before vowel-initial morpheme"
+Vow:0 <=> _ %>: [ %{I%}: | %{А%}: ] ;
+
 
 !!!! {A} stuff !!!!
 
