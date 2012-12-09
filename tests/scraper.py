@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#! /usr/bin/python
 #GCI 2012 - Apertium - rptynan
 
 import urllib.request
@@ -36,8 +36,9 @@ def tosorttime():
 		pagestr=pagestr[nxttable:]
 		noun=(parsenext("th").text,parsenext('i').text)
 		parsenext("td")
-		name = firsttrans(fromstring(pagestr).find(".//td").text)
-		filen.write("\n  "+name.strip()+'='+noun[1].strip()+":\n")
+		name = fromstring(pagestr).find(".//td")
+		name = firsttrans(fromstring(re.sub("<.*?>",'',str(tostring(name),"utf-8"))).text)
+		filen.write("\n  "+name.strip()+' = '+noun[1].strip()+":\n")
 #Different cases of the noun
 		while(True):
 			check=fromstring(pagestr).find(".//td")
@@ -45,9 +46,12 @@ def tosorttime():
 			if(check==None or check.find(".//i")!=None):
 				break
 			#Special case for one's to be checked
-			if(str(check).find('class="check"')!=-1):
-				continue
-			#print(fromstring(pagestr).find(".//td").text)
+			try:
+				if(check.attrib["class"]=="check"):
+					[parsenext("th").text, parsenext("td")]
+					continue
+			except KeyError:
+				pass
 			noun = [parsenext("th").text, parsenext("td")]
 			#Special case for bolded letters
 			if(noun[1].find(".//b")!=None):
@@ -104,7 +108,7 @@ while(True):
 				nxth=pagestr.find("h3")
 				if((nxth<nxttable and nxth!=-1) or nxttable==-1):
 					break
-				if(pagestr.find("To sort")<nxttable):
+				if(pagestr.find("To sort")<nxttable and pagestr.find("To sort")!=-1):
 					tosorttime()
 					exit()
 				pagestr=pagestr[nxttable:]
@@ -113,8 +117,9 @@ while(True):
 					parsenext("th")
 				noun=(parsenext("th").text,parsenext('i').text)
 				parsenext("td")
-				name = firsttrans(fromstring(pagestr).find(".//td").text)
-				filen.write("\n  "+name.strip()+'='+noun[1].strip()+":\n")
+				name = fromstring(pagestr).find(".//td")
+				name = firsttrans(fromstring(re.sub("<.*?>",'',str(tostring(name),"utf-8"))).text)
+				filen.write("\n  "+name.strip()+' = '+noun[1].strip()+":\n")
 
 
 	#Different cases of the noun
@@ -124,10 +129,13 @@ while(True):
 					if(check.find(".//i")!=None):
 						break
 					#Special case for one's to be checked
-					if(str(check).find('class="check"')!=-1):
-						continue
-					
-					#print(fromstring(pagestr).find(".//td").text)
+					try:
+						if(check.attrib["class"]=="check"):
+							[parsenext("th").text, parsenext("td")]
+							continue
+					except KeyError:
+						pass
+
 					noun = [parsenext("th").text,' ']
 					
 					noun[1] = parsenext("td")
@@ -147,6 +155,14 @@ while(True):
 					
 					#If there's second form
 					if(str(tostring(ch)).find('colspan="2"')==-1):
+						check=fromstring(pagestr).find(".//td")
+						#Special case for one's to be checked
+						try:
+							if(check.attrib["class"]=="check"):
+								[parsenext("th").text, parsenext("td")]
+								continue
+						except KeyError:
+							pass
 						noun[1]=parsenext("td")
 						if(noun[1].find(".//b")!=None):
 							noun[1] = fromstring(re.sub("<.*?>",'',str(tostring(noun[1]),"utf-8"))).text
@@ -171,8 +187,9 @@ while(True):
 				pagestr=pagestr[nxttable:]
 				noun=(parsenext("th").text,parsenext('i').text)
 				parsenext("td")
-				name = firsttrans(fromstring(pagestr).find(".//td").text)
-				filen.write("\n  "+name.strip()+'='+noun[1].strip()+":\n")
+				name = fromstring(pagestr).find(".//td")
+				name = firsttrans(fromstring(re.sub("<.*?>",'',str(tostring(name),"utf-8"))).text)
+				filen.write("\n  "+name.strip()+' = '+noun[1].strip()+":\n")
 
 
 	#Different cases of the noun
@@ -182,10 +199,13 @@ while(True):
 					if(check.find(".//i")!=None):
 						break
 					#Special case for one's to be checked
-					if(str(check).find('class="check"')!=-1):
-						continue
+					try:
+						if(check.attrib["class"]=="check"):
+							[parsenext("th").text, parsenext("td")]
+							continue
+					except KeyError:
+						pass
 					
-					#print(fromstring(pagestr).find(".//td").text)
 					noun = [parsenext("th").text, parsenext("td")]
 
 					#Special case for bolded letters
