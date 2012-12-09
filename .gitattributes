@@ -2,4 +2,4 @@
 /Makefile -text
 /apertium-khk.khk.lexc -text
 /apertium-khk.khk.twol -text
-dev/scraper.py -text
+tests/scraper.py -text
