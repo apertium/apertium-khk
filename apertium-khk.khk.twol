@@ -31,6 +31,8 @@ PalConsI =  ч ж ш г е;
 
 Nasal = н м ;
 
+Y = е я ;
+
 Rules 
 
 !!!! G stuff !!!!
@@ -99,19 +101,35 @@ Rules
 
 !!!! {a} stuff !!!!
 
-"{a} harmony"
-%{а%}:Vy <=> :Vx [ :NonVow/:0 ]* [ :т | :д | :с | :х ]/:0 _ :д ;  ! улсад, байхад
-                       :Vx [ :NonVow/:0 ]* [ :NonVow ]/:0 _ :х ;  ! болох
-                       :Vx [ :NonVow/:0 ]* [ :NonVow ]/:0 _ :в ;  ! болов, ирэв, etc.
-                       :Vx [ :NonVow/:0 ]* [ :NonVow ]/:0 _ :н ;  ! нэгэн
+!"{a} harmony"
+!%{а%}:Vy <=> :Vx [ :NonVow* [ :т | :д | :с | :х ] ]/:0 _ :д ;  ! улсад, байхад
+!                                                               ! хүүхэд, оршилд
+!                    :Vx [ :NonVow/:0 ]* [ :NonVow ]/:0 _ :х ;  ! болох
+!                    :Vx [ :NonVow/:0 ]* [ :NonVow ]/:0 _ :в ;  ! болов, ирэв, etc.
+!                    :Vx [ :NonVow/:0 ]* [ :NonVow ]/:0 _ :н ;  ! нэгэн
+!         except
+!             :PalConsA/[ :0 - ь: ] _ ;   ! avoid conflict with after palcons
+!             ь: _ :NonVow/:0 [ :Vow | .#. ] ;
+!             :н %>: _ :н :д ;            ! хүнд, шашинд, оронд
+!             _ :NonVow/:0 :Vow ;         ! хүүхдийг, but хүүхэд
+!         where Vx in ( ү э ө а о у )
+!               Vy in ( э э ө а о а )
+!         matched ;
+
+"{а} harmony"
+%{а%}:Vy <=> [ :Vx :NonVow (:NonVow) ]/:0 _ [ :д | :в | :н | :л ] .#. ;  
          except
-            :PalConsA/[ :0 - ь: ] _ ;   ! avoid conflict with after palcons
+             :PalConsA/[ :0 - ь: ] _ ;   ! avoid conflict with after palcons
              ь: _ :NonVow/:0 [ :Vow | .#. ] ;
-             :н %>: _ :н :д ;            ! хүнд, шашинд, оронд
-             _ :NonVow/:0 :Vow ;         ! хүүхдийг, but хүүхэд
+             [ :Vow | %{а%}: ] [ :л | :Nasal | :Y | :р ]/:0 _ :д ;
+             :NonVow _ :л [ :Vow | %{а%}: ] ;
+!             :н %>: _ :н :д ;            ! хүнд, шашинд, оронд
+!             _ :NonVow/:0 :Vow ;         ! хүүхдийг, but хүүхэд
          where Vx in ( ү э ө а о у )
                Vy in ( э э ө а о а )
          matched ;
+
+
 
 "{a} is front unrounded after first-initial [non-transparent] и"
 %{а%}:э <=> .#. [ :NonVow/:0 ]* :и [ :NonVow/:0 ]* [ :т | :д | :с ]/:0 _ ;
