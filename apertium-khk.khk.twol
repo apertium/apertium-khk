@@ -136,10 +136,12 @@ Rules
 
 "{а} harmony"
 %{а%}:Vy <=> [ :Vx :NonVow (:NonVow) ]/:0 _ [ :д | :в | :н | :л | :г ] .#. ;  
+             [ :Vx (:NonVow) [ :NonVow - Y: ] ]/:0 _ [ :н :д ]/:0 .#. ; 
+				                                     ! хүнд, шашинд, оронд
          except
              :PalConsA/[ :0 - ь: ] _ ;   ! avoid conflict with after palcons
              ь: _ :NonVow/:0 [ :Vow | .#. ] ;
-             [ :Vow | %{а%}: ] [ :л | :Nasal | :Y | :р ]/:0 _ :д ;
+             [ :Vow | %{а%}: ] [ :л | :Nasal | :Y | :р | :г ]/:0 _ :д ;
              :NonVow _ :л [ :Vow | %{а%}: ] ;
 !             :н %>: _ :н :д ;            ! хүнд, шашинд, оронд
 !             _ :NonVow/:0 :Vow ;         ! хүүхдийг, but хүүхэд
