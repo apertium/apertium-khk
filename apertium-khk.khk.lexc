@@ -178,6 +178,7 @@ Multichar_Symbols
 %{Д%}
 %{н%}
 %{Н%}
+%{ъ%}         ! blocks voicing assimilation, mostly of Д for "irregular" locatives
 
 %>            ! Morpheme boundary
 %             ! Space
@@ -218,55 +219,55 @@ LEXICON Clit
 LEXICON Cases-Normal
 
 %<nom%>: Clit ;
-%<acc%>:%{I%}%{й%}г Clit ;
+%<acc%>:%>%{I%}%{й%}г Clit ;
 
-%<refl%>:%{г%}%{А%}%{А%} Clit ;  ! this is both nom and acc
+%<refl%>:%>%{г%}%{А%}%{А%} Clit ;  ! this is both nom and acc
 
-%<gen%>:%{г%}%{I%}%{й%}н Clit ;
-%<gen%>%<refl%>:%{г%}%{I%}%{й%}нх%{А%}%{А%} Clit ;
+%<gen%>:%>%{г%}%{I%}%{й%}н Clit ;
+%<gen%>%<refl%>:%>%{г%}%{I%}%{й%}нх%>%{А%}%{А%} Clit ;
 
-%<abl%>:%{г%}%{А%}%{А%}с Clit ;
-%<abl%>%<refl%>:%{г%}%{А%}%{А%}с%{А%}%{А%} Clit ;
+%<abl%>:%>%{г%}%{А%}%{А%}с Clit ;
+%<abl%>%<refl%>:%>%{г%}%{А%}%{А%}с%{А%}%{А%} Clit ;
 
-%<inst%>:%{г%}%{А%}%{А%}р Clit ;
-%<inst%>%<refl%>:%{г%}%{А%}%{А%}р%{А%}%{А%} Clit ;
+%<inst%>:%>%{г%}%{А%}%{А%}р Clit ;
+%<inst%>%<refl%>:%>%{г%}%{А%}%{А%}р%>%{А%}%{А%} Clit ;
 
-%<dat%>:%{а%}%{Д%} Clit ;               ! (with exceptional forms in т)
-%<dat%>%<refl%>:д%{А%}%{А%} Clit ;  ! (with exceptional forms in т)
+%<dat%>:%>%{а%}%{Д%} Clit ;               ! (with exceptional forms in т)
+%<dat%>%<refl%>:%>д%{А%}%{А%} Clit ;  ! (with exceptional forms in т)
 
 %<dat%>%<attr%>:% д%{А%}х%{ь%} Clit ;
 
-%<gens%>:%{а%}н # ;
+%<gens%>:%>%{а%}н # ;
 
 
 LEXICON Cases-ExtraN
 
 %<nom%>: Clit ;
-%<acc%>:%{I%}%{й%}г Clit ;
+%<acc%>:%>%{I%}%{й%}г Clit ;
 
-%<refl%>:%{г%}%{А%}%{А%} Clit ;  ! this is both nom and acc
+%<refl%>:%>%{г%}%{А%}%{А%} Clit ;  ! this is both nom and acc
 
-%<gen%>:%{Н%}%{I%}%{й%} Clit ;
-%<gen%>%<refl%>:%{Н%}%{I%}%{й%}нх%{А%}%{А%} Clit ;
+%<gen%>:%>%{Н%}%{I%}%{й%} Clit ;
+%<gen%>%<refl%>:%>%{Н%}%{I%}%{й%}нх%>%{А%}%{А%} Clit ;
 
-%<abl%>:%{Н%}%{А%}%{А%}с Clit ;
-%<abl%>%<refl%>:%{Н%}%{А%}%{А%}с%{А%}%{А%} Clit ;
+%<abl%>:%>%{Н%}%{А%}%{А%}с Clit ;
+%<abl%>%<refl%>:%>%{Н%}%{А%}%{А%}с%>%{А%}%{А%} Clit ;
 
-%<inst%>:%{Н%}%{А%}%{А%}р Clit ;
-%<inst%>%<refl%>:%{Н%}%{А%}%{А%}р%{А%}%{А%} Clit ;
+%<inst%>:%>%{Н%}%{А%}%{А%}р Clit ;
+%<inst%>%<refl%>:%>%{Н%}%{А%}%{А%}р%>%{А%}%{А%} Clit ;
 
-%<dat%>:%{а%}%{Н%}д Clit ;               ! (with exceptional forms in т)
-%<dat%>%<refl%>:%{Н%}д%{А%}%{А%} Clit ;  ! (with exceptional forms in т)
+%<dat%>:%>%{а%}%{Н%}д Clit ;               ! (with exceptional forms in т)
+%<dat%>%<refl%>:%>%{Н%}д%{А%}%{А%} Clit ;  ! (with exceptional forms in т)
 
 %<dat%>%<attr%>:% д%{А%}х%{ь%} Clit ;
 
-%<gens%>:%{а%}н # ;
+%<gens%>:%>%{а%}н # ;
 
 
 LEXICON Ninfl
 
 %<n%>: Cases-Normal ;
-%<n%>%<pl%>:%{н%}%{У%}%{У%}д Cases-Normal ;  ! (with exceptional forms)
+%<n%>%<pl%>:%>%{н%}%{У%}%{У%}д Cases-Normal ;  ! (with exceptional forms)
 
 LEXICON Ninfl-NoPl
 
@@ -280,7 +281,7 @@ LEXICON Ninfl-Pl
 LEXICON Ninfl-ExtraN
 
 %<n%>: Cases-ExtraN ;
-%<n%>%<pl%>:н%{У%}%{У%}д Cases-Normal ;  ! (with exceptional forms)
+%<n%>%<pl%>:%>н%{У%}%{У%}д Cases-Normal ;  ! (with exceptional forms)
 
 LEXICON Ninfl-ExtraN-NoPl
 
@@ -289,29 +290,29 @@ LEXICON Ninfl-ExtraN-NoPl
 
 LEXICON Vinfl-Common
 
-%<aor%>:н%{А%} # ;
-%<aor%>%<neg%>:%{а%}хгүй Clit ;
+%<aor%>:%>н%{А%} # ;
+%<aor%>%<neg%>:%>%{а%}хгүй Clit ;
 
-%<past%>:с%{А%}н Clit ;
-%<past%>%<neg%>:%{г%}%{А%}%{А%}гүй Clit ;
-%<past%>:%{а%}в # ;  ! FIXME: figure this out
+%<past%>:%>с%{А%}н Clit ;
+%<past%>%<neg%>:%>%{г%}%{А%}%{А%}гүй Clit ;
+%<past%>:%>%{а%}в # ;  ! FIXME: figure this out
 
 %<past%>%<evid%>:жээ # ;
 
-%<ifi%>:л%{А%}%{А%} # ;
-%<hab%>:д%{А%}г Clit ;
+%<ifi%>:%>л%{А%}%{А%} # ;
+%<hab%>:%>д%{а%}г Clit ;
 
-%<ger%>:%{а%}х Cases-Normal ;
-%<ger_imp%>:д%{А%}г Cases-Normal ;
-%<ger_prf%>:с%{А%}н Cases-Normal ;
+%<ger%>:%>%{а%}х Cases-Normal ;
+%<ger_imp%>:%>д%{а%}г Cases-Normal ;
+%<ger_prf%>:%>с%{а%}н Cases-Normal ;
 
-%<gna_imp%>:%{а%}ж # ;
-%<gna_prf%>:%{г%}%{А%}%{А%}д # ;
-%<gna_cnd%>:%{В%}%{А%}л # ;
-%<gna_cnd%>:%{Т%}%{А%}л # ;
+%<gna_imp%>:%>%{а%}ж # ;
+%<gna_prf%>:%>%{г%}%{А%}%{А%}д # ;
+%<gna_cnd%>:%>%{В%}%{А%}л # ;
+%<gna_cnd%>:%>%{Т%}%{А%}л # ;
 
-%<imp%>:%{А%}%{А%}р%{А%}й # ;     ! simple imperative
-%<sug%>:%{А%}%{А%}ч # ;           ! suggestion
+%<imp%>:%>%{А%}%{А%}р%{А%}й # ;     ! simple imperative
+%<sug%>:%>%{А%}%{А%}ч # ;           ! suggestion
 
 LEXICON Vinfl-TV
 
@@ -572,7 +573,7 @@ LEXICON Nouns
 гал Ninfl ; ! "fire"
 гөрөөс Ninfl-ExtraN ; ! "~gazelle"
 өрөө Ninfl-ExtraN ; ! "room"
-сар Ninfl ; ! "month"
+сар:сар%{ъ%} Ninfl ; ! "month"
 сар Ninfl-ExtraN ; ! "moon"
 мэлхий Ninfl-ExtraN ; ! "turtle"
 ажил Ninfl ; ! "work"

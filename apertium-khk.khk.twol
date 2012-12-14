@@ -4,6 +4,7 @@ Alphabet
  %0 1 2 3 4 5 6 7 8 9
  %{ң%}:н %{В%}:в %{Т%}:т %{Д%}:д %{Н%}:н ! consonants
  %{г%}:0 %{й%}:0 %{а%}:0 %{ь%}:0 %{н%}:0 ! disappearing stuff
+ %{ъ%}:0                                 ! "
  %{А%}:а %{I%}:ы %{У%}:у                 ! Vowels
  ° %% %, %. %- %>:0 %                    ! punctuation and boundaries
  ;
@@ -39,7 +40,7 @@ Rules
 
 "G epenthesis"
 %{г%}:г <=> [ [ :Vow :Vow ] | %{ң%}: ]/:0 _ ;        ! дүүгийн, (нохойн), санг
-                                    :й/:0 _ %{А%}: ; ! дүүгээс, нохойгоос
+                        [ :Vow | :й ] %>: _ %{А%}: ; ! дүүгээс, нохойгоос
 
 
 !!!! I stuff !!!!
@@ -47,6 +48,9 @@ Rules
 "{I} as и instead of ы"
 %{I%}:и <=> :FrontVow [ :NonVow/:0 ]* _ ;
                          :PalConsI/:0 _ ;
+        except
+            :Vow/:0 _ ; ! хүүг, дүүг, not ангийг
+          %{ң%}:/:0 _ ; ! үзэсгэлэнг, санг
 
 "{I} deletion after diphthongs, longvowels, {ң}, and [ExtraN after diphthong]"
 %{I%}:0 <=>   :й/:0 _ ; ! нохойг, далайг
@@ -67,31 +71,45 @@ Rules
 
 !!!! {A} stuff !!!!
 
-"{A} vowel harmony"
-%{А%}:Vy <=> :Vx [ :NonVow/[ :0 | %  ] ]* _ ;
+"{A} vowel harmony for second {А} in {А}{А}"
+%{А%}:Vy <=> [ :Vx - %{А%}: ] [ :NonVow (:NonVow*) ]/[ :0 | :%  ] %{А%}: _ ;
+             !!! а:Vx :NonVow %>: %{А%}: _ ;   ! DEBUG
          except
              _ %{А%}: ;  ! if {A}{A}, only do second {A}
              ь:/:0 _ ;
-         where Vx in ( ү э ө о )
-               Vy in ( э э ө о )
+         where Vx in ( ү э ө о а у )
+               Vy in ( э э ө о а а )
+         matched ;
+
+"{А} vowel harmony for Y ''vowels''"
+%{А%}:Vy <=> .#. (:NonVow) [ :Vx - %{А%}: ] [ [ :NonVow - Y: ] ( [ :NonVow - Y: ]*) ]/[ :0 | :% ] %{А%}: _ ;
+         except
+             _ %{А%}: ;  ! if {A}{A}, only do second {A}
+             ь:/:0 _ ;
+         where Vx in ( я е ю ё и )
+               Vy in ( а э а о э )
          matched ;
 
 "{А} vowel harmony for first {А} in {A}{A}"
 %{А%}:Vy <=> _ %{А%}:Vx ;
          except
              ь:/:0 _ %{А%}: ;
-         where Vx in ( ү э ө о )
-               Vy in ( э э ө о )
+             :и/:0 _ %{А%}: ;
+         where Vx in ( э ө о а )
+               Vy in ( э ө о а )
          matched ;
 
-"{А} becomes и after palatalised cons"
-%{А%}:и <=> ь:/:0 _ ;
+"first {А} becomes и after palatalised cons or и"
+%{А%}:и <=> ь:/:0 _ %{А%}: ;
 
-"{A} is э after [non-transparent] и in first syllable"
-%{А%}:э <=> .#. [ :NonVow/:0 ]* :и [ :NonVow/:0 ]* _ ;
-         except
-             _ %{А%}: ;
-             ь:/:0 _ ;
+"first {А} deletes after и"
+%{А%}:0 <=> :и/[ :0 - ь: ] _ %{А%}: ;
+
+!!"{A} is э after [non-transparent] и in first syllable"
+!!%{А%}:э <=> .#. [ :NonVow/:0 ]* :и [ :NonVow/:0 ]* _ ;
+!!         except
+!!             _ %{А%}: ;
+!!             ь:/:0 _ ;
 
 
 !!!! {У} stuff !!!!
@@ -117,7 +135,7 @@ Rules
 !         matched ;
 
 "{а} harmony"
-%{а%}:Vy <=> [ :Vx :NonVow (:NonVow) ]/:0 _ [ :д | :в | :н | :л ] .#. ;  
+%{а%}:Vy <=> [ :Vx :NonVow (:NonVow) ]/:0 _ [ :д | :в | :н | :л | :г ] .#. ;  
          except
              :PalConsA/[ :0 - ь: ] _ ;   ! avoid conflict with after palcons
              ь: _ :NonVow/:0 [ :Vow | .#. ] ;
@@ -129,10 +147,19 @@ Rules
                Vy in ( э э ө а о а )
          matched ;
 
+"{а} vowel harmony for Y cons"
+%{а%}:Vy <=> .#. (:NonVow) :Vx [ [ :NonVow - Y: ] ( [ :NonVow - Y: ] ) ]/:0 _ [ :д | :в | :н | :л | :г ] .#. ;
+         except
+             :PalConsA/[ :0 - ь: ] _ ;   ! avoid conflict with after palcons
+             ь: _ :NonVow/:0 [ :Vow | .#. ] ;
+             [ :Vow | %{а%}: ] [ :л | :Nasal | :Y | :р ]/:0 _ :д ;
+             :NonVow _ :л [ :Vow | %{а%}: ] ;
+         where Vx in ( я е ю ё и )
+               Vy in ( а э а о э )
+         matched ;
 
-
-"{a} is front unrounded after first-initial [non-transparent] и"
-%{а%}:э <=> .#. [ :NonVow/:0 ]* :и [ :NonVow/:0 ]* [ :т | :д | :с ]/:0 _ ;
+!"{a} is front unrounded after first-initial [non-transparent] и"
+!%{а%}:э <=> .#. [ :NonVow/:0 ]* :и [ :NonVow/:0 ]* [ :т | :д | :с ]/:0 _ ;
 
 "{а} after palatal cons"
 %{а%}:и <=> :PalConsA/[ :0 - ь: ] _ ;
@@ -140,19 +167,19 @@ Rules
 
 "ь deletion before {а}"
 ь:0 <=> _ %{а%}:и/:0 ;
-        _ %{А%}:и/:0 ;
+        _ %>: %{А%}: %{А%}: ;
 
 
 !!!! MISC !!!!
 
 "{ь} appears with back-vowels"
-%{ь%}:ь <=> %{А%}:BackVow :NonVow* _ ;
+%{ь%}:ь <=> %{А%}:BackVow :NonVow (:NonVow*) _ ;
 
 "{В} surfaces as б after л, nasals, and в"
 %{В%}:б <=> [ :в | :Nasal | :л ]/[ :0 | %  ] _ ;
 
 "{Д} devoices after some stuff"
-%{Д%}:т <=> [ :г | :р ]/:0 _ ;
+%{Д%}:т <=> [ :г | :р ]/[ :0 - %{ъ%}:0 ] _ ;
 
 
 !!!! extra {н} stuff !!!!
