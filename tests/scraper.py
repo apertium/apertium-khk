@@ -6,7 +6,7 @@ from lxml.html import fromstring
 from lxml.html import tostring
 import re
 
-matchWord = re.compile(r"(.*?) \[")
+matchWord = re.compile(r"([\w\s]*?) [\[\/]")
 
 page = urllib.request.urlopen("http://wiki.firespeaker.org/Khalkha_noun_classes")
 #page = urllib.request.urlopen("file:///home/ash/Code/GCI/mongolian_noun_scraper/Khalkha_noun_classes")
