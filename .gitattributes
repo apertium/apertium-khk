@@ -1,7 +1,16 @@
 * text=auto !eol
-/Makefile -text
+/AUTHORS -text
+/COPYING -text
+/ChangeLog -text
+/Makefile.am -text
+/NEWS -text
+/README -text
 /apertium-khk.khk.lexc -text
+/apertium-khk.khk.rlx -text
 /apertium-khk.khk.twol -text
+/autogen.sh -text
+/configure.ac -text
+/modes.xml -text
 tests/added-n[!!-~]forms[!!-~]-[!!-~]full[!!-~]added-n[!!-~]forms.yaml -text
 tests/added-n[!!-~]forms[!!-~]-[!!-~]partial[!!-~]added-n[!!-~]forms.yaml -text
 tests/normal[!!-~]nouns[!!-~]-[!!-~]ending[!!-~]with[!!-~]"vowels".yaml -text
