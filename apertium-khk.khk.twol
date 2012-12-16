@@ -40,7 +40,7 @@ Rules
 
 "G epenthesis"
 %{г%}:г <=> [ [ :Vow :Vow ] | %{ң%}: ]/:0 _ ;        ! дүүгийн, (нохойн), санг
-                        [ :Vow | :й ] %>: _ %{А%}: ; ! дүүгээс, нохойгоос
+               [ :Vow [ :Vow | :й ] ] %>: _ %{А%}: ; ! дүүгээс, нохойгоос
 
 
 !!!! I stuff !!!!
@@ -71,23 +71,58 @@ Rules
 
 !!!! {A} stuff !!!!
 
+!"{A} vowel harmony for second {А} in {А}{А}"
+!%{А%}:Vy <=> [ :Vx - %{А%}: ] [ :NonVow* :NonVow ]/[ :0 | :%  ]* %{А%}: _ ;
+!         except
+!             _ %{А%}: ;  ! if {A}{A}, only do second {A}
+!!             ь:/:0 _ ;
+!         where Vx in ( ү э ө о а у )
+!               Vy in ( э э ө о а а )
+!         matched ;
+
+!"{A} vowel harmony for second {А} in {А}{А}"
+!!%{А%}:э <=>  [ :э - %{А%}: ] :NonVow %>: %{г%}: %{А%}: _ ;
+!!%{А%}:э <=>  [ :э - %{А%}: ] [ :NonVow* :NonVow ]/[ :0* | :% ] %{А%}: _ ;
+!%{А%}:Vy <=>  [ :Vx - %{А%}: ] [ :NonVow* :NonVow ]/[ :0* | :% ] %{А%}: _ ;
+!         except
+!             _ %{А%}: ;  ! if {A}{A}, only do second {A}
+!         where Vx in ( ү э ө о )
+!               Vy in ( э э ө о )
+!         matched ;
+!
+!             !!! а:Vx :NonVow %>: %{А%}: _ ;   ! DEBUG
+!
+!"{А} vowel harmony for second {А} in {А}{А} ү"
+!%{А%}:э <=>  [ :ү - %{А%}: ] [ :NonVow* :NonVow ]/[ :0* | :% ] %{А%}: _ ;
+!"{А} vowel harmony for second {А} in {А}{А} э"
+!%{А%}:э <=>  [ :э - %{А%}: ] [ :NonVow* :NonVow ]/[ :0* | :% ] %{А%}: _ ;
+!"{А} vowel harmony for second {А} in {А}{А} ө"
+!%{А%}:ө <=>  [ :ө - %{А%}: ] [ :NonVow* :NonVow ]/[ :0* | :% ] %{А%}: _ ;
+!"{А} vowel harmony for second {А} in {А}{А} о"
+!%{А%}:о <=>  [ :о - %{А%}: ] [ :NonVow* :NonVow ]/[ :0* | :% ] %{А%}: _ ;
+!!"{А} vowel harmony for second {А} in {А}{А} а"
+!!%{А%}:а <=>  [ :а - %{А%}: ] [ :NonVow* :NonVow ]/[ :0* | :% ] %{А%}: _ ;
+!"{А} vowel harmony for second {А} in {А}{А} у"
+!%{А%}:у <=>  [ :у - %{А%}: ] [ :NonVow* :NonVow ]/[ :0* | :% ] %{А%}: _ ;
+
+
 "{A} vowel harmony for second {А} in {А}{А}"
-%{А%}:Vy <=> [ :Vx - %{А%}: ] [ :NonVow (:NonVow*) ]/[ :0 | :%  ] %{А%}: _ ;
-             !!! а:Vx :NonVow %>: %{А%}: _ ;   ! DEBUG
+%{А%}:Vy <=>  [ :Vx - %{А%}: ] [ :NonVow* :NonVow ]/[ :0* | :% ] %{А%}: _ ;
          except
              _ %{А%}: ;  ! if {A}{A}, only do second {A}
              ь:/:0 _ ;
-         where Vx in ( ү э ө о а у )
-               Vy in ( э э ө о а а )
+         where Vx in ( ү э ө о )
+               Vy in ( э э ө о )
          matched ;
+
 
 "{А} vowel harmony for Y ''vowels''"
 %{А%}:Vy <=> .#. (:NonVow) [ :Vx - %{А%}: ] [ [ :NonVow - Y: ] ( [ :NonVow - Y: ]*) ]/[ :0 | :% ] %{А%}: _ ;
          except
              _ %{А%}: ;  ! if {A}{A}, only do second {A}
              ь:/:0 _ ;
-         where Vx in ( я е ю ё и )
-               Vy in ( а э а о э )
+         where Vx in ( е ё и )  ! я ю
+               Vy in ( э о э )  ! а а
          matched ;
 
 "{А} vowel harmony for first {А} in {A}{A}"
@@ -95,15 +130,16 @@ Rules
          except
              ь:/:0 _ %{А%}: ;
              :и/:0 _ %{А%}: ;
-         where Vx in ( э ө о а )
-               Vy in ( э ө о а )
+         where Vx in ( э ө о )  ! а
+               Vy in ( э ө о )  ! а
          matched ;
 
-"first {А} becomes и after palatalised cons or и"
-%{А%}:и <=> ь:/:0 _ %{А%}: ;
+!"first {А} becomes и after palatalised cons or и"
+!%{А%}:и <=> ь:/:0 _ %{А%}: ;
 
-"first {А} deletes after и"
-%{А%}:0 <=> :и/[ :0 - ь: ] _ %{А%}: ;
+"first {А} deletes after и or ь:и"
+!%{А%}:0 <=> :и/[ :0 - ь: ] _ %{А%}: ;
+%{А%}:0 <=> [ :и | ь:и ]/:0 _ %{А%}: ;
 
 !!"{A} is э after [non-transparent] и in first syllable"
 !!%{А%}:э <=> .#. [ :NonVow/:0 ]* :и [ :NonVow/:0 ]* _ ;
@@ -171,6 +207,8 @@ Rules
 ь:0 <=> _ %{а%}:и/:0 ;
         _ %>: %{А%}: %{А%}: ;
 
+"ь becomes и before {А}"
+ь:и <=> _ %{А%}:/:0 ;
 
 !!!! MISC !!!!
 
