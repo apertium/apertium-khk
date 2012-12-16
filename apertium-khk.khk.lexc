@@ -214,6 +214,7 @@ LEXICON Clit
 +уу%<qst%>:% %{У%}%{У%} # ;     ! yes/no-question
 +даа%<qst%>:% д%{А%}%{А%} # ;   !
 +аа%<qst%>:% %{А%}%{А%} # ;     !
++билээ%<qst%>:% билээ # ;       ! assumed previously known information (?)
 
 
 LEXICON Cases-Normal
@@ -615,6 +616,7 @@ LEXICON Verbs
 ажилла Vinfl-IV ; ! "work"
 эхэл Vinfl-IV ; ! "begin"
 дуус Vinfl-IV ; ! "finish"
+гар Vinfl-IV ; ! "leave"
 
 
 LEXICON Conjunctions

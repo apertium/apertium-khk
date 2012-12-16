@@ -23,8 +23,8 @@ FrontVow = ү э ө
 BackVow = у а о
           У А О ;
 
-NonVow = Б В Г Д Е Ж З К Л М Н П Р С Т Ф Х Ц Ч Ш Ь Ъ Я
-         б в г д е ж з к л м н п р с т ф х ц ч ш ь ъ я ; ! This is for surface forms only, so no archiphonemes
+NonVow = Б В Г Д Е Ж Й З К Л М Н П Р С Т Ф Х Ц Ч Ш Ь Ъ Я
+         б в г д е ж й з к л м н п р с т ф х ц ч ш ь ъ я ; ! This is for surface forms only, so no archiphonemes
 
 !PalCons =  г ж ш ;
 PalConsA =  ч ж ш ;
@@ -46,7 +46,7 @@ Rules
 !!!! I stuff !!!!
 
 "{I} as и instead of ы"
-%{I%}:и <=> :FrontVow [ :NonVow/:0 ]* _ ;
+%{I%}:и <=> :FrontVow [ :NonVow* [ :NonVow - :й ] ]/:0* _ ;
                          :PalConsI/:0 _ ;
         except
             :Vow/:0 _ ; ! хүүг, дүүг, not ангийг
@@ -63,7 +63,8 @@ Rules
 
 "{й} should surface after {I} as и"
 %{й%}:й <=> %{I%}:и _ ;
-      :и/:0 %{I%}:0 _ ;   ! ангийг
+!      :и/:0 %{I%}:0 _ ;   ! ангийг
+              :и/:0 _ ;   ! ангийг, ангийн
 
 !"final short vowel deletion before vowel-initial morpheme"
 !Vow:0 <=> _ %>: [ %{I%}: | %{А%}: ] ;
@@ -107,7 +108,7 @@ Rules
 
 
 "{A} vowel harmony for second {А} in {А}{А}"
-%{А%}:Vy <=>  [ :Vx - %{А%}: ] [ :NonVow* :NonVow ]/[ :0* | :% ] %{А%}: _ ;
+%{А%}:Vy <=>  [ :Vx - %{А%}: ] [ :NonVow* :NonVow ]/[ :0 | :% ]* %{А%}: _ ;
          except
              _ %{А%}: ;  ! if {A}{A}, only do second {A}
              ь:/:0 _ ;
@@ -202,13 +203,17 @@ Rules
 "{а} after palatal cons"
 %{а%}:и <=> :PalConsA/[ :0 - ь: ] _ ;
             ь: _ :NonVow/:0 [ :Vow | .#. ] ;
+        except
+            :PalConsA _ [ :л :Vow ]/:0 ;
 
 "ь deletion before {а}"
 ь:0 <=> _ %{а%}:и/:0 ;
-        _ %>: %{А%}: %{А%}: ;
+!        _ %>: %{А%}: %{А%}: ;
+    except
+        _ [ %{А%}: | %{I%}: | %{У%}: ]/:0 ;
 
 "ь becomes и before {А}"
-ь:и <=> _ %{А%}:/:0 ;
+ь:и <=> _ [ %{А%}: | %{I%}: | %{У%}: ]/:0 ;
 
 !!!! MISC !!!!
 
