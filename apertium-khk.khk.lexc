@@ -126,6 +126,7 @@ Multichar_Symbols
               ! <ifi_evid>
 
 !! Non-Finite verb forms
+%<gna%>       ! generic verbal adverb
 %<gna_prf%>   ! perfective verbal adverb
 %<gna_imp%>   ! imperfective verbal adverb
 %<gna_cnd%>   ! conditional verbal adverb
@@ -294,7 +295,7 @@ LEXICON Vinfl-Common
 %<aor%>:%>н%{А%} # ;
 %<aor%>%<neg%>:%>%{а%}хгүй Clit ;
 
-%<past%>:%>с%{А%}н Clit ;
+%<past%>:%>с%{а%}н Clit ;
 %<past%>%<neg%>:%>%{г%}%{А%}%{А%}гүй Clit ;
 %<past%>:%>%{а%}в # ;  ! FIXME: figure this out
 
@@ -307,7 +308,8 @@ LEXICON Vinfl-Common
 %<ger_imp%>:%>д%{а%}г Cases-Normal ;
 %<ger_prf%>:%>с%{а%}н Cases-Normal ;
 
-%<gna_imp%>:%>%{а%}ж # ;
+%<gna%>:%>%{а%}ж # ;
+%<gna_imp%>:%>%{а%}н # ;
 %<gna_prf%>:%>%{г%}%{А%}%{А%}д # ;
 %<gna_cnd%>:%>%{В%}%{А%}л # ;
 %<gna_cnd%>:%>%{Т%}%{А%}л # ;
