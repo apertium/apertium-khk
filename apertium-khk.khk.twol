@@ -108,7 +108,8 @@ Rules
 
 
 "{A} vowel harmony for second {А} in {А}{А}"
-%{А%}:Vy <=>  [ :Vx - %{А%}: ] [ :NonVow* :NonVow ]/[ :0 | :% ]* %{А%}: _ ;
+!%{А%}:Vy <=>  [ :Vx - %{А%}: ] [ :NonVow* :NonVow ]/[ :0 | :%  | %{а%}:0 ] %{А%}: _ ;
+%{А%}:Vy <=>  [ :Vx - %{А%}: ] [ :NonVow* %{а%}:0* :NonVow ]/[ :0* | :%  ] %{А%}: _ ;
          except
              _ %{А%}: ;  ! if {A}{A}, only do second {A}
              ь:/:0 _ ;
@@ -178,7 +179,7 @@ Rules
          except
              :PalConsA/[ :0 - ь: ] _ ;   ! avoid conflict with after palcons
              ь: _ :NonVow/:0 [ :Vow | .#. ] ;
-             [ :Vow | %{а%}: ] [ :л | :Nasal | :Y | :р | :г ]/:0 _ :д ;
+             [ [ :Vow (:й) ] | %{а%}: ] [ [ :л (:ь) ] | :Nasal | :Y | :р | :г ]/:0 _ :д ;
              :NonVow _ :л [ :Vow | %{а%}: ] ;
 !             :н %>: _ :н :д ;            ! хүнд, шашинд, оронд
 !             _ :NonVow/:0 :Vow ;         ! хүүхдийг, but хүүхэд
