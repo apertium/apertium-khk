@@ -23,8 +23,8 @@ FrontVow = ү э ө
 BackVow = у а о
           У А О ;
 
-NonVow = Б В Г Д Е Ж Й З К Л М Н П Р С Т Ф Х Ц Ч Ш Ь Ъ Я
-         б в г д е ж й з к л м н п р с т ф х ц ч ш ь ъ я ; ! This is for surface forms only, so no archiphonemes
+NonVow = Б В Г Д Е Ж З Й К Л М Н П Р С Т Ф Х Ц Ч Ш Ь Ъ Я
+         б в г д е ж з й к л м н п р с т ф х ц ч ш ь ъ я ; ! This is for surface forms only, so no archiphonemes
 
 !PalCons =  г ж ш ;
 PalConsA =  ч ж ш ;
@@ -33,6 +33,7 @@ PalConsI =  ч ж ш г е;
 Nasal = н м ;
 
 Y = е я ;
+
 
 Rules 
 
@@ -80,7 +81,7 @@ Rules
 !         where Vx in ( ү э ө о а у )
 !               Vy in ( э э ө о а а )
 !         matched ;
-
+!
 !"{A} vowel harmony for second {А} in {А}{А}"
 !!%{А%}:э <=>  [ :э - %{А%}: ] :NonVow %>: %{г%}: %{А%}: _ ;
 !!%{А%}:э <=>  [ :э - %{А%}: ] [ :NonVow* :NonVow ]/[ :0* | :% ] %{А%}: _ ;
@@ -109,7 +110,7 @@ Rules
 
 "{A} vowel harmony for second {А} in {А}{А}"
 !%{А%}:Vy <=>  [ :Vx - %{А%}: ] [ :NonVow* :NonVow ]/[ :0 | :%  | %{а%}:0 ] %{А%}: _ ;
-%{А%}:Vy <=>  [ :Vx - %{А%}: ] [ :NonVow* %{а%}:0* :NonVow ]/[ :0* | :%  ] %{А%}: _ ;
+%{А%}:Vy <=> [ :Vx - %{А%}: ] [ :NonVow* :NonVow ]/[ :0 | :%  ] [ %{А%}: - :0 ] _ ;
          except
              _ %{А%}: ;  ! if {A}{A}, only do second {A}
              ь:/:0 _ ;
@@ -180,7 +181,7 @@ Rules
 %{а%}:Vy <=> [ :Vx :NonVow (:NonVow) ]/:0 _ [ :д | :в | :н | :л | :г ] (:NonVow) .#. ;  
              [ :Vx (:NonVow) [ :NonVow - Y: ] ]/:0 _ [ :н :д ]/:0 .#. ; 
 				                                     ! хүнд, шашинд, оронд
-!             [ :Vx (:NonVow) :NonVow ]/:0 _ [ :NonVow (:NonVow) :NonVow* ]/:0 .#. ;
+!             [ :Vx (:NonVow) :NonVow ]/:0 _ [ :NonVow :NonVow :NonVow* ]/:0 .#. ;
          except
              :PalConsA/[ :0 - ь: ] _ ;   ! avoid conflict with after palcons
              ь: _ :NonVow/:0 [ :Vow | .#. ] ;
@@ -188,6 +189,7 @@ Rules
              :NonVow _ :л [ :Vow | %{а%}: ] ;
 !             :н %>: _ :н :д ;            ! хүнд, шашинд, оронд
 !             _ :NonVow/:0 :Vow ;         ! хүүхдийг, but хүүхэд
+             :NonVow :й/:0 _ ;           ! далайд, нохойд
          where Vx in ( ү э ө а о у )
                Vy in ( э э ө а о а )
          matched ;
