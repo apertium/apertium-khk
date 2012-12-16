@@ -155,6 +155,10 @@ Rules
 "{У} vowel harmony"
 %{У%}:ү <=> :FrontVow [ :NonVow/[ :0 | %  ] ]* _ ;
 
+"first {У} deletes after и or ь:и"
+%{У%}:0 <=> [ :и | ь:и ]/:0 _ %{У%}: ;
+
+
 !!!! {a} stuff !!!!
 
 !"{a} harmony"
@@ -173,13 +177,14 @@ Rules
 !         matched ;
 
 "{а} harmony"
-%{а%}:Vy <=> [ :Vx :NonVow (:NonVow) ]/:0 _ [ :д | :в | :н | :л | :г ] .#. ;  
+%{а%}:Vy <=> [ :Vx :NonVow (:NonVow) ]/:0 _ [ :д | :в | :н | :л | :г ] (:NonVow) .#. ;  
              [ :Vx (:NonVow) [ :NonVow - Y: ] ]/:0 _ [ :н :д ]/:0 .#. ; 
 				                                     ! хүнд, шашинд, оронд
+!             [ :Vx (:NonVow) :NonVow ]/:0 _ [ :NonVow (:NonVow) :NonVow* ]/:0 .#. ;
          except
              :PalConsA/[ :0 - ь: ] _ ;   ! avoid conflict with after palcons
              ь: _ :NonVow/:0 [ :Vow | .#. ] ;
-             [ [ :Vow (:й) ] | %{а%}: ] [ [ :л (:ь) ] | :Nasal | :Y | :р | :г ]/:0 _ :д ;
+             [ [ :Vow (:й) ] | %{а%}: ] [ [ :л (:ь) ] | :Nasal | :Y | :р | :г ]/:0 _ [ :д | %{Д%}: ] ;
              :NonVow _ :л [ :Vow | %{а%}: ] ;
 !             :н %>: _ :н :д ;            ! хүнд, шашинд, оронд
 !             _ :NonVow/:0 :Vow ;         ! хүүхдийг, but хүүхэд
@@ -225,7 +230,7 @@ Rules
 %{В%}:б <=> [ :в | :Nasal | :л ]/[ :0 | %  ] _ ;
 
 "{Д} devoices after some stuff"
-%{Д%}:т <=> [ :г | :р ]/[ :0 - %{ъ%}:0 ] _ ;
+%{Д%}:т <=> [ :г | :р | :в ]/[ :0 - %{ъ%}:0 ] _ ;
 
 
 !!!! extra {н} stuff !!!!
