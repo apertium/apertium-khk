@@ -387,8 +387,10 @@ LEXICON Pronouns
 
 LEXICON Determiners
 
-энэ%<det%>%<nom%>:энэ # ;
-эн%<det%>:эн Cases-Normal ;
+энэ%<det%>%<nom%>:энэ # ;        ! "this"
+эн%<det%>:эн Cases-Normal ;      ! "this one"
+ямар%<det%>%<nom%>:ям%{а%}р # ;  ! "which"
+ям%{а%}р Cases-Normal ;          ! "which one"
 
 LEXICON Num
 
