@@ -22,3 +22,4 @@ tests/normal[!!-~]nouns[!!-~]-[!!-~]ending[!!-~]with[!!-~]ŋ.yaml -text
 tests/scraper.py -text
 tests/variable[!!-~]forms[!!-~]-[!!-~]normal[!!-~]and[!!-~]added[!!-~]n.yaml -text
 tests/variable[!!-~]forms[!!-~]-[!!-~]underlying[!!-~]n[!!-~]and[!!-~]underlying[!!-~]ŋ.yaml -text
+tests/verbs.yaml -text
