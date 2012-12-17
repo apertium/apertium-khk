@@ -1,0 +1,18 @@
+Config:
+  hfst:
+      App: hfst-optimised-lookup
+      Gen: ../khk.autogen.hfst
+      Morph: ../khk.automorf.hfst
+
+Tests:
+
+ "бол = be":
+    бол<v><iv><aor> : болно
+    бол<v><iv><aor><neg> : болохгүй
+    бол<v><iv><ifi> : боллоо
+    бол<v><iv><past> : болсон
+    бол<v><iv><past> : болов
+    бол<v><iv><past><evid> : болжээ
+    бол<v><iv><imp> : болоорой
+    бол<v><iv><sug> : болооч
+
