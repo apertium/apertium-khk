@@ -450,7 +450,8 @@ LEXICON Nouns
 дарга Ninfl ; ! "boss"
 алга Ninfl-ExtraN ; ! "palm"
 нүд Ninfl-ExtraN ; ! "eye"
-мод Ninfl-ExtraN ; ! "tree"
+мод Ninfl-ExtraN-NoPl ; ! "tree"
+мод:модод Ninfl-Pl ; ! "trees"
 ах Ninfl ; ! "older brother"
 дүү Ninfl ; ! "younger sibling"
 малгай Ninfl ; ! "hat"
@@ -668,6 +669,7 @@ LEXICON Adverbs
 дахин Adv ; ! "again"
 одоо Adv ; ! "now"
 сая Adv ; ! "just now"
+мөн Adv ; ! "right, truly"
 
 
 LEXICON Adjectives
@@ -676,6 +678,7 @@ LEXICON Adjectives
 сайхан Adj ; ! "good"
 муу Adj ; ! "bad"
 зөв Adj ; ! "correct"
+ёстой Adj ; ! "necessary"
 
 
 LEXICON Particles
