@@ -269,6 +269,13 @@ LEXICON Cases-ExtraN
 
 %<gens%>:%>%{а%}н # ;
 
+LEXICON PrnInfl
+
+%<prn%>: Cases-Normal ;
+
+LEXICON DetInfl
+
+%<det%>: # ;
 
 LEXICON Ninfl
 
@@ -390,17 +397,17 @@ LEXICON Pronouns
 тэд%<prn%>%<p3%>%<pl%>%<px%>:тэднийх Clit ;   ! FIXME: check
 тэд%<prn%>%<p3%>%<pl%>%<gens%>:нь Clit ;
 
-хэн Cases-Normal ; ! "who"
-юу Cases-Normal ; ! "what"
-өөр Cases-Normal ; ! "oneself"
+хэн PrnInfl ;            ! "who"
+юу PrnInfl ;             ! "what"
+өөр PrnInfl ;            ! "oneself"
+энэ:эн PrnInfl ;         ! "this one"
+ямар:ям%{а%}р PrnInfl ;  ! "which one"
 
 LEXICON Determiners
 
-энэ%<det%>%<nom%>:энэ # ;        ! "this"
-эн%<det%>:эн Cases-Normal ;      ! "this one"
-ямар%<det%>%<nom%>:ям%{а%}р # ;  ! "which"
-ямар:ям%{а%}р Cases-Normal ;     ! "which one"
-бүх:бүх Cases-Normal ;           ! "entire, all, the whole"
+энэ:энэ DetInfl ;        ! "this"
+ямар:ям%{а%}р DetInfl ;  ! "which"
+бүх:бүх DetInfl ;        ! "entire, all, the whole"
 
 LEXICON Num
 
@@ -410,14 +417,14 @@ LEXICON Numbers
 
 нэг Num ;
 хоёр Num ;
-гурав Num ;
-дөрөв Num ;
+гур%{а%}в Num ;
+дөр%{а%}в Num ;
 тав Num ;
 зургаа Num ;
 долоо Num ;
 найм Num ;
 ёс Num ;
-арав Num ;
+ар%{а%}в Num ;
 зүн Num ;
 
 LEXICON Conj
@@ -685,6 +692,7 @@ LEXICON PostAdv
 
 ч PostAdv-Infl ; ! "not any"
 хамт PostAdv-Infl ; ! "together"
+биш PostAdv-Infl ; ! "not"
 
 
 LEXICON Adverbs
@@ -705,6 +713,7 @@ LEXICON Adjectives
 муу Adj ; ! "bad"
 зөв Adj ; ! "correct"
 ёстой Adj ; ! "necessary"
+хэрэгтэй Adj ; ! "necessary"
 
 
 LEXICON Particles
