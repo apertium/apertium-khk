@@ -203,7 +203,7 @@ Vx:0 <=> :NonVow _ %>: %{I%}: ;
 !               Vy in ( э э ө а о а )
 !         matched ;
 
-"{а} harmony"
+"inserted {а} and its harmony"
 %{а%}:Vy <=> :Vx [ (:NonVow) :NonVow ]/:0 _ [ :в | :н | :м | :л | :р | :г | :х ] (:NonVow/:0) .#. ;  
              :Vx [ (:NonVow) [ :NonVow - Y: ] ]/:0 _ [ :н :д ]/:0 .#. ; 
 				                                     ! хүнд, шашинд, оронд
@@ -270,8 +270,8 @@ Vx:0 <=> :NonVow _ %>: %{I%}: ;
 !"{н} surfaces at the end of a triggers deletion of genitive-final н"
 !н:0 <=> %{н%}:н %{I%}: %{й%}: _ ;
 
-"genitive-final н deletes in н-final regular nouns"
-н:0 <=> :н/:0 %{I%}: %{й%}: _ ;
+"genitive-final н deletes after regular noun stems ending in н"
+н:0 <=> :н %>: %{г%}: %{I%}: %{й%}: _ ;
 
 
 !!!! extra {Н} noun phonology !!!!

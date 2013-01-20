@@ -590,6 +590,12 @@ LEXICON Nouns
 тойм Ninfl ; ! "report/review/summary?"
 өгүүлэл:өгүүл%{а%}л Ninfl ; ! "speech/presentation"
 сэдэв:сэд%{а%}в Ninfl ; ! "topic/theme"
+амьтан:амьт%{а%}н Ninfl-NoPl ; ! "animal"
+амьтан:амьт%{а%}д Ninfl-Pl ; ! "animals"
+шашин:шаш%{а%}н Ninfl ; ! "religion"
+орон:ор%{а%}н Ninfl ; ! "place"
+он:он Ninfl ; ! "calendar year"
+сэхээтэн:сэхээт%{а%}н Ninfl ; ! "intellectual"
 
 
 LEXICON Verbs
