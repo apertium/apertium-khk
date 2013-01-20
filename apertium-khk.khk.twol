@@ -45,7 +45,7 @@ Rules
 
 "G epenthesis"
 %{г%}:г <=> [ [ :Vow :Vow ] | %{ң%}: ]/:0 _ ;        ! дүүгийн, (нохойн), санг
-               [ :Vow [ :Vow | :й ] ] %>: _ %{А%}: ; ! дүүгээс, нохойгоос
+               [ :Vow [ :Vow | :й ] ] %>: _ %{А1%}: ; ! дүүгээс, нохойгоос
 
 
 !!!! I stuff !!!!
@@ -211,13 +211,14 @@ Vx:0 <=> :NonVow _ %>: (%{г%}:) %{I%}: ;
 
 "inserted {а} and its harmony"
 %{а%}:Vy <=> :Vx [ :NonVow* :NonVow ]/:0 _ [ :Sonorant | :х ] (:NonVow/:0) .#. ;  
-             :Vx [ :NonVow* :Sonorant ]/:0 _ [ [ :Sonorant - :г ] :NonVow* ]/:0 :Vow ;
+             :Vx [ :NonVow* :Sonorant ]/:0 _ [ [ :Sonorant - :г ] :NonVow* ]/:0 [ :Vow | .#. ] ;
              :Vx [ :NonVow* [ :NonVow - Y: ] ]/:0 _ [ :н :д ]/:0 .#. ; 
 				                                     ! хүнд, шашинд, оронд
              :Vx [ :NonVow* [ :ж | :ч | :т | :ц | :с | :ш | :х | :д ] ]/:0 _ :NonVow .#. ;
-!             [ :Vx (:NonVow) :NonVow ]/:0 _ [ :NonVow :NonVow :NonVow* ]/:0 .#. ;
+!             [ :Vx (:NonVow) :NonVow ]/:0 _ [ :NonVow :NonVow :NonVow* ]/:0 [ .#. | :Vow ] ;
          except
              [ :Vow :л ]/:0 _ [ :л :Vow ]/:0 ;   ! өгүүллийг
+             [ :Vow :р ]/:0 _ [ :н :Vow ]/:0 ;   ! орныг
              :PalConsA/[ :0 - ь: ] _ ;   ! avoid conflict with after palcons
              ь: _ :NonVow/:0 [ :Vow | .#. ] ;
              [ [ :Vow (:й) ] | %{а%}: ] [ [ :л (:ь) ] | :Nasal | :Y | :р | :г ]/:0 _ [ :д | %{Д%}: ] ;

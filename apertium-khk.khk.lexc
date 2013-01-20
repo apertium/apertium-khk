@@ -274,6 +274,11 @@ LEXICON Ninfl
 %<n%>: Cases-Normal ;
 %<n%>%<pl%>:%>%{н%}%{У%}%{У%}д Cases-Normal ;  ! (with exceptional forms)
 
+LEXICON Ninfl-Person
+
+%<n%>: Cases-Normal ;
+%<n%>%<pl%>:%>% нар Cases-Normal ;
+
 LEXICON Ninfl-NoPl
 
 %<n%>: Cases-Normal ;
@@ -455,7 +460,7 @@ LEXICON Nouns
 мод Ninfl-ExtraN-NoPl ; ! "tree"
 мод:модод Ninfl-Pl ; ! "trees"
 ах Ninfl ; ! "older brother"
-дүү Ninfl ; ! "younger sibling"
+дүү:дүү Ninfl-Person ; ! "younger sibling"
 малгай Ninfl ; ! "hat"
 машин Ninfl ; ! "car"
 муур Ninfl ; ! "cat"
@@ -470,7 +475,7 @@ LEXICON Nouns
 аяга Ninfl ; ! "cup"
 охин Ninfl ; ! "girl; daughter"
 өдөр Ninfl ; ! "day"
-нохой Ninfl ; ! "dog"
+нохой:нохой Ninfl ; ! "dog"
 хаалга Ninfl ; ! "door"
 даашинз Ninfl ; ! "dress"
 жолооч Ninfl ; ! "driver"
@@ -544,7 +549,7 @@ LEXICON Nouns
 үг Ninfl ; ! "word"
 ажил:аж%{а%}л Ninfl ; ! "work"
 жил Ninfl ; ! "year"
-дүү Ninfl ; ! "younger sibling"
+дүү:дүү Ninfl ; ! "younger sibling"
 тэмээ Ninfl-ExtraN ; ! "camel"
 илжиг Ninfl ; ! "donkey"
 буга Ninfl ; ! "deer"
@@ -573,6 +578,7 @@ LEXICON Nouns
 мах Ninfl-ExtraN ; ! "meat"
 цай Ninfl-ExtraN ; ! "tea"
 үнэн Ninfl ; ! "truth"
+үнэ:үнэ Ninfl ; ! "price"
 дэлхий Ninfl ; ! "world"
 зам Ninfl ; ! "road"
 дунд Ninfl ; ! "middle"
@@ -587,7 +593,7 @@ LEXICON Nouns
 сар Ninfl-ExtraN ; ! "moon"
 мэлхий Ninfl-ExtraN ; ! "turtle"
 ажил Ninfl ; ! "work"
-далай Ninfl ; ! "sea"
+далай:далай Ninfl ; ! "sea"
 оршил:орш%{а%}л Ninfl ; ! "introduction"
 тойм Ninfl ; ! "report/review/summary?"
 өгүүлэл:өгүүл%{а%}л Ninfl ; ! "speech/presentation"
@@ -606,6 +612,8 @@ LEXICON Nouns
 сан:са%{ң%} Ninfl ; ! "store [room], warehouse, treasury, etc."
 номын% сан:номын% са%{ң%} Ninfl ; ! "library"
 Куба:Куба Ninfl ; ! "Cuba"
+тэнгэр:тэнг%{а%}р Ninfl ; ! "sky, heaven"
+Бурхан:Бурхан Ninfl ; ! "God"
 
 
 LEXICON Verbs
@@ -686,6 +694,7 @@ LEXICON Adverbs
 одоо Adv ; ! "now"
 сая Adv ; ! "just now"
 мөн Adv ; ! "right, truly"
+ягаад Adv ; ! "why"
 
 
 LEXICON Adjectives
