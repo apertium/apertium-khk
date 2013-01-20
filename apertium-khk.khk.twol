@@ -65,9 +65,12 @@ Rules
           %{ң%}:/:0 _ ; ! үзэсгэлэнг, санг
  :Vow :й/:0 %{Н%}:н _ ; ! толгойн, мэлхийн, гахайн
 
-"Deletion of stem-final 'short vowel' before %{I%}"
-Vx:0 <=> :NonVow _ %>: %{I%}: ;
-     where Vx in ( а о э ө ) ;   ! алга>{I}{й}г:алгыг, өнгө>{I}{й}г:өнгийг
+"Deletion of stem-final 'short vowel' before %{I%} and %{А1%}"
+Vx:0 <=> :NonVow _ %>: (%{г%}:) %{I%}: ;
+                            ! алга>{I}{й}г:алгыг, өнгө>{I}{й}г:өнгийг
+         :NonVow _ %>: (%{г%}:) %{А1%}: ;
+                            ! Кубаас, but алганаас
+     where Vx in ( а о э ө ) ;   
 
 
 !"I forget what this is for"
@@ -214,6 +217,7 @@ Vx:0 <=> :NonVow _ %>: %{I%}: ;
              :Vx [ :NonVow* [ :ж | :ч | :т | :ц | :с | :ш | :х | :д ] ]/:0 _ :NonVow .#. ;
 !             [ :Vx (:NonVow) :NonVow ]/:0 _ [ :NonVow :NonVow :NonVow* ]/:0 .#. ;
          except
+             [ :Vow :л ]/:0 _ [ :л :Vow ]/:0 ;   ! өгүүллийг
              :PalConsA/[ :0 - ь: ] _ ;   ! avoid conflict with after palcons
              ь: _ :NonVow/:0 [ :Vow | .#. ] ;
              [ [ :Vow (:й) ] | %{а%}: ] [ [ :л (:ь) ] | :Nasal | :Y | :р | :г ]/:0 _ [ :д | %{Д%}: ] ;
