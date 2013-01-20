@@ -438,8 +438,9 @@ LEXICON Numbers
 долоо:долоо Num ;        ! "seven"
 найм:найм Num ;          ! "eight"
 ёс:ёс Num ;              ! "nine"
-арав:ар%{а%}в Num ;      ! "hundred"
-зүн:зүн Num ;            ! "thousand"
+арав:ар%{а%}в Num ;      ! "ten"
+зуун:зуун Num ;          ! "hundred"
+мянга:мянга Num ;        ! "thousand"
 
 LEXICON Conj
 
@@ -638,6 +639,8 @@ LEXICON Nouns
 Бурхан:Бурхан Ninfl ; ! "God"
 хаан:хаан Ninfl ; ! "king"
 хүч:хүч Ninfl ; ! "strength"
+тахил:тахил Ninfl ; ! "sacrifice/offering"
+зуун:зуун Ninfl ; ! "century, era"
 
 
 LEXICON Verbs
@@ -672,6 +675,10 @@ LEXICON Verbs
 эхэл Vinfl-IV ; ! "begin"
 дуус Vinfl-IV ; ! "finish"
 гар:гар Vinfl-IV ; ! "leave"
+ор:ор%{ъ%} Vinfl-IV ; ! "go/come in, enter"
+зар:зар%{ъ%} Vinfl-TV; ! "announce for sale" ??
+зориул:зориул Vinfl-TV ; ! "dedicate"
+үйлд:үйлд Vinfl-TV ; ! "create"
 
 
 LEXICON Conjunctions
@@ -685,6 +692,7 @@ LEXICON Conjunctions
 гэвч Conj ; ! "but"
 буюу Conj ;
 хэрвээ Conj ; ! ~"if"
+хэрэв Conj ; ! ~"if"
 болгон Conj ; ! emphasiser?
 
 
@@ -735,6 +743,8 @@ LEXICON Adjectives
 хэрэгтэй Adj ; ! "necessary"
 эмэгтэй Adj ; ! "female / woman"
 эрэгтэй Adj ; ! "male / man"
+адил Adj ; ! "same"
+адилхан Adj ; ! "similar"
 
 
 LEXICON Particles
@@ -747,5 +757,7 @@ LEXICON ProperNouns
 Есүс:Есүс NP-COG-M ;        ! "Jesus"
 Давид:Давид NP-COG-M ;      ! "David"
 Иуда:Иуда NP-COG-M ;        ! "Judah"
+Мосе:Мосе NP-COG-M ;        ! "Moses"
 
 Египет:Египет NP-TOP ;      ! "Egypt"
+Иерусалим:Иерусалим NP-TOP ; ! "Jerusalem"
