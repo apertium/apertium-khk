@@ -392,7 +392,8 @@ LEXICON Determiners
 энэ%<det%>%<nom%>:энэ # ;        ! "this"
 эн%<det%>:эн Cases-Normal ;      ! "this one"
 ямар%<det%>%<nom%>:ям%{а%}р # ;  ! "which"
-ям%{а%}р Cases-Normal ;          ! "which one"
+ямар:ям%{а%}р Cases-Normal ;     ! "which one"
+бүх:бүх Cases-Normal ;           ! "entire, all, the whole"
 
 LEXICON Num
 
@@ -596,6 +597,9 @@ LEXICON Nouns
 орон:ор%{а%}н Ninfl ; ! "place"
 он:он Ninfl ; ! "calendar year"
 сэхээтэн:сэхээт%{а%}н Ninfl ; ! "intellectual"
+учир:уч%{а%}р Ninfl ; ! "reason, ~event"
+цэрэг:цэр%{а%}г Ninfl ; ! "soldier"?
+тэрэг:тэр%{а%}г Ninfl ; ! "cart/wagon"
 
 
 LEXICON Verbs
