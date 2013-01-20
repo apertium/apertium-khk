@@ -235,7 +235,8 @@ Vx:0 <=> :NonVow _ %>: (%{г%}:) %{I%}: ;
          matched ;
 
 "{а} vowel harmony for Y cons"
-%{а%}:Vy <=> .#. (:NonVow) :Vx [ [ :NonVow - Y: ] ( [ :NonVow - Y: ] ) ]/:0 _ [ :д | :в | :н | :л | :г ] .#. ;
+%{а%}:Vy <=> .#. (:NonVow) :Vx [ [ :NonVow - Y: ]* [ :NonVow - Y: ] ]/:0 _ [ :Sonorant | :х ] (:NonVow/:0) [ .#. | :Vow ] ;
+             !.#. (:NonVow) :Vx [ [ :NonVow - Y: ] ( [ :NonVow - Y: ] ) ]/:0 _ [ :д | :в | :н | :л | :г ] .#. ;
          except
              :PalConsA/[ :0 - ь: ] _ ;   ! avoid conflict with after palcons
              ь: _ :NonVow/:0 [ :Vow | .#. ] ;
