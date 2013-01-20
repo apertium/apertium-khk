@@ -161,7 +161,7 @@ Vx:0 <=> :NonVow _ %>: (%{г%}:) %{I%}: ;
          matched ;
 
 "{А2} vowel harmony for Y ''vowels''"
-%{А2%}:Vy <=> .#. (:NonVow) :Vx [ [ :NonVow* :NonVow ]/[ :0 | :%  ] - Y: ] _ ;
+%{А2%}:Vy <=> .#. (:NonVow) :Vx [ [ :NonVow* :NonVow ]/[ :0 | :%  ] - Y: ] %{А1%}: _ ;
          where Vx in ( е ё и )  ! я ю
                Vy in ( э о э )  ! а а
          matched ;

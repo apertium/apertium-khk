@@ -404,6 +404,7 @@ LEXICON Pronouns
 ямар:ям%{а%}р PrnInfl ;  ! "which one"
 тийм:тийм PrnInfl ;      ! "one like that"
 ийм:ийм PrnInfl ;        ! "one like this"
+бүгд:бүгд PrnInfl ;      ! "everyone"
 
 LEXICON Determiners
 
@@ -412,6 +413,7 @@ LEXICON Determiners
 бүх:бүх DetInfl ;        ! "entire, all, the whole"
 тийм:тийм DetInfl ;      ! "such a"
 ийм:ийм DetInfl ;        ! "such a"
+бүгд:бүгд DetInfl ;      ! "all"
 
 LEXICON Num
 
@@ -627,6 +629,7 @@ LEXICON Nouns
 тэнгэр:тэнг%{а%}р Ninfl ; ! "sky, heaven"
 Бурхан:Бурхан Ninfl ; ! "God"
 хаан:хаан Ninfl ; ! "king"
+хүч:хүч Ninfl ; ! "strength"
 
 
 LEXICON Verbs
@@ -634,33 +637,33 @@ LEXICON Verbs
 бол Vinfl-IV ; ! "be"
 бай Vinfl-IV ; ! "be"
 үз Vinfl-TV ; ! "see"
-хар Vinfl-TV ; ! "look at"
+хар:хар%{ъ%} Vinfl-TV ; ! "look at"
 гэ Vinfl-IV ; ! "say" / quotative marker
 ав Vinfl-TV ; ! "take"
 ир:ир%{ъ%} Vinfl-IV ; ! "come"
-яв Vinfl-TV ; ! "go"
+яв:яв%{ъ%} Vinfl-TV ; ! "go"
 оч Vinfl-TV ; ! "go"
 өг Vinfl-TV ; ! "give"
 тэг Vinfl-IV ; ! "do such"
 ингэ Vinfl-IV ; ! "do thus"
-барь Vinfl-TV ; ! "grab"
+барь:барь Vinfl-TV ; ! "grab"
 сонс Vinfl-IV ; ! "listen"  FIXME: IV/TV?
 бос Vinfl-IV ; ! "stand"
 чад Vinfl-IV ; ! "be able to" FIXME: IV/TV?
-ярь Vinfl-IV ; ! "speak"
-гар Vinfl-IV ; ! "leave"
+ярь:ярь Vinfl-IV ; ! "speak"
+гар:гар Vinfl-IV ; ! "leave"
 ол Vinfl-TV ; ! "find"
 хай Vinfl-TV ; ! "look for"
 март Vinfl-TV ; ! "forget"
-тавь Vinfl-TV ; ! "put"
+тавь:тавь Vinfl-TV ; ! "put"
 хий Vinfl-TV ; ! "do/make/put in"
 хэл Vinfl-IV ; ! "say"
-хүр Vinfl-TV ; ! "reach"
+хүр:хүр Vinfl-TV ; ! "reach"
 амьдар Vinfl-IV ; ! "live"
 ажилла Vinfl-IV ; ! "work"
 эхэл Vinfl-IV ; ! "begin"
 дуус Vinfl-IV ; ! "finish"
-гар Vinfl-IV ; ! "leave"
+гар:гар Vinfl-IV ; ! "leave"
 
 
 LEXICON Conjunctions
@@ -674,6 +677,7 @@ LEXICON Conjunctions
 гэвч Conj ; ! "but"
 буюу Conj ;
 хэрвээ Conj ; ! ~"if"
+болгон Conj ; ! emphasiser?
 
 
 LEXICON Postpos
@@ -710,6 +714,7 @@ LEXICON Adverbs
 мөн Adv ; ! "right, truly"
 ягаад Adv ; ! "why"
 тийм Adv ; ! "in such a way"
+илүү Adv ; ! "rather"
 
 
 LEXICON Adjectives
