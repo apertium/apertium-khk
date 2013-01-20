@@ -212,35 +212,40 @@ Vx:0 <=> :NonVow _ %>: (%{г%}:) %{I%}: ;
 !         matched ;
 
 "inserted {а} and its harmony"
-%{а%}:Vy <=> :Vx [ :NonVow* :NonVow ]/:0 _ [ :Sonorant | :х ] (:NonVow/:0) [ .#. | :Vow ] ;  
+%{а%}:Vy <=> :Vx [ :NonVow* :NonVow ]/:0 _ [ :Sonorant | :х ] [ :NonVow/:0 | .#. ] ;
              :Vx [ :NonVow* :Sonorant ]/:0 _ [ [ :Sonorant - :г ] :NonVow* ]/:0 [ :Vow | .#. ] ;
              :Vx [ :NonVow* [ :NonVow - Y: ] ]/:0 _ [ :н :д ]/:0 .#. ; 
 				                                     ! хүнд, шашинд, оронд
              :Vx [ :NonVow* [ :ж | :ч | :т | :ц | :с | :ш | :х | :д ] ]/:0 _ :NonVow .#. ;
+             :Vx [ :NonVow* :NonVow ]/:0 _ %{Ж%}:/:0 .#. ;
+                                                 ! санаж, очиж
 !             [ :Vx (:NonVow) :NonVow ]/:0 _ [ :NonVow :NonVow :NonVow* ]/:0 [ .#. | :Vow ] ;
              :Vx [ :NonVow* :г ]/:0 _ [ :х ]/:0 :Vow ;
          except
              [ :Vow :л ]/:0 _ [ :л :Vow ]/:0 ;   ! өгүүллийг
+             [ :Vow [ [ :Sonorant - :Nasal ] (:ь) ] ]/:0 _ [ %{Ж%}: ]/:0 .#. ;    ! ирж, явч
              [ :Vow :р ]/:0 _ [ [ :н | :в ] :Vow ]/:0 ;   ! орныг, дөрвөн
              :PalConsA/[ :0 - ь: ] _ ;   ! avoid conflict with after palcons
              ь: _ :NonVow/:0 [ :Vow | .#. ] ;
              [ [ :Vow (:й) ] | %{а%}: ] [ [ :л (:ь) ] | :Nasal | :Y | :р | :г ]/:0 _ [ :д | %{Д%}: ] ;
              :NonVow _ :л [ :Vow | %{а%}: ] ;
-             :Vow :й :0* _ ;             ! байв
+             :Vow :й :0* _ ;             ! байв, далайд, нохойд
 !             :н %>: _ :н :д ;            ! хүнд, шашинд, оронд
 !             _ :NonVow/:0 :Vow ;         ! хүүхдийг, but хүүхэд
-             :NonVow :й/:0 _ ;           ! далайд, нохойд
+!             :NonVow :й/:0 _ ;           ! далайд, нохойд
          where Vx in ( ү э ө а о у )
                Vy in ( э э ө а о а )
          matched ;
 
 "{а} vowel harmony for Y cons"
-%{а%}:Vy <=> .#. (:NonVow) :Vx [ [ :NonVow - Y: ]* [ :NonVow - Y: ] ]/:0 _ [ :Sonorant | :х ] (:NonVow/:0) [ .#. | :Vow ] ;
+%{а%}:Vy <=> .#. (:NonVow) :Vx [ [ :NonVow - Y: ]* [ :NonVow - Y: ] ]/:0 _ [ :Sonorant | :х | :ж ] (:NonVow/:0) [ .#. | :Vow ] ;
+                  ! идэж
              !.#. (:NonVow) :Vx [ [ :NonVow - Y: ] ( [ :NonVow - Y: ] ) ]/:0 _ [ :д | :в | :н | :л | :г ] .#. ;
          except
              :PalConsA/[ :0 - ь: ] _ ;   ! avoid conflict with after palcons
              ь: _ :NonVow/:0 [ :Vow | .#. ] ;
              [ :Vow | %{а%}: ] [ :л | :Nasal | :Y | :р ]/:0 _ :д ;
+             :Vx [ [ :Sonorant - :Nasal ] (:ь) ]/:0 _ [ %{Ж%}: ]/:0 .#. ;    ! ирж, явч
              :NonVow _ :л [ :Vow | %{а%}: ] ;
          where Vx in ( я е ю ё и )
                Vy in ( а э а о э )
@@ -276,7 +281,7 @@ Vx:0 <=> :NonVow _ %>: (%{г%}:) %{I%}: ;
 %{Д%}:т <=> [ :г | :р | :в ]/[ :0 - %{ъ%}:0 ] _ ;
 
 "{Ж} devoices sometimes"
-%{Ж%}:ч <=> [ :г | :р | :в ]/[ :0 - %{ъ%}:0 ] _ ;
+%{Ж%}:ч <=> [ :г | :р | :в ] [ :0 - %{ъ%}:0 ]* _ ;
 
 !!!! extra {н} stuff !!!!
 
