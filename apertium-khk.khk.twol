@@ -240,7 +240,7 @@ Vx:0 <=> :NonVow _ %>: %{I%}: ;
 %{а%}:и <=> :PalConsA/[ :0 - ь: ] _ ;
             ь: _ :NonVow/:0 [ :Vow | .#. ] ;
         except
-            :PalConsA _ [ :л :Vow ]/:0 ;
+            :PalConsA _ [ [ :л | :н ] :Vow ]/:0 ;
 
 "ь deletion before {а}"
 ь:0 <=> _ %{а%}:и/[:0 - [ %{А1%}: | %{I%}: | %{У%}: ] ] ;
