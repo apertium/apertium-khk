@@ -209,6 +209,7 @@ PostAdv ;
 Determiners ;
 Numbers ;
 Particles ;     ! UGH
+ProperNouns ;
 
 
 LEXICON Clit
@@ -305,6 +306,13 @@ LEXICON Ninfl-ExtraN-NoPl
 
 %<n%>: Cases-ExtraN ;
 
+LEXICON NP-COG-M
+
+%<np%>%<cog%>%<m%>: Cases-Normal ;
+
+LEXICON NP-TOP
+
+%<np%>%<top%>: Cases-Normal ; 
 
 LEXICON Vinfl-Common
 
@@ -732,3 +740,12 @@ LEXICON Adjectives
 LEXICON Particles
 
 бүү%<imp%>%<neg%>:бүү # ;   ! negative imperative particle ≈ "don't ___ !"
+
+LEXICON ProperNouns
+
+Израил:Израил NP-COG-M ;    ! "Israel"
+Есүс:Есүс NP-COG-M ;        ! "Jesus"
+Давид:Давид NP-COG-M ;      ! "David"
+Иуда:Иуда NP-COG-M ;        ! "Judah"
+
+Египет:Египет NP-TOP ;      ! "Egypt"
