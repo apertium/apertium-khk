@@ -204,10 +204,10 @@ Vx:0 <=> :NonVow _ %>: %{I%}: ;
 !         matched ;
 
 "inserted {а} and its harmony"
-%{а%}:Vy <=> :Vx [ (:NonVow) :NonVow ]/:0 _ [ :в | :н | :м | :л | :р | :г | :х ] (:NonVow/:0) .#. ;  
-             :Vx [ (:NonVow) [ :NonVow - Y: ] ]/:0 _ [ :н :д ]/:0 .#. ; 
+%{а%}:Vy <=> :Vx [ :NonVow* :NonVow ]/:0 _ [ :в | :н | :м | :л | :р | :г | :х ] (:NonVow/:0) .#. ;  
+             :Vx [ :NonVow* [ :NonVow - Y: ] ]/:0 _ [ :н :д ]/:0 .#. ; 
 				                                     ! хүнд, шашинд, оронд
-             :Vx [ (:NonVow) [ :ж | :ч | :т | :ц | :с | :ш | :х | :д ] ]/:0 _ :NonVow .#. ;
+             :Vx [ :NonVow* [ :ж | :ч | :т | :ц | :с | :ш | :х | :д ] ]/:0 _ :NonVow .#. ;
 !             [ :Vx (:NonVow) :NonVow ]/:0 _ [ :NonVow :NonVow :NonVow* ]/:0 .#. ;
          except
              :PalConsA/[ :0 - ь: ] _ ;   ! avoid conflict with after palcons
