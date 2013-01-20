@@ -182,7 +182,8 @@ Multichar_Symbols
 %{н%}
 %{Н%}
 %{ң%}         ! for nouns ending in н that's /ŋ/ and not /n/→[ŋ]
-%{ъ%}         ! blocks voicing assimilation, mostly of Д for "irregular" locatives
+%{ъ%}         ! blocks voicing assimilation, mostly of Д for "irregular" locatives and Ж irregular verbal adverbs
+%{Ж%}
 
 %>            ! Morpheme boundary
 %             ! Space
@@ -316,7 +317,7 @@ LEXICON Vinfl-Common
 %<ger_imp%>:%>д%{а%}г Cases-Normal ;
 %<ger_prf%>:%>с%{а%}н Cases-Normal ;
 
-%<gna%>:%>%{а%}ж # ;
+%<gna%>:%>%{а%}%{Ж%} # ;
 %<gna_imp%>:%>%{а%}н # ;
 %<gna_prf%>:%>%{г%}%{А1%}%{А2%}д # ;
 %<gna_cnd%>:%>%{В%}%{А%}л # ;
