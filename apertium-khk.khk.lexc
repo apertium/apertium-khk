@@ -595,7 +595,7 @@ LEXICON Nouns
 хэл Ninfl ; ! "tongue, language"
 толгой Ninfl-ExtraN ; ! "head"
 юм Ninfl ; ! "thing"
-учир Ninfl ; ! "cause, reason"
+!учир Ninfl ; ! "cause, reason"
 ёс Ninfl ; ! "culture"?
 баяр Ninfl ; ! "happiness/luck/fortune"
 мах Ninfl-ExtraN ; ! "meat"
@@ -627,7 +627,7 @@ LEXICON Nouns
 орон:ор%{а%}н Ninfl ; ! "place"
 он:он Ninfl ; ! "calendar year"
 сэхээтэн:сэхээт%{а%}н Ninfl ; ! "intellectual"
-учир:уч%{а%}р Ninfl ; ! "reason, ~event"
+учир:уч%{а%}р Ninfl ; ! "cause, reason"
 цэрэг:цэр%{а%}г Ninfl ; ! "soldier"?
 тэрэг:тэр%{а%}г Ninfl ; ! "cart/wagon"
 үзэсгэлэн:үзэсгэл%{а%}%{ң%} Ninfl ; ! "beauty, presentation"
@@ -652,8 +652,8 @@ LEXICON Verbs
 гэ Vinfl-IV ; ! "say" / quotative marker
 ав Vinfl-TV ; ! "take"
 ир:ир%{ъ%} Vinfl-IV ; ! "come"
-яв:яв%{ъ%} Vinfl-TV ; ! "go"
-оч Vinfl-TV ; ! "go"
+яв:яв%{ъ%} Vinfl-IV ; ! "go"
+оч:оч Vinfl-IV ; ! "go"
 өг Vinfl-TV ; ! "give"
 тэг Vinfl-IV ; ! "do such"
 ингэ Vinfl-IV ; ! "do thus"
@@ -679,6 +679,8 @@ LEXICON Verbs
 зар:зар%{ъ%} Vinfl-TV; ! "announce for sale" ??
 зориул:зориул Vinfl-TV ; ! "dedicate"
 үйлд:үйлд Vinfl-TV ; ! "create"
+ид:ид Vinfl-TV ; ! "eat"
+сан:сан Vinfl-TV ; ! "miss"
 
 
 LEXICON Conjunctions
@@ -718,6 +720,7 @@ LEXICON PostAdv
 ч PostAdv-Infl ; ! "not any"
 хамт PostAdv-Infl ; ! "together"
 биш PostAdv-Infl ; ! "not"
+л PostAdv-Infl ; ! "only"
 
 
 LEXICON Adverbs
