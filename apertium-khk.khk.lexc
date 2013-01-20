@@ -181,6 +181,7 @@ Multichar_Symbols
 %{Д%}
 %{н%}
 %{Н%}
+%{ң%}         ! for nouns ending in н that's /ŋ/ and not /n/→[ŋ]
 %{ъ%}         ! blocks voicing assimilation, mostly of Д for "irregular" locatives
 
 %>            ! Morpheme boundary
@@ -600,6 +601,10 @@ LEXICON Nouns
 учир:уч%{а%}р Ninfl ; ! "reason, ~event"
 цэрэг:цэр%{а%}г Ninfl ; ! "soldier"?
 тэрэг:тэр%{а%}г Ninfl ; ! "cart/wagon"
+үзэсгэлэн:үзэсгэл%{а%}%{ң%} Ninfl ; ! "beauty, presentation"
+!үзэсгэлэн:үзэсгэлэнгүүд Ninfl-Pl ; ! "beauties, presentations"
+сан:са%{ң%} Ninfl ; ! "store [room], warehouse, treasury, etc."
+номын% сан:номын% са%{ң%} Ninfl ; ! "library"
 
 
 LEXICON Verbs

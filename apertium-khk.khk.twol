@@ -24,6 +24,9 @@ FrontVow = ү э ө
 BackVow = у а о
           У А О ;
 
+Sonorant = в г р л н м
+           В Г Р Л Н М ;
+
 NonVow = Б В Г Д Е Ж З Й К Л М Н П Р С Т Ф Х Ц Ч Ш Ь Ъ Я
          б в г д е ж з й к л м н п р с т ф х ц ч ш ь ъ я ; ! This is for surface forms only, so no archiphonemes
 
@@ -204,7 +207,8 @@ Vx:0 <=> :NonVow _ %>: %{I%}: ;
 !         matched ;
 
 "inserted {а} and its harmony"
-%{а%}:Vy <=> :Vx [ :NonVow* :NonVow ]/:0 _ [ :в | :н | :м | :л | :р | :г | :х ] (:NonVow/:0) .#. ;  
+%{а%}:Vy <=> :Vx [ :NonVow* :NonVow ]/:0 _ [ :Sonorant | :х ] (:NonVow/:0) .#. ;  
+             :Vx [ :NonVow* :Sonorant ]/:0 _ [ [ :Sonorant - :г ] :NonVow* ]/:0 :Vow ;
              :Vx [ :NonVow* [ :NonVow - Y: ] ]/:0 _ [ :н :д ]/:0 .#. ; 
 				                                     ! хүнд, шашинд, оронд
              :Vx [ :NonVow* [ :ж | :ч | :т | :ц | :с | :ш | :х | :д ] ]/:0 _ :NonVow .#. ;
@@ -272,7 +276,10 @@ Vx:0 <=> :NonVow _ %>: %{I%}: ;
 !н:0 <=> %{н%}:н %{I%}: %{й%}: _ ;
 
 "genitive-final н deletes after regular noun stems ending in н"
-н:0 <=> :н %>: %{г%}: %{I%}: %{й%}: _ ;
+н:0 <=> [ :н - %{ң%}: ] %>: %{г%}: %{I%}: %{й%}: _ ;
+
+"{н} in regular plural is г after {ң}-final stems"
+%{н%}:г <=> %{ң%}:н/:0 _ ;
 
 
 !!!! extra {Н} noun phonology !!!!
