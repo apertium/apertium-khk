@@ -6,6 +6,7 @@ Alphabet
  %{г%}:0 %{й%}:0 %{а%}:0 %{ь%}:0 %{н%}:0 ! disappearing stuff
  %{ъ%}:0                                 ! "
  %{А%}:а %{I%}:ы %{У%}:у                 ! Vowels
+ %{А1%}:а %{А2%}:а                       ! new {А} vowels
  ° %% %, %. %- %>:0 %                    ! punctuation and boundaries
  ;
 
@@ -48,7 +49,9 @@ Rules
 
 "{I} as и instead of ы"
 %{I%}:и <=> :FrontVow [ :NonVow* [ :NonVow - :й ] ]/:0* _ ;
-                         :PalConsI/:0 _ ;
+            :PalConsI/[ :0 - BackVow: ] _ ;    ! цаг>{I}{й}г:цагийг
+                                               ! алга>{I}{й}г:алгыг
+            FrontVow:0 %>: _ ;                 ! өнгө>{I}{й}г:өнгийг
         except
             :Vow/:0 _ ; ! хүүг, дүүг, not ангийг
           %{ң%}:/:0 _ ; ! үзэсгэлэнг, санг
@@ -58,6 +61,11 @@ Rules
             :Vow/:0 _ ; ! хүүг, дүүг, not ангийг
           %{ң%}:/:0 _ ; ! үзэсгэлэнг, санг
  :Vow :й/:0 %{Н%}:н _ ; ! толгойн, мэлхийн, гахайн
+
+"Deletion of stem-final 'short vowel' before %{I%}"
+Vx:0 <=> :NonVow _ %>: %{I%}: ;
+     where Vx in ( а о э ө ) ;   ! алга>{I}{й}г:алгыг, өнгө>{I}{й}г:өнгийг
+
 
 !"I forget what this is for"
 !н:0 <=> :й/:0 _ %{I%}: ;
@@ -108,42 +116,56 @@ Rules
 !%{А%}:у <=>  [ :у - %{А%}: ] [ :NonVow* :NonVow ]/[ :0* | :% ] %{А%}: _ ;
 
 
-"{A} vowel harmony for second {А} in {А}{А}"
-!%{А%}:Vy <=>  [ :Vx - %{А%}: ] [ :NonVow* :NonVow ]/[ :0 | :%  | %{а%}:0 ] %{А%}: _ ;
-!%{А%}:Vy <=> [ :Vx - %{А%}: ] [ :NonVow* %>:* :NonVow ]/[ [ :0 - %{А%}: ]* | :%  ] [ %{А%}: - :0 ] _ ;
-%{А%}:Vy <=> :Vx [ :NonVow* :NonVow ]/[ [ :0 - %{А%}: ] | :%  ] %{А%}:Vow _ ;
-         except
-             _ %{А%}: ;  ! if {A}{A}, only do second {A}
+"Vowel harmony for {А2}"
+!%{А2%}:Vy <=> :Vx [ :NonVow* :NonVow ]/[ :0 | :%  ] %{А1%}:Vow _ ;
+%{А2%}:Vy <=> :Vx [ [ :NonVow* :NonVow ]/[ :0 | :и | :ы | :%  ] - [ %{А1%}: ] ] [ %{А1%}:Vow | %{А1%}:0 ] _ ;
+!         except
 !             ь:/:0 _ ;
          where Vx in ( ү э ө о )
                Vy in ( э э ө о )
          matched ;
 
+"Vowel harmony for {А1}"
+%{А1%}:Vy <=> :Vx [ :NonVow* :NonVow ]/[ :0 | :и | :ы | :%  ] _ %{А2%}: ;
+         except
+             ь:/:0 _ ;
+             :и/:0 _ ;
+         where Vx in ( ү э ө о )  ! а
+               Vy in ( э э ө о )  ! а
+         matched ;
+
+"Vowel harmony for {А}"
+%{А%}:Vy <=> :Vx [ :NonVow* :NonVow ]/[ :0 | :%  ] _ ;
+         where Vx in ( ү э ө о ) 
+               Vy in ( э э ө о )
+         matched ;
 
 "{А} vowel harmony for Y ''vowels''"
-%{А%}:Vy <=> .#. (:NonVow) [ :Vx - %{А%}: ] [ [ :NonVow - Y: ] ( [ :NonVow - Y: ]*) ]/[ :0 | :% ] %{А%}: _ ;
-         except
-             _ %{А%}: ;  ! if {A}{A}, only do second {A}
-!             ь:/:0 _ ;
+%{А%}:Vy <=> .#. (:NonVow) :Vx [ [ :NonVow* :NonVow ]/[ :0 | :%  ] - Y: ] _ ;
          where Vx in ( е ё и )  ! я ю
                Vy in ( э о э )  ! а а
          matched ;
 
-"{А} vowel harmony for first {А} in {A}{A}"
-%{А%}:Vy <=> _ %{А%}:Vx ;
-         except
-             ь:/:0 _ %{А%}: ;
-             :и/:0 _ %{А%}: ;
-         where Vx in ( э ө о )  ! а
-               Vy in ( э ө о )  ! а
+"{А1} vowel harmony for Y ''vowels''"
+%{А1%}:Vy <=> .#. (:NonVow) :Vx [ [ :NonVow* :NonVow ]/[ :0 | :%  ] - Y: ] _ ;
+         where Vx in ( е ё и )  ! я ю
+               Vy in ( э о э )  ! а а
          matched ;
+
+"{А2} vowel harmony for Y ''vowels''"
+%{А2%}:Vy <=> .#. (:NonVow) :Vx [ [ :NonVow* :NonVow ]/[ :0 | :%  ] - Y: ] _ ;
+         where Vx in ( е ё и )  ! я ю
+               Vy in ( э о э )  ! а а
+         matched ;
+
+
 
 !"first {А} becomes и after palatalised cons or и"
 !%{А%}:и <=> ь:/:0 _ %{А%}: ;
 
-"first {А} deletes after и or ь:и"
+"{А1} deletes after и or ь:и"
 !%{А%}:0 <=> :и/[ :0 - ь: ] _ %{А%}: ;
-%{А%}:0 <=> [ :и | ь:и ]/:0 _ %{А%}: ;
+%{А1%}:0 <=> [ :и | ь:и ]/:0 _ %{А2%}: ;
 
 !!"{A} is э after [non-transparent] и in first syllable"
 !!%{А%}:э <=> .#. [ :NonVow/:0 ]* :и [ :NonVow/:0 ]* _ ;
@@ -216,13 +238,13 @@ Rules
             :PalConsA _ [ :л :Vow ]/:0 ;
 
 "ь deletion before {а}"
-ь:0 <=> _ %{а%}:и/:0 ;
+ь:0 <=> _ %{а%}:и/[:0 - [ %{А1%}: | %{I%}: | %{У%}: ] ] ;
 !        _ %>: %{А%}: %{А%}: ;
     except
         _ [ %{А%}: | %{I%}: | %{У%}: ]/:0 ;
 
-"ь becomes и before {А}"
-ь:и <=> _ [ %{А%}: | %{I%}: | %{У%}: ]/:0 ;
+"ь becomes и before {А1}"
+ь:и <=> _ [ %{А1%}: | %{I%}: | %{У%}: ]/:0 ;
 
 !!!! MISC !!!!
 
