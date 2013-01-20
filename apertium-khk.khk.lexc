@@ -171,6 +171,8 @@ Multichar_Symbols
 %{й%}
 %{а%}
 %{А%}
+%{А1%}
+%{А2%}
 %{I%}
 %{ь%}
 %{В%}
@@ -213,8 +215,8 @@ LEXICON Clit
 # ;
 +вэ%<qst%>:% %{В%}э # ;         ! wh-question
 +уу%<qst%>:% %{У%}%{У%} # ;     ! yes/no-question
-+даа%<qst%>:% д%{А%}%{А%} # ;   !
-+аа%<qst%>:% %{А%}%{А%} # ;     !
++даа%<qst%>:% д%{А1%}%{А2%} # ;   !
++аа%<qst%>:% %{А1%}%{А2%} # ;     !
 +билээ%<qst%>:% билээ # ;       ! assumed previously known information (?)
 
 
@@ -223,19 +225,19 @@ LEXICON Cases-Normal
 %<nom%>: Clit ;
 %<acc%>:%>%{I%}%{й%}г Clit ;
 
-%<refl%>:%>%{г%}%{А%}%{А%} Clit ;  ! this is both nom and acc
+%<refl%>:%>%{г%}%{А1%}%{А2%} Clit ;  ! this is both nom and acc
 
 %<gen%>:%>%{г%}%{I%}%{й%}н Clit ;
-%<gen%>%<refl%>:%>%{г%}%{I%}%{й%}нх%>%{А%}%{А%} Clit ;
+%<gen%>%<refl%>:%>%{г%}%{I%}%{й%}нх%>%{А1%}%{А2%} Clit ;
 
-%<abl%>:%>%{г%}%{А%}%{А%}с Clit ;
-%<abl%>%<refl%>:%>%{г%}%{А%}%{А%}с%{А%}%{А%} Clit ;
+%<abl%>:%>%{г%}%{А1%}%{А2%}с Clit ;
+%<abl%>%<refl%>:%>%{г%}%{А1%}%{А2%}с%{А1%}%{А2%} Clit ;
 
-%<inst%>:%>%{г%}%{А%}%{А%}р Clit ;
-%<inst%>%<refl%>:%>%{г%}%{А%}%{А%}р%>%{А%}%{А%} Clit ;
+%<inst%>:%>%{г%}%{А1%}%{А2%}р Clit ;
+%<inst%>%<refl%>:%>%{г%}%{А1%}%{А2%}р%>%{А1%}%{А2%} Clit ;
 
 %<dat%>:%>%{а%}%{Д%} Clit ;               ! (with exceptional forms in т)
-%<dat%>%<refl%>:%>д%{А%}%{А%} Clit ;  ! (with exceptional forms in т)
+%<dat%>%<refl%>:%>д%{А1%}%{А2%} Clit ;  ! (with exceptional forms in т)
 
 %<dat%>%<attr%>:% д%{А%}х%{ь%} Clit ;
 
@@ -247,19 +249,19 @@ LEXICON Cases-ExtraN
 %<nom%>: Clit ;
 %<acc%>:%>%{I%}%{й%}г Clit ;
 
-%<refl%>:%>%{г%}%{А%}%{А%} Clit ;  ! this is both nom and acc
+%<refl%>:%>%{г%}%{А1%}%{А2%} Clit ;  ! this is both nom and acc
 
 %<gen%>:%>%{Н%}%{I%}%{й%} Clit ;
-%<gen%>%<refl%>:%>%{Н%}%{I%}%{й%}нх%>%{А%}%{А%} Clit ;
+%<gen%>%<refl%>:%>%{Н%}%{I%}%{й%}нх%>%{А1%}%{А2%} Clit ;
 
-%<abl%>:%>%{Н%}%{А%}%{А%}с Clit ;
-%<abl%>%<refl%>:%>%{Н%}%{А%}%{А%}с%>%{А%}%{А%} Clit ;
+%<abl%>:%>%{Н%}%{А1%}%{А2%}с Clit ;
+%<abl%>%<refl%>:%>%{Н%}%{А1%}%{А2%}с%>%{А1%}%{А2%} Clit ;
 
-%<inst%>:%>%{Н%}%{А%}%{А%}р Clit ;
-%<inst%>%<refl%>:%>%{Н%}%{А%}%{А%}р%>%{А%}%{А%} Clit ;
+%<inst%>:%>%{Н%}%{А1%}%{А2%}р Clit ;
+%<inst%>%<refl%>:%>%{Н%}%{А1%}%{А2%}р%>%{А1%}%{А2%} Clit ;
 
 %<dat%>:%>%{а%}%{Н%}д Clit ;               ! (with exceptional forms in т)
-%<dat%>%<refl%>:%>%{Н%}д%{А%}%{А%} Clit ;  ! (with exceptional forms in т)
+%<dat%>%<refl%>:%>%{Н%}д%{А1%}%{А2%} Clit ;  ! (with exceptional forms in т)
 
 %<dat%>%<attr%>:% д%{А%}х%{ь%} Clit ;
 
@@ -296,12 +298,12 @@ LEXICON Vinfl-Common
 %<aor%>%<neg%>:%>%{а%}хгүй Clit ;
 
 %<past%>:%>с%{а%}н Clit ;
-%<past%>%<neg%>:%>%{г%}%{А%}%{А%}гүй Clit ;
+%<past%>%<neg%>:%>%{г%}%{А1%}%{А2%}гүй Clit ;
 %<past%>:%>%{а%}в # ;  ! FIXME: figure this out
 
 %<past%>%<evid%>:жээ # ;
 
-%<ifi%>:%>л%{А%}%{А%} # ;
+%<ifi%>:%>л%{А1%}%{А2%} # ;
 %<hab%>:%>д%{а%}г Clit ;
 
 %<ger%>:%>%{а%}х Cases-Normal ;
@@ -310,12 +312,12 @@ LEXICON Vinfl-Common
 
 %<gna%>:%>%{а%}ж # ;
 %<gna_imp%>:%>%{а%}н # ;
-%<gna_prf%>:%>%{г%}%{А%}%{А%}д # ;
+%<gna_prf%>:%>%{г%}%{А1%}%{А2%}д # ;
 %<gna_cnd%>:%>%{В%}%{А%}л # ;
 %<gna_cnd%>:%>%{Т%}%{А%}л # ;
 
-%<imp%>:%>%{А%}%{А%}р%{А%}й # ;     ! simple imperative
-%<sug%>:%>%{А%}%{А%}ч # ;           ! suggestion
+%<imp%>:%>%{А1%}%{А2%}р%{А%}й # ;     ! simple imperative
+%<sug%>:%>%{А1%}%{А2%}ч # ;           ! suggestion
 
 LEXICON Vinfl-TV
 
