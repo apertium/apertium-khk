@@ -631,16 +631,17 @@ LEXICON Nouns
 цэрэг:цэр%{а%}г Ninfl ; ! "soldier"?
 тэрэг:тэр%{а%}г Ninfl ; ! "cart/wagon"
 үзэсгэлэн:үзэсгэл%{а%}%{ң%} Ninfl ; ! "beauty, presentation"
-!үзэсгэлэн:үзэсгэлэнгүүд Ninfl-Pl ; ! "beauties, presentations"
 сан:са%{ң%} Ninfl ; ! "store [room], warehouse, treasury, etc."
 номын% сан:номын% са%{ң%} Ninfl ; ! "library"
 Куба:Куба Ninfl ; ! "Cuba"
 тэнгэр:тэнг%{а%}р Ninfl ; ! "sky, heaven"
 Бурхан:Бурхан Ninfl ; ! "God"
+ЭЗЭН:ЭЗЭН Ninfl ; ! "The Lord"
 хаан:хаан Ninfl ; ! "king"
 хүч:хүч Ninfl ; ! "strength"
 тахил:тахил Ninfl ; ! "sacrifice/offering"
 зуун:зуун Ninfl ; ! "century, era"
+шударга:шударга Ninfl ; ! "repute, reputation" (?)
 
 
 LEXICON Verbs
