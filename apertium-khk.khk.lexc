@@ -402,12 +402,16 @@ LEXICON Pronouns
 өөр PrnInfl ;            ! "oneself"
 энэ:эн PrnInfl ;         ! "this one"
 ямар:ям%{а%}р PrnInfl ;  ! "which one"
+тийм:тийм PrnInfl ;      ! "one like that"
+ийм:ийм PrnInfl ;        ! "one like this"
 
 LEXICON Determiners
 
 энэ:энэ DetInfl ;        ! "this"
 ямар:ям%{а%}р DetInfl ;  ! "which"
 бүх:бүх DetInfl ;        ! "entire, all, the whole"
+тийм:тийм DetInfl ;      ! "such a"
+ийм:ийм DetInfl ;        ! "such a"
 
 LEXICON Num
 
@@ -415,17 +419,17 @@ LEXICON Num
 
 LEXICON Numbers
 
-нэг Num ;
-хоёр Num ;
-гур%{а%}в Num ;
-дөр%{а%}в Num ;
-тав Num ;
-зургаа Num ;
-долоо Num ;
-найм Num ;
-ёс Num ;
-ар%{а%}в Num ;
-зүн Num ;
+нэг:нэг Num ;            ! "one"
+хоёр:хоёр Num ;          ! "two"
+гурав:гур%{а%}в Num ;    ! "three"
+дөрөв:дөр%{а%}в Num ;    ! "four"
+тав:тав Num ;            ! "five"
+зургаа:зургаа Num ;      ! "six"
+долоо:долоо Num ;        ! "seven"
+найм:найм Num ;          ! "eight"
+ёс:ёс Num ;              ! "nine"
+арав:ар%{а%}в Num ;      ! "hundred"
+зүн:зүн Num ;            ! "thousand"
 
 LEXICON Conj
 
@@ -562,10 +566,10 @@ LEXICON Nouns
 илжиг Ninfl ; ! "donkey"
 буга Ninfl ; ! "deer"
 заан Ninfl ; ! "elephant"
-хулан Ninfl ; ! "wild asian ass"
+хулан Ninfl ; ! "wild asian ass / onager"
 цаас Ninfl ; ! "paper"
-эзэн Ninfl ; ! "master/lord"
-газар Ninfl ; ! "place, land"
+эзэн:эз%{а%}н Ninfl ; ! "master/lord"
+газар:газ%{а%}р Ninfl ; ! "place, land"
 хүн:хүн Ninfl-NoPl ; ! "person"
 хүн:хүмүүс Ninfl-Pl ; ! "person"
 үе Ninfl ; ! "time"
@@ -632,7 +636,7 @@ LEXICON Verbs
 хар Vinfl-TV ; ! "look at"
 гэ Vinfl-IV ; ! "say" / quotative marker
 ав Vinfl-TV ; ! "take"
-ир Vinfl-IV ; ! "come"
+ир:ир%{ъ%} Vinfl-IV ; ! "come"
 яв Vinfl-TV ; ! "go"
 оч Vinfl-TV ; ! "go"
 өг Vinfl-TV ; ! "give"
@@ -704,6 +708,7 @@ LEXICON Adverbs
 сая Adv ; ! "just now"
 мөн Adv ; ! "right, truly"
 ягаад Adv ; ! "why"
+тийм Adv ; ! "in such a way"
 
 
 LEXICON Adjectives
@@ -714,6 +719,8 @@ LEXICON Adjectives
 зөв Adj ; ! "correct"
 ёстой Adj ; ! "necessary"
 хэрэгтэй Adj ; ! "necessary"
+эмэгтэй Adj ; ! "female / woman"
+эрэгтэй Adj ; ! "male / man"
 
 
 LEXICON Particles
