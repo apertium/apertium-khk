@@ -442,9 +442,9 @@ LEXICON Numbers
 зуун:зуун Num ;          ! "hundred"
 мянга:мянга Num ;        ! "thousand"
 
-LEXICON Conj
+LEXICON ConjCoo
 
-%<cnj%>: # ;
+%<cnjcoo%>: # ;
 
 
 LEXICON Postp
@@ -686,17 +686,17 @@ LEXICON Verbs
 
 LEXICON Conjunctions
 
-бөгөөд Conj ; ! "along with" ?
-ба Conj ; ! "and"
-бас Conj ; ! "and"
-харин Conj ; ! ~"but"
-эсвэл Conj ; ! "if"
-болон Conj ;
-гэвч Conj ; ! "but"
-буюу Conj ;
-хэрвээ Conj ; ! ~"if"
-хэрэв Conj ; ! ~"if"
-болгон Conj ; ! emphasiser?
+бөгөөд ConjCoo ; ! "along with" ?
+ба ConjCoo ; ! "and"
+бас ConjCoo ; ! "and"
+харин ConjCoo ; ! ~"but"
+эсвэл ConjCoo ; ! "if"
+болон ConjCoo ;
+гэвч ConjCoo ; ! "but"
+буюу ConjCoo ;
+хэрвээ ConjCoo ; ! ~"if"
+хэрэв ConjCoo ; ! ~"if"
+болгон ConjCoo ; ! emphasiser?
 
 
 LEXICON Postpos
