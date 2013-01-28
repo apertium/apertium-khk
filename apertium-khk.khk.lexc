@@ -686,74 +686,75 @@ LEXICON Verbs
 
 LEXICON Conjunctions
 
-бөгөөд ConjCoo ; ! "along with" ?
-ба ConjCoo ; ! "and"
-бас ConjCoo ; ! "and"
-харин ConjCoo ; ! ~"but"
-эсвэл ConjCoo ; ! "if"
-болон ConjCoo ;
-гэвч ConjCoo ; ! "but"
-буюу ConjCoo ;
-хэрвээ ConjCoo ; ! ~"if"
-хэрэв ConjCoo ; ! ~"if"
-болгон ConjCoo ; ! emphasiser?
+бөгөөд:бөгөөд ConjCoo ; ! "along with" ?
+ба:ба ConjCoo ; ! "and"
+бас:бас ConjCoo ; ! "and"
+харин:харин ConjCoo ; ! ~"but"
+эсвэл:эсвэл ConjCoo ; ! "if"
+болон:болон ConjCoo ;
+гэвч:гэвч ConjCoo ; ! "but"
+буюу:буюу ConjCoo ;
+хэрвээ:хэрвээ ConjCoo ; ! ~"if"
+хэрэв:хэрэв ConjCoo ; ! ~"if"
+болгон:болгон ConjCoo ; ! emphasiser?
 
 
 LEXICON Postpos
 
-бол Postp ;     ! topicaliser
-шиг Postp ;     ! "like"
-бүр Postp ;     ! "each"
-өмнө Postp ;    ! "before, until" ! FIXME: takes attr
-дараа Postp ;   ! "after"         ! FIXME: takes attr
-гэвэл Postp ;   ! CHECK
-дээр Postp ;    ! "on (top of)"   ! FIXME: takes attr
-дотор Postp ;   ! "in(side of)"   ! FIXME: takes attr
-доор Postp ;    ! "under"         ! FIXME: takes attr
-тухай Postp ;   ! "about"
-гадна Postp ;   ! "outside"
-төлөө Postp ;   !
-тулд Postp ;    ! 
-хүртэл Postp ;  ! "until"
+бол:бол Postp ;        ! topicaliser
+шиг:шиг Postp ;        ! "like"
+бүр:бүр Postp ;        ! "each"
+өмнө:өмнө Postp ;      ! "before, until" ! FIXME: takes attr
+дараа:дараа Postp ;    ! "after"         ! FIXME: takes attr
+гэвэл:гэвэл Postp ;    ! CHECK
+дээр:дээр Postp ;      ! "on (top of)"   ! FIXME: takes attr
+дотор:дотор Postp ;    ! "in(side of)"   ! FIXME: takes attr
+доор:доор Postp ;      ! "under"         ! FIXME: takes attr
+тухай:тухай Postp ;    ! "about"
+гадна:гадна Postp ;    ! "outside"
+төлөө:төлөө Postp ;    !
+тулд:тулд Postp ;      ! 
+хүртэл:хүртэл Postp ;  ! "until"
 
 LEXICON PostAdv
 
-ч PostAdv-Infl ; ! "not any"
-хамт PostAdv-Infl ; ! "together"
-биш PostAdv-Infl ; ! "not"
-л PostAdv-Infl ; ! "only"
+ч:ч PostAdv-Infl ; ! "not any"
+хамт:хамт PostAdv-Infl ; ! "together"
+биш:биш PostAdv-Infl ; ! "not"
+л:л PostAdv-Infl ; ! "only"
 
 
 LEXICON Adverbs
 
-сайн Adv ; ! "well"
-их Adv ; ! "very"
-дахин Adv ; ! "again"
-одоо Adv ; ! "now"
-сая Adv ; ! "just now"
-мөн Adv ; ! "right, truly"
-ягаад Adv ; ! "why"
-тийм Adv ; ! "in such a way"
-илүү Adv ; ! "rather"
+сайн:сайн Adv ; ! "well"
+их:их Adv ; ! "very"
+дахин:дахин Adv ; ! "again"
+одоо:ороо Adv ; ! "now"
+сая:сая Adv ; ! "just now"
+мөн:мөн Adv ; ! "right, truly"
+ягаад:ягаад Adv ; ! "why"
+тийм:тийм Adv ; ! "in such a way"
+илүү:илүү Adv ; ! "rather"
 
 
 LEXICON Adjectives
 
-ариун Adj ; ! "pure"
-сайхан Adj ; ! "good"
-муу Adj ; ! "bad"
-зөв Adj ; ! "correct"
-ёстой Adj ; ! "necessary"
-хэрэгтэй Adj ; ! "necessary"
-эмэгтэй Adj ; ! "female / woman"
-эрэгтэй Adj ; ! "male / man"
-адил Adj ; ! "same"
-адилхан Adj ; ! "similar"
+ариун:ариун Adj ; ! "pure"
+сайхан:сайхан Adj ; ! "good"
+муу:муу Adj ; ! "bad"
+зөв:зөв Adj ; ! "correct"
+ёстой:ёстой Adj ; ! "necessary"
+хэрэгтэй:хэрэгтэй Adj ; ! "necessary"
+эмэгтэй:эмэгтэй Adj ; ! "female / woman"
+эрэгтэй:эрэгтэй Adj ; ! "male / man"
+адил:адил Adj ; ! "same"
+адилхан:адилхан Adj ; ! "similar"
 
 
 LEXICON Particles
 
 бүү%<imp%>%<neg%>:бүү # ;   ! negative imperative particle ≈ "don't ___ !"
+шүү%<mod_ass%>:шүү # ;      ! assertive modal particle
 
 LEXICON ProperNouns
 
