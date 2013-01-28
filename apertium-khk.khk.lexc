@@ -716,7 +716,7 @@ LEXICON Postpos
 тулд:тулд Postp ;      ! 
 хүртэл:хүртэл Postp ;  ! "until"
 
-LEXICON PostAdv
+LEXICON Postadverbs
 
 ч:ч PostAdv-Infl ; ! "not any"
 хамт:хамт PostAdv-Infl ; ! "together"
