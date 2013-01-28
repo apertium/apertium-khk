@@ -475,7 +475,7 @@ LEXICON Nouns
 нас:нас Ninfl ; ! "age"
 байр Ninfl ; ! "apartment"
 банк Ninfl ; ! "bank"
-ном Ninfl ; ! "book"
+ном:ном Ninfl ; ! "book"
 гутал Ninfl ; ! "boot(s)"
 дарга Ninfl ; ! "boss"
 алга Ninfl-ExtraN ; ! "palm"
