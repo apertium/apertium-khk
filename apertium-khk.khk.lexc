@@ -204,8 +204,8 @@ Pronouns ;
 Conjunctions ;
 Adverbs ;
 Adjectives ;
-Postpos ;
-PostAdv ;
+Postpositions ;
+Postadverbs ;
 Determiners ;
 Numbers ;
 Particles ;     ! UGH
@@ -699,7 +699,7 @@ LEXICON Conjunctions
 болгон:болгон ConjCoo ; ! emphasiser?
 
 
-LEXICON Postpos
+LEXICON Postpositions
 
 бол:бол Postp ;        ! topicaliser
 шиг:шиг Postp ;        ! "like"
