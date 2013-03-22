@@ -15,6 +15,7 @@
 tests/aa.yaml -text
 tests/added-n[!!-~]forms[!!-~]-[!!-~]full[!!-~]added-n[!!-~]forms.yaml -text
 tests/added-n[!!-~]forms[!!-~]-[!!-~]partial[!!-~]added-n[!!-~]forms.yaml -text
+tests/epenthetic.yaml -text
 tests/normal[!!-~]nouns[!!-~]-[!!-~]ending[!!-~]with[!!-~]"vowels".yaml -text
 tests/normal[!!-~]nouns[!!-~]-[!!-~]ending[!!-~]with[!!-~]consonants.yaml -text
 tests/normal[!!-~]nouns[!!-~]-[!!-~]ending[!!-~]with[!!-~]n.yaml -text

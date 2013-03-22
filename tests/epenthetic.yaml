@@ -1,0 +1,38 @@
+Config:
+  hfst:
+      App: hfst-optimised-lookup
+      Gen: ../khk.autogen.hfst
+      Morph: ../khk.automorf.hfst
+
+Tests:
+
+ "[twol] epenthetic vowel surfaces in some verbforms":
+    гар<v><iv><aor><neg> : гарахгүй
+    бол<v><iv><aor><neg> : болохгүй
+    гар<v><iv><ger><nom> : гарах
+    бол<v><iv><ger><nom> : болох
+    яв<v><iv><ger><nom> : явах
+    ир<v><iv><ger><nom> : ирэх
+    ид<v><tv><gna> : идэж
+    сан<v><tv><gna> : санаж
+
+ "[twol] epenthetic vowel doesn't surface in some verbforms":
+    гар<v><iv><gna> : гарч
+    бол<v><iv><gna> : болж
+    ир<v><iv><gna> : ирж
+    яв<v><iv><gna> : явж
+    ярь<v><iv><gna> : ярьж
+    тавь<v><tv><gna> : тавьж
+    боль<v><tv><gna> : больж
+    барь<v><tv><gna> : барьж
+    хий<v><tv><gna> : хийж
+    хий<v><tv><ger><nom> : хийх
+
+ "[twol] epenthetic vowel surfaces as и in some verbforms after palatal cons":
+    ярь<v><iv><ger><nom> : ярих
+    тавь<v><tv><ger><nom> : тавих
+    боль<v><tv><ger><nom> : болих
+    барь<v><tv><ger><nom> : барих
+    оч<v><iv><ger><nom> : очих
+    шинж<v><iv><ger><nom> : шинжих
+    оч<v><iv><gna> : очиж
