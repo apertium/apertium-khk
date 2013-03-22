@@ -233,6 +233,7 @@ Vx:0 <=> :NonVow _ %>: (%{г%}:) %{I%}: ;
 !             :н %>: _ :н :д ;            ! хүнд, шашинд, оронд
 !             _ :NonVow/:0 :Vow ;         ! хүүхдийг, but хүүхэд
 !             :NonVow :й/:0 _ ;           ! далайд, нохойд
+             ь:/[ :0 - ь:0 ] _ х: ;
          where Vx in ( ү э ө а о у )
                Vy in ( э э ө а о а )
          matched ;
@@ -244,6 +245,7 @@ Vx:0 <=> :NonVow _ %>: (%{г%}:) %{I%}: ;
          except
              :PalConsA/[ :0 - ь: ] _ ;   ! avoid conflict with after palcons
              ь: _ :NonVow/:0 [ :Vow | .#. ] ;
+             ь:/[ :0 - ь:0 ] _ х: ;
              [ :Vow | %{а%}: ] [ :л | :Nasal | :Y | :р ]/:0 _ :д ;
              :Vx [ [ :Sonorant - :Nasal ] (:ь) ]/:0 _ [ %{Ж%}: ]/:0 .#. ;    ! ирж, явч
              :NonVow _ :л [ :Vow | %{а%}: ] ;
@@ -258,6 +260,7 @@ Vx:0 <=> :NonVow _ %>: (%{г%}:) %{I%}: ;
 "{а} after palatal cons"
 %{а%}:и <=> :PalConsA/[ :0 - ь: ] _ ;
             ь: _ :NonVow/:0 [ :Vow | .#. ] ;
+            ь:/[ :0 - ь:0 ] _ х: ;
         except
             :PalConsA _ [ [ :л | :н ] :Vow ]/:0 ;
 
