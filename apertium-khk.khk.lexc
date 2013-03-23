@@ -642,6 +642,20 @@ LEXICON Nouns
 тахил:тахил Ninfl ; ! "sacrifice/offering"
 зуун:зуун Ninfl ; ! "century, era"
 шударга:шударга Ninfl ; ! "repute, reputation" (?)
+зэрэг:зэр%{а%}г Ninfl ; ! "manner, degree"
+гол:гол Ninfl ; ! "river"
+удаа:удаа Ninfl ; ! "time, occurrence"
+засаг:зас%{а%}г Ninfl ; ! "government"
+төр:төр Ninfl ; ! "state, regime"
+аварга:аварга Ninfl ; ! "champion"
+хэсэг:хэс%{а%}г Ninfl ; ! "section, piece"
+түүх:түүх Ninfl ; ! "history"
+муж:муж Ninfl ; ! "state"
+хөгжим:хөгж%{а%}м Ninfl ; ! "music"
+зун:зун Ninfl ; ! "summer"
+өвөл:өв%{а%}л Ninfl ; ! "winter"
+амжил:амж%{а%}л Ninfl ; ! "success"
+холбоо:холбоо Ninfl ; ! "connection, federation"
 
 
 LEXICON Verbs
@@ -685,7 +699,7 @@ LEXICON Verbs
 боль:боль Vinfl-TV ; ! "stop, halt, bring to an end"
 шинж:шинж Vinfl-TV ; ! "investigate" ?
 зас:зас Vinfl-TV ; ! "fix"
-
+холб:холб Vinfl-IV ; ! "tie, connect" - takes comm objects
 
 LEXICON Conjunctions
 
@@ -718,6 +732,7 @@ LEXICON Postpositions
 төлөө:төлөө Postp ;    !
 тулд:тулд Postp ;      ! 
 хүртэл:хүртэл Postp ;  ! "until"
+хойш:хойш Postp ;      ! "since"
 
 LEXICON Postadverbs
 
@@ -753,6 +768,13 @@ LEXICON Adjectives
 адил:адил Adj ; ! "same"
 адилхан:адилхан Adj ; ! "similar"
 шинэ:шинэ Adj ; ! "new"
+том:том Adj ; ! "big"
+жижиг:жиж%{а%}г Adj ; ! "small"
+жижигхэн:жижигх%{а%}н Adj ; ! "little"
+цагаан:цагаа%{ң%} Adj ; ! "white"   ! FIXME: check ң
+улаан:улаа%{ң%} Adj ; ! "red"       ! FIXME: check ң
+дулаан:дулаа%{ң%} Adj ; ! "warm"    ! FIXME: check ң
+чухал:чух%{а%}л Adj ; ! "important"
 
 
 LEXICON Particles
