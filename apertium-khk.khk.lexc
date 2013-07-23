@@ -778,6 +778,9 @@ LEXICON Adjectives
 улаан:улаа%{ң%} Adj ; ! "red"       ! FIXME: check ң
 дулаан:дулаа%{ң%} Adj ; ! "warm"    ! FIXME: check ң
 чухал:чух%{а%}л Adj ; ! "important"
+амархан:амархан Adj ; ! "easy"
+хэзүү:хэзүү Adj ; ! "hard"
+буруу:буруу Adj ; ! "wrong, incorrect"
 
 
 LEXICON Particles
