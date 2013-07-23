@@ -656,6 +656,7 @@ LEXICON Nouns
 өвөл:өв%{а%}л Ninfl ; ! "winter"
 амжил:амж%{а%}л Ninfl ; ! "success"
 холбоо:холбоо Ninfl ; ! "connection, federation"
+цус:цус Ninfl ; ! "blood"
 
 
 LEXICON Verbs
@@ -700,6 +701,8 @@ LEXICON Verbs
 шинж:шинж Vinfl-TV ; ! "investigate" ?
 зас:зас Vinfl-TV ; ! "fix"
 холб:холб Vinfl-IV ; ! "tie, connect" - takes comm objects
+сонго:сонго Vinfl-TV ; ! "choose"
+ойлго:ойлго Vinfl-TV ; ! "understand"
 
 LEXICON Conjunctions
 
