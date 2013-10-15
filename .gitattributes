@@ -5,10 +5,10 @@
 /Makefile.am -text
 /NEWS -text
 /README -text
-/apertium-khk-0.1.pc.in -text
 /apertium-khk.khk.lexc -text
 /apertium-khk.khk.rlx -text
 /apertium-khk.khk.twol -text
+/apertium-khk.pc.in -text
 /autogen.sh -text
 /configure.ac -text
 /modes.xml -text

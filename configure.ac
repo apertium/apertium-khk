@@ -92,4 +92,4 @@ then
 fi
 
 
-AC_OUTPUT([Makefile apertium-khk-0.1.pc])
+AC_OUTPUT([Makefile apertium-khk.pc])
