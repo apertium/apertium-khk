@@ -1,6 +1,8 @@
 DELIMITERS = "<.>" "<!>" "<?>" "<...>" "<¶>" "<:>";
 SOFT-DELIMITERS = "<,>";
 
+SUBREADINGS = LTR ;
+
 SETS
 
 LIST BOS = (>>>) (sent);
@@ -25,8 +27,9 @@ SELECT VerbalAdjective IF
 # if we're at the end of a sentence it's probably a finite verb form
 # could be made more specific?  e.g., if a subject-looking thing precedes?
 REMOVE Gerund IF
-       (0C FiniteVerb)
-       (1 EOS)
+      (0 FiniteVerb)
+      (1 EOS)
+
 ;
 
 SELECT N ;
