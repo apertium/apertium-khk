@@ -212,7 +212,7 @@ Vx:0 <=> :NonVow _ %>: (%{г%}:) %{I%}: ;
 !         matched ;
 
 "inserted {а} and its harmony"
-%{а%}:Vy <=> :Vx [ :NonVow* :NonVow ]/:0 _ [ :Sonorant | :х ] [ :NonVow/:0 | .#. ] ;
+%{а%}:Vy <=> :Vx [ :NonVow* :NonVow ]/:0 _ [ :Sonorant | :х ] [ :NonVow/:0 | .#. | %  | %+: ] ;
              :Vx [ :NonVow* :Sonorant ]/:0 _ [ [ :Sonorant - :г ] :NonVow* ]/:0 [ :Vow | .#. ] ;
              :Vx [ :NonVow* [ :NonVow - Y: ] ]/:0 _ [ :н :д ]/:0 .#. ; 
 				                                     ! хүнд, шашинд, оронд
@@ -239,7 +239,7 @@ Vx:0 <=> :NonVow _ %>: (%{г%}:) %{I%}: ;
          matched ;
 
 "{а} vowel harmony for Y cons"
-%{а%}:Vy <=> .#. (:NonVow) :Vx [ [ :NonVow - Y: ]* [ :NonVow - Y: ] ]/:0 _ [ :Sonorant | :х | :ж ] (:NonVow/:0) [ .#. | :Vow ] ;
+%{а%}:Vy <=> .#. (:NonVow) :Vx [ [ :NonVow - Y: ]* [ :NonVow - Y: ] ]/:0 _ [ :Sonorant | :х | :ж ] (:NonVow/:0) [ .#. | %  | :Vow ] ;
                   ! идэж
              !.#. (:NonVow) :Vx [ [ :NonVow - Y: ] ( [ :NonVow - Y: ] ) ]/:0 _ [ :д | :в | :н | :л | :г ] .#. ;
          except
@@ -256,6 +256,9 @@ Vx:0 <=> :NonVow _ %>: (%{г%}:) %{I%}: ;
 
 !"{a} is front unrounded after first-initial [non-transparent] и"
 !%{а%}:э <=> .#. [ :NonVow/:0 ]* :и [ :NonVow/:0 ]* [ :т | :д | :с ]/:0 _ ;
+
+!"{a} is front unrounded after first-initial [non-transparent] и"
+!%{а%}:э <=> .#. [ :NonVow/:0 ]* :и [ :NonVow/:0 ]* [ :NonVow ]/:0 _ :NonVow/:0 [ .#. | %  ] ;
 
 "{а} after palatal cons"
 %{а%}:и <=> :PalConsA/[ :0 - ь: ] _ ;

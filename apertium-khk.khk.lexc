@@ -327,7 +327,7 @@ LEXICON Vinfl-Common
 
 %<aor%>:%>н%{А%} # ;
 %<aor%>%<neg%>:%>%{а%}хгүй Clit-NonQst ;
-%<aor%>+уу%<qst%>:%{а%}х Clit-Qst ;
+%<aor%>:%{а%}х Clit-Qst ;
 
 %<past%>:%>с%{а%}н Clit ;
 %<past%>%<neg%>:%>%{г%}%{А1%}%{А2%}гүй Clit ;
