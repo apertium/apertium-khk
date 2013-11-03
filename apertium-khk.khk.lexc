@@ -212,15 +212,23 @@ Particles ;     ! UGH
 ProperNouns ;
 
 
+LEXICON Clit-Qst
++вэ%<qst%>:% %{В%}э # ;         ! wh-question
++уу%<qst%>:% %{У%}%{У%} # ;     ! yes/no-question
+
+LEXICON Clit-NonQst
+
++даа%<qst%>:% д%{А1%}%{А2%} # ;   !
++аа%<qst%>:% %{А1%}%{А2%} # ;     !
++билээ%<qst%>:% билээ # ;       ! assumed previously known information (?)
+
+
 LEXICON Clit
 ! Sentence-final clitics
 
 # ;
-+вэ%<qst%>:% %{В%}э # ;         ! wh-question
-+уу%<qst%>:% %{У%}%{У%} # ;     ! yes/no-question
-+даа%<qst%>:% д%{А1%}%{А2%} # ;   !
-+аа%<qst%>:% %{А1%}%{А2%} # ;     !
-+билээ%<qst%>:% билээ # ;       ! assumed previously known information (?)
+Clit-Qst ;
+Clit-NonQst ;
 
 
 LEXICON Cases-Normal
@@ -317,7 +325,8 @@ LEXICON NP-TOP
 LEXICON Vinfl-Common
 
 %<aor%>:%>н%{А%} # ;
-%<aor%>%<neg%>:%>%{а%}хгүй Clit ;
+%<aor%>%<neg%>:%>%{а%}хгүй Clit-NonQst ;
+%<aor%>+уу%<qst%>:%{а%}х Clit-Qst ;
 
 %<past%>:%>с%{а%}н Clit ;
 %<past%>%<neg%>:%>%{г%}%{А1%}%{А2%}гүй Clit ;
@@ -715,7 +724,6 @@ LEXICON Verbs
 сонго:сонго Vinfl-TV ; ! "choose"
 ойлго:ойлго Vinfl-TV ; ! "understand"
 бүтээ:бүтээ Vinfl-TV ; ! "create"  ! Use/MT
-ир:ир Vinfl-IV ; ! "come"
 уу:уу Vinfl-TV ; ! "drink"
 мэд:мэд Vinfl-TV ; ! "know"
 
