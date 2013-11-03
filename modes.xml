@@ -5,7 +5,7 @@
     <pipeline>
       <program name="hfst-strings2fst -S"/>
       <program name="hfst-compose-intersect">
-        <file name=".deps/khk.twol.hfst"/>
+        <file name=".deps/khk.twol.bin"/>
       </program>
       <program name="hfst-fst2strings"/>
     </pipeline>
@@ -13,16 +13,16 @@
 
   <mode name="khk-morph">
     <pipeline>
-      <program name="hfst-proc -w">
-        <file name="khk.automorf.hfst"/>
+      <program name="lt-proc -w">
+        <file name="khk.automorf.bin"/>
       </program>
     </pipeline>
   </mode>
 
   <mode name="khk-lexc">
     <pipeline>
-      <program name="hfst-proc -g">
-        <file name=".deps/khk.lexc.hfst"/>
+      <program name="lt-proc -g">
+        <file name=".deps/khk.lexc.bin"/>
       </program>
     </pipeline>
   </mode>
@@ -30,16 +30,16 @@
 
   <mode name="khk-gener">
     <pipeline>
-      <program name="hfst-proc -g">
-        <file name="khk.autogen.hfst"/>
+      <program name="lt-proc -g">
+        <file name="khk.autogen.bin"/>
       </program>
     </pipeline>
   </mode>
 
   <mode name="khk-disam">
     <pipeline>
-      <program name="hfst-proc -w">
-        <file name="khk.automorf.hfst"/>
+      <program name="lt-proc -w">
+        <file name="khk.automorf.bin"/>
       </program>
       <program name="cg-proc -w">
         <file name="khk.rlx.bin"/>
