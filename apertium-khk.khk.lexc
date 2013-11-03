@@ -351,59 +351,59 @@ LEXICON Vinfl-IV
 
 LEXICON Pronouns
 
-би%<prn%>%<p1%>%<sg%>%<nom%>:би Clit ;
-би%<prn%>%<p1%>%<sg%>%<acc%>:намайг Clit ;
-би%<prn%>%<p1%>%<sg%>%<gen%>:миний Clit ;
-би%<prn%>%<p1%>%<sg%>%<abl%>:надаас Clit ;
-би%<prn%>%<p1%>%<sg%>%<dat%>:надад Clit ;
-би%<prn%>%<p1%>%<sg%>%<inst%>:надаар Clit ;
-би%<prn%>%<p1%>%<sg%>%<px%>:минийх Clit ;    ! FIXME: check
-би%<prn%>%<p1%>%<sg%>%<gens%>:минь Clit ;
+би%<prn%>%<pers%>%<p1%>%<sg%>%<nom%>:би Clit ;
+би%<prn%>%<pers%>%<p1%>%<sg%>%<acc%>:намайг Clit ;
+би%<prn%>%<pers%>%<p1%>%<sg%>%<gen%>:миний Clit ;
+би%<prn%>%<pers%>%<p1%>%<sg%>%<abl%>:надаас Clit ;
+би%<prn%>%<pers%>%<p1%>%<sg%>%<dat%>:надад Clit ;
+би%<prn%>%<pers%>%<p1%>%<sg%>%<inst%>:надаар Clit ;
+би%<prn%>%<pers%>%<p1%>%<sg%>%<px%>:минийх Clit ;    ! FIXME: check
+би%<prn%>%<pers%>%<p1%>%<sg%>%<gens%>:минь Clit ;
 
-бид%<prn%>%<p1%>%<pl%>%<nom%>:бид Clit ;
-бид%<prn%>%<p1%>%<pl%>%<acc%>:биднийг Clit ;
-бид%<prn%>%<p1%>%<pl%>%<gen%>:бидний Clit ;
-бид%<prn%>%<p1%>%<pl%>%<abl%>:биднээс Clit ;
-бид%<prn%>%<p1%>%<pl%>%<dat%>:бидэнд Clit ;
-бид%<prn%>%<p1%>%<pl%>%<inst%>:биднээр Clit ;
-бид%<prn%>%<p1%>%<pl%>%<px%>:биднийх Clit ; ! FIXME: Check
+бид%<prn%>%<pers%>%<p1%>%<pl%>%<nom%>:бид Clit ;
+бид%<prn%>%<pers%>%<p1%>%<pl%>%<acc%>:биднийг Clit ;
+бид%<prn%>%<pers%>%<p1%>%<pl%>%<gen%>:бидний Clit ;
+бид%<prn%>%<pers%>%<p1%>%<pl%>%<abl%>:биднээс Clit ;
+бид%<prn%>%<pers%>%<p1%>%<pl%>%<dat%>:бидэнд Clit ;
+бид%<prn%>%<pers%>%<p1%>%<pl%>%<inst%>:биднээр Clit ;
+бид%<prn%>%<pers%>%<p1%>%<pl%>%<px%>:биднийх Clit ; ! FIXME: Check
 
-чи%<prn%>%<p2%>%<sg%>%<nom%>:чи Clit ;
-чи%<prn%>%<p2%>%<sg%>%<acc%>:чамайг Clit ;
-чи%<prn%>%<p2%>%<sg%>%<gen%>:чиний Clit ;
-чи%<prn%>%<p2%>%<sg%>%<abl%>:чамаас Clit ;
-чи%<prn%>%<p2%>%<sg%>%<dat%>:чамд Clit ;
-чи%<prn%>%<p2%>%<sg%>%<inst%>:чамаар Clit ;  ! FIXME: check
-чи%<prn%>%<p2%>%<sg%>%<px%>:чинийх Clit ;    ! FIXME: check
-чи%<prn%>%<p2%>%<sg%>%<gens%>:чинь Clit ;
+чи%<prn%>%<pers%>%<p2%>%<sg%>%<nom%>:чи Clit ;
+чи%<prn%>%<pers%>%<p2%>%<sg%>%<acc%>:чамайг Clit ;
+чи%<prn%>%<pers%>%<p2%>%<sg%>%<gen%>:чиний Clit ;
+чи%<prn%>%<pers%>%<p2%>%<sg%>%<abl%>:чамаас Clit ;
+чи%<prn%>%<pers%>%<p2%>%<sg%>%<dat%>:чамд Clit ;
+чи%<prn%>%<pers%>%<p2%>%<sg%>%<inst%>:чамаар Clit ;  ! FIXME: check
+чи%<prn%>%<pers%>%<p2%>%<sg%>%<px%>:чинийх Clit ;    ! FIXME: check
+чи%<prn%>%<pers%>%<p2%>%<sg%>%<gens%>:чинь Clit ;
 
-та%<prn%>%<p2%>%<frm%>%<nom%>:та Clit ;
-та%<prn%>%<p2%>%<frm%>%<acc%>:таныг Clit ;
-та%<prn%>%<p2%>%<frm%>%<gen%>:таны Clit ;
-%та%<prn%>%<p2%>%<frm%>%<abl%>:та Clit ;    ! FIXME: check
-та%<prn%>%<p2%>%<frm%>%<dat%>:танд Clit ;
-%та%<prn%>%<p2%>%<frm%>%<inst%>:та Clit ;  ! FIXME: check
-та%<prn%>%<p2%>%<frm%>%<px%>:таных Clit ;   ! FIXME: check
-та%<prn%>%<p2%>%<frm%>%<gens%>:тань Clit ;
+та%<prn%>%<pers%>%<p2%>%<frm%>%<nom%>:та Clit ;
+та%<prn%>%<pers%>%<p2%>%<frm%>%<acc%>:таныг Clit ;
+та%<prn%>%<pers%>%<p2%>%<frm%>%<gen%>:таны Clit ;
+!та%<prn%>%<pers%>%<p2%>%<frm%>%<abl%>:та Clit ;    ! FIXME: check
+та%<prn%>%<pers%>%<p2%>%<frm%>%<dat%>:танд Clit ;
+!та%<prn%>%<pers%>%<p2%>%<frm%>%<inst%>:та Clit ;  ! FIXME: check
+та%<prn%>%<pers%>%<p2%>%<frm%>%<px%>:таных Clit ;   ! FIXME: check
+та%<prn%>%<pers%>%<p2%>%<frm%>%<gens%>:тань Clit ;
 
-тэр%<prn%>%<p3%>%<sg%>%<nom%>:тэр Clit ;
-тэр%<prn%>%<p3%>%<sg%>%<acc%>:түүнийг Clit ;
-тэр%<prn%>%<p3%>%<sg%>%<gen%>:түүний Clit ;
-тэр%<prn%>%<p3%>%<sg%>%<abl%>:түүнээс Clit ;
+тэр%<prn%>%<pers%>%<p3%>%<sg%>%<nom%>:тэр Clit ;
+тэр%<prn%>%<pers%>%<p3%>%<sg%>%<acc%>:түүнийг Clit ;
+тэр%<prn%>%<pers%>%<p3%>%<sg%>%<gen%>:түүний Clit ;
+тэр%<prn%>%<pers%>%<p3%>%<sg%>%<abl%>:түүнээс Clit ;
 тэр%<dem%>%<p3%>%<sg%>%<dat%>:тэнд Clit ;     ! loc
-тэр%<prn%>%<p3%>%<sg%>%<dat%>:түүнд Clit ;    ! dat/loc
-тэр%<prn%>%<p3%>%<sg%>%<inst%>:тэрээр Clit ;  ! FIXME: check
-тэр%<prn%>%<p3%>%<sg%>%<px%>:түүнийх Clit ;   ! FIXME: check
-тэр%<prn%>%<p3%>%<sg%>%<gens%>:нь Clit ;
+тэр%<prn%>%<pers%>%<p3%>%<sg%>%<dat%>:түүнд Clit ;    ! dat/loc
+тэр%<prn%>%<pers%>%<p3%>%<sg%>%<inst%>:тэрээр Clit ;  ! FIXME: check
+тэр%<prn%>%<pers%>%<p3%>%<sg%>%<px%>:түүнийх Clit ;   ! FIXME: check
+тэр%<prn%>%<pers%>%<p3%>%<sg%>%<gens%>:нь Clit ;
 
-тэд%<prn%>%<p3%>%<pl%>%<nom%>:тэд Clit ;
-тэд%<prn%>%<p3%>%<pl%>%<acc%>:тэднийг Clit ;
-тэд%<prn%>%<p3%>%<pl%>%<gen%>:тэдний Clit ;
-тэд%<prn%>%<p3%>%<pl%>%<abl%>:тэднээс Clit ;
-тэд%<prn%>%<p3%>%<pl%>%<dat%>:тэдэнд Clit ;   ! FIXME: check
-тэд%<prn%>%<p3%>%<pl%>%<inst%>:тэднээр Clit ; ! FIXME: check
-тэд%<prn%>%<p3%>%<pl%>%<px%>:тэднийх Clit ;   ! FIXME: check
-тэд%<prn%>%<p3%>%<pl%>%<gens%>:нь Clit ;
+тэд%<prn%>%<pers%>%<p3%>%<pl%>%<nom%>:тэд Clit ;
+тэд%<prn%>%<pers%>%<p3%>%<pl%>%<acc%>:тэднийг Clit ;
+тэд%<prn%>%<pers%>%<p3%>%<pl%>%<gen%>:тэдний Clit ;
+тэд%<prn%>%<pers%>%<p3%>%<pl%>%<abl%>:тэднээс Clit ;
+тэд%<prn%>%<pers%>%<p3%>%<pl%>%<dat%>:тэдэнд Clit ;   ! FIXME: check
+тэд%<prn%>%<pers%>%<p3%>%<pl%>%<inst%>:тэднээр Clit ; ! FIXME: check
+тэд%<prn%>%<pers%>%<p3%>%<pl%>%<px%>:тэднийх Clit ;   ! FIXME: check
+тэд%<prn%>%<pers%>%<p3%>%<pl%>%<gens%>:нь Clit ;
 
 хэн PrnInfl ;            ! "who"
 юу PrnInfl ;             ! "what"
