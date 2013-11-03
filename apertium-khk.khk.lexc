@@ -211,6 +211,7 @@ Determiners ;
 Numbers ;
 Particles ;     ! UGH
 ProperNouns ;
+Punctuation ;
 
 
 LEXICON Clit-Qst
@@ -826,3 +827,31 @@ LEXICON ProperNouns
 
 Египет:Египет NP-TOP ;      ! "Egypt"
 Иерусалим:Иерусалим NP-TOP ; ! "Jerusalem"
+
+ LEXICON Punctuation
+!===================!
+
+
+%.%<sent%>:%. # ;
+%.%.%<sent%>:%.%. # ;
+%.%.%.%<sent%>:%.%.%. # ;
+%;%<sent%>:%; # ;
+%:%<sent%>:%: # ;
+%!%<sent%>:%! # ;
+%-%<guio%>:%- # ;
+%—%<guio%>:%— # ;
+,%<cm%>:, # ;
+%?%<sent%>:%? # ;
+%'%<apos%>:%' # ;
+%"%<sent%>:%" # ;
+%«%<lquot%>:%« # ;
+%»%<rquot%>:%» # ;
+%”%<rquot%>:%” # ;
+%“%<lquot%>:%“ # ;
+%(%<lpar%>:%( # ;
+%]%<rpar%>:%] # ;
+%[%<lpar%>:%[ # ;
+%)%<rpar%>:%) # ;
+%\%<sent%>:%\ # ;
+%/%<sent%>:%/ # ;
+
