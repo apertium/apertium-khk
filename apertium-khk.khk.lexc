@@ -666,6 +666,8 @@ LEXICON Nouns
 оршил:оршил Ninfl ; ! "introduction, preamble"
 гишүүн:гишүүн Ninfl ; ! "member"
 эрх% чөлөө:эрх% чөлөө Ninfl ; ! "freedom"
+хувин:хуви%{ң%} Ninfl ; ! "bucket"
+пив:пив Ninfl ; ! "beer"
 
 
 LEXICON Verbs
@@ -713,6 +715,9 @@ LEXICON Verbs
 сонго:сонго Vinfl-TV ; ! "choose"
 ойлго:ойлго Vinfl-TV ; ! "understand"
 бүтээ:бүтээ Vinfl-TV ; ! "create"  ! Use/MT
+ир:ир Vinfl-IV ; ! "come"
+уу:уу Vinfl-TV ; ! "drink"
+мэд:мэд Vinfl-TV ; ! "know"
 
 LEXICON Conjunctions
 
@@ -766,6 +771,9 @@ LEXICON Adverbs
 ягаад:ягаад Adv ; ! "why"
 тийм:тийм Adv ; ! "in such a way"
 илүү:илүү Adv ; ! "rather"
+маргааш:маргааш Adv ; ! "tomorrow"
+өнөөдөр:өнөөдөр Adv ; ! "today"
+өчигдөр:өчигдөр Adv ; ! "yesterday"
 
 
 LEXICON Adjectives
