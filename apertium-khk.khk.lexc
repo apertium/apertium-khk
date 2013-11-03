@@ -657,6 +657,10 @@ LEXICON Nouns
 амжил:амж%{а%}л Ninfl ; ! "success"
 холбоо:холбоо Ninfl ; ! "connection, federation"
 цус:цус Ninfl ; ! "blood"
+элэг:элэг Ninfl ; ! "liver"
+бурхан:бурхан Ninfl ; ! "god"
+эх:эх Ninfl-ExtraN ; ! "beginning"
+гэр% бүл:гэр% бүл Ninfl ; ! "family"
 
 
 LEXICON Verbs
@@ -703,6 +707,7 @@ LEXICON Verbs
 холб:холб Vinfl-IV ; ! "tie, connect" - takes comm objects
 сонго:сонго Vinfl-TV ; ! "choose"
 ойлго:ойлго Vinfl-TV ; ! "understand"
+бүтээ:бүтээ Vinfl-TV ; ! "create"  ! Use/MT
 
 LEXICON Conjunctions
 
