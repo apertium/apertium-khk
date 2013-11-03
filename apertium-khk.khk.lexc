@@ -326,7 +326,7 @@ LEXICON NP-TOP
 LEXICON Vinfl-Common
 
 %<aor%>:%>н%{А%} # ;
-%<aor%>%<neg%>:%>%{а%}хгүй Clit-NonQst ;
+%<aor%>%<neg%>:%>%{а%}хгүй Clit ; ! can take юу/юү, but can it take вэ?
 %<aor%>:%{а%}х Clit-Qst ;
 
 %<past%>:%>с%{а%}н Clit ;
