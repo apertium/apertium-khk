@@ -661,6 +661,11 @@ LEXICON Nouns
 бурхан:бурхан Ninfl ; ! "god"
 эх:эх Ninfl-ExtraN ; ! "beginning"
 гэр% бүл:гэр% бүл Ninfl ; ! "family"
+эрх:эрх Ninfl ; ! "rights"
+тунхаглал:тунхаглал Ninfl ; ! "declaration"
+оршил:оршил Ninfl ; ! "introduction, preamble"
+гишүүн:гишүүн Ninfl ; ! "member"
+эрх% чөлөө:эрх% чөлөө Ninfl ; ! "freedom"
 
 
 LEXICON Verbs
@@ -786,6 +791,7 @@ LEXICON Adjectives
 амархан:амархан Adj ; ! "easy"
 хэзүү:хэзүү Adj ; ! "hard"
 буруу:буруу Adj ; ! "wrong, incorrect"
+түгээмэл:түгээмэл Adj ; ! "general"
 
 
 LEXICON Particles
