@@ -244,8 +244,8 @@ LEXICON Cases-Normal
 %<abl%>:%>%{г%}%{А1%}%{А2%}с Clit ;
 %<abl%>%<refl%>:%>%{г%}%{А1%}%{А2%}с%{А1%}%{А2%} Clit ;
 
-%<inst%>:%>%{г%}%{А1%}%{А2%}р Clit ;
-%<inst%>%<refl%>:%>%{г%}%{А1%}%{А2%}р%>%{А1%}%{А2%} Clit ;
+%<ins%>:%>%{г%}%{А1%}%{А2%}р Clit ;
+%<ins%>%<refl%>:%>%{г%}%{А1%}%{А2%}р%>%{А1%}%{А2%} Clit ;
 
 %<dat%>:%>%{а%}%{Д%} Clit ;               ! (with exceptional forms in т)
 %<dat%>%<refl%>:%>д%{А1%}%{А2%} Clit ;  ! (with exceptional forms in т)
@@ -268,8 +268,8 @@ LEXICON Cases-ExtraN
 %<abl%>:%>%{Н%}%{А1%}%{А2%}с Clit ;
 %<abl%>%<refl%>:%>%{Н%}%{А1%}%{А2%}с%>%{А1%}%{А2%} Clit ;
 
-%<inst%>:%>%{Н%}%{А1%}%{А2%}р Clit ;
-%<inst%>%<refl%>:%>%{Н%}%{А1%}%{А2%}р%>%{А1%}%{А2%} Clit ;
+%<ins%>:%>%{Н%}%{А1%}%{А2%}р Clit ;
+%<ins%>%<refl%>:%>%{Н%}%{А1%}%{А2%}р%>%{А1%}%{А2%} Clit ;
 
 %<dat%>:%>%{а%}%{Н%}д Clit ;               ! (with exceptional forms in т)
 %<dat%>%<refl%>:%>%{Н%}д%{А1%}%{А2%} Clit ;  ! (with exceptional forms in т)
@@ -365,7 +365,7 @@ LEXICON Pronouns
 би%<prn%>%<pers%>%<p1%>%<sg%>%<gen%>:миний Clit ;
 би%<prn%>%<pers%>%<p1%>%<sg%>%<abl%>:надаас Clit ;
 би%<prn%>%<pers%>%<p1%>%<sg%>%<dat%>:надад Clit ;
-би%<prn%>%<pers%>%<p1%>%<sg%>%<inst%>:надаар Clit ;
+би%<prn%>%<pers%>%<p1%>%<sg%>%<ins%>:надаар Clit ;
 би%<prn%>%<pers%>%<p1%>%<sg%>%<px%>:минийх Clit ;    ! FIXME: check
 би%<prn%>%<pers%>%<p1%>%<sg%>%<gens%>:минь Clit ;
 
@@ -374,7 +374,7 @@ LEXICON Pronouns
 бид%<prn%>%<pers%>%<p1%>%<pl%>%<gen%>:бидний Clit ;
 бид%<prn%>%<pers%>%<p1%>%<pl%>%<abl%>:биднээс Clit ;
 бид%<prn%>%<pers%>%<p1%>%<pl%>%<dat%>:бидэнд Clit ;
-бид%<prn%>%<pers%>%<p1%>%<pl%>%<inst%>:биднээр Clit ;
+бид%<prn%>%<pers%>%<p1%>%<pl%>%<ins%>:биднээр Clit ;
 бид%<prn%>%<pers%>%<p1%>%<pl%>%<px%>:биднийх Clit ; ! FIXME: Check
 
 чи%<prn%>%<pers%>%<p2%>%<sg%>%<nom%>:чи Clit ;
@@ -382,7 +382,7 @@ LEXICON Pronouns
 чи%<prn%>%<pers%>%<p2%>%<sg%>%<gen%>:чиний Clit ;
 чи%<prn%>%<pers%>%<p2%>%<sg%>%<abl%>:чамаас Clit ;
 чи%<prn%>%<pers%>%<p2%>%<sg%>%<dat%>:чамд Clit ;
-чи%<prn%>%<pers%>%<p2%>%<sg%>%<inst%>:чамаар Clit ;  ! FIXME: check
+чи%<prn%>%<pers%>%<p2%>%<sg%>%<ins%>:чамаар Clit ;  ! FIXME: check
 чи%<prn%>%<pers%>%<p2%>%<sg%>%<px%>:чинийх Clit ;    ! FIXME: check
 чи%<prn%>%<pers%>%<p2%>%<sg%>%<gens%>:чинь Clit ;
 
@@ -391,7 +391,7 @@ LEXICON Pronouns
 та%<prn%>%<pers%>%<p2%>%<frm%>%<gen%>:таны Clit ;
 !та%<prn%>%<pers%>%<p2%>%<frm%>%<abl%>:та Clit ;    ! FIXME: check
 та%<prn%>%<pers%>%<p2%>%<frm%>%<dat%>:танд Clit ;
-!та%<prn%>%<pers%>%<p2%>%<frm%>%<inst%>:та Clit ;  ! FIXME: check
+!та%<prn%>%<pers%>%<p2%>%<frm%>%<ins%>:та Clit ;  ! FIXME: check
 та%<prn%>%<pers%>%<p2%>%<frm%>%<px%>:таных Clit ;   ! FIXME: check
 та%<prn%>%<pers%>%<p2%>%<frm%>%<gens%>:тань Clit ;
 
@@ -401,7 +401,7 @@ LEXICON Pronouns
 тэр%<prn%>%<pers%>%<p3%>%<sg%>%<abl%>:түүнээс Clit ;
 тэр%<dem%>%<p3%>%<sg%>%<dat%>:тэнд Clit ;     ! loc
 тэр%<prn%>%<pers%>%<p3%>%<sg%>%<dat%>:түүнд Clit ;    ! dat/loc
-тэр%<prn%>%<pers%>%<p3%>%<sg%>%<inst%>:тэрээр Clit ;  ! FIXME: check
+тэр%<prn%>%<pers%>%<p3%>%<sg%>%<ins%>:тэрээр Clit ;  ! FIXME: check
 тэр%<prn%>%<pers%>%<p3%>%<sg%>%<px%>:түүнийх Clit ;   ! FIXME: check
 тэр%<prn%>%<pers%>%<p3%>%<sg%>%<gens%>:нь Clit ;
 
@@ -410,7 +410,7 @@ LEXICON Pronouns
 тэд%<prn%>%<pers%>%<p3%>%<pl%>%<gen%>:тэдний Clit ;
 тэд%<prn%>%<pers%>%<p3%>%<pl%>%<abl%>:тэднээс Clit ;
 тэд%<prn%>%<pers%>%<p3%>%<pl%>%<dat%>:тэдэнд Clit ;   ! FIXME: check
-тэд%<prn%>%<pers%>%<p3%>%<pl%>%<inst%>:тэднээр Clit ; ! FIXME: check
+тэд%<prn%>%<pers%>%<p3%>%<pl%>%<ins%>:тэднээр Clit ; ! FIXME: check
 тэд%<prn%>%<pers%>%<p3%>%<pl%>%<px%>:тэднийх Clit ;   ! FIXME: check
 тэд%<prn%>%<pers%>%<p3%>%<pl%>%<gens%>:нь Clit ;
 
