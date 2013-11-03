@@ -7,7 +7,7 @@ Alphabet
  %{ъ%}:0                                 ! "
  %{А%}:а %{I%}:ы %{У%}:у                 ! Vowels
  %{А1%}:а %{А2%}:а                       ! new {А} vowels
- ° %% %, %. %- %>:0 %                    ! punctuation and boundaries
+ ° %% %, %. %- %>:0 %  %+                ! punctuation and boundaries
  ;
 
 Sets
