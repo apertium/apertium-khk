@@ -1,6 +1,8 @@
 prefix=@prefix@
 exec_prefix=${prefix}
 libdir=@libdir@
+dir=@libdir@/apertium/apertium-khk
+srcdir=@datarootdir@/apertium/apertium-khk
 
 Name: apertium-khk
 Description: Finite-state morphological transducer and constraint grammar for Khalka (Mongolian)
