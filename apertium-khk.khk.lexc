@@ -238,7 +238,7 @@ LEXICON Cases-Normal
 %<nom%>: Clit ;
 %<acc%>:%>%{I%}%{й%}г Clit ;
 
-%<refl%>:%>%{г%}%{А1%}%{А2%} Clit ;  ! this is both nom and acc
+%<nom%>%<refl%>:%>%{г%}%{А1%}%{А2%} Clit ;  ! this is both nom and acc
 
 %<gen%>:%>%{г%}%{I%}%{й%}н Clit ;
 %<gen%>%<refl%>:%>%{г%}%{I%}%{й%}нх%>%{А1%}%{А2%} Clit ;
@@ -478,6 +478,7 @@ LEXICON PostAdv-Infl
 LEXICON Adj
 
 %<adj%>: # ;
+%<adj%>%<subst%>: Cases-Normal ;
 
 
 LEXICON Adv
@@ -548,7 +549,7 @@ LEXICON Nouns
 өглөө Ninfl ; ! "morning"
 ээж Ninfl ; ! "mother"
 уул Ninfl ; ! "mountain"
-хөгжим Ninfl ; ! "music"
+хөгжим:хөгж%{а%}м Ninfl ; ! "music"
 нэр Ninfl ; ! "name"
 дэвтэр Ninfl ; ! "notebook"
 дугаар Ninfl ; ! "number"
@@ -560,7 +561,7 @@ LEXICON Nouns
 зураг Ninfl ; ! "picture"
 гахай Ninfl-ExtraN ; ! "pig"
 табаг Ninfl ; ! "plate"
-аймаг Ninfl ; ! "province"
+аймаг:айм%{а%}г Ninfl ; ! "aimag (province)"
 асуулт Ninfl ; ! "question"
 цув Ninfl ; ! "coat"
 өрөө Ninfl ; ! "room"
@@ -669,7 +670,6 @@ LEXICON Nouns
 хэсэг:хэс%{а%}г Ninfl ; ! "section, piece"
 түүх:түүх Ninfl ; ! "history"
 муж:муж Ninfl ; ! "state"
-хөгжим:хөгж%{а%}м Ninfl ; ! "music"
 зун:зун Ninfl ; ! "summer"
 өвөл:өв%{а%}л Ninfl ; ! "winter"
 амжил:амж%{а%}л Ninfl ; ! "success"
@@ -695,7 +695,11 @@ LEXICON Nouns
 тэргүүн:тэргүүн Ninfl ; ! "chief, head, leader"
 цахилгаан:цахилгаан Ninfl ; ! "electricity, lightning"
 хөлбөмбөг:хөлбөмбөг Ninfl ; ! "basketball"
-хөгжим:хөгж%{а%}м Ninfl ; ! "music"
+баг:баг Ninfl ; ! "team"
+медаль:медаль Ninfl ; ! "medal"
+төв:төв Ninfl ; ! "center"
+байдал:байд%{а%}л Ninfl ; ! "character, degree"
+нутаг:нут%{а%}г Ninfl ; ! "homeland"
 
 
 LEXICON Verbs
@@ -726,7 +730,7 @@ LEXICON Verbs
 хэл Vinfl-IV ; ! "say"
 хүр:хүр Vinfl-TV ; ! "reach"
 амьдар Vinfl-IV ; ! "live"
-ажилла Vinfl-IV ; ! "work"
+ажилл Vinfl-IV ; ! "work"
 эхэл Vinfl-IV ; ! "begin"
 дуус Vinfl-IV ; ! "finish"
 гар:гар Vinfl-IV ; ! "leave"
@@ -746,6 +750,7 @@ LEXICON Verbs
 уу:уу Vinfl-TV ; ! "drink"
 мэд:мэд Vinfl-TV ; ! "know"
 хэмээ:хэмээ Vinfl-TV ; ! "say (literary)"
+суу:суу Vinfl-IV ; ! "sit"
 
 LEXICON Conjunctions
 
@@ -835,6 +840,14 @@ LEXICON Adjectives
 шигшээ:шигшээ Adj ; ! "qualifying/championship/final [game]"
 дээд:дээд Adj ; ! "uppder, top"
 тэргүүн:тэргүүн Adj ; ! "main, primary"
+төв:төв Adj ; ! "central"
+бусад:бус%{а%}д Adj ; ! "other"
+
+зүүн:зүүн Adj ; ! "east"
+хойд:хойд Adj ; ! "north"
+баруун:баруун Adj ; ! "west"
+өмнө:өмнө Adj ; ! "south"
+
 
 
 LEXICON Particles
