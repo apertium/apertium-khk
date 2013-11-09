@@ -11,6 +11,7 @@
 /apertium-khk.pc.in -text
 /autogen.sh -text
 /configure.ac -text
+dev/countstems.sh -text
 /modes.xml -text
 tests/aa.yaml -text
 tests/added-n[!!-~]forms[!!-~]-[!!-~]full[!!-~]added-n[!!-~]forms.yaml -text
