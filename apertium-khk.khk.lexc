@@ -700,7 +700,13 @@ LEXICON Nouns
 төв:төв Ninfl ; ! "center"
 байдал:байд%{а%}л Ninfl ; ! "character, degree"
 нутаг:нут%{а%}г Ninfl ; ! "homeland"
-
+тус:тус Ninfl ; ! "utility; same" CHECK
+аж% ахуй:аж% ахуй Ninfl ; ! "economy, economics"
+мөрөн:мөр%{а%}н Ninfl ; ! "мөрөн"
+хагас:хагас Ninfl ; ! "half"
+гүр:гүр Ninfl-ExtraN ; ! "magnet" CHECK
+лиг:лиг Ninfl ; ! "league"
+ёс:ёс Ninfl-ExtraN ; ! "custom"
 
 LEXICON Verbs
 
@@ -751,6 +757,8 @@ LEXICON Verbs
 мэд:мэд Vinfl-TV ; ! "know"
 хэмээ:хэмээ Vinfl-TV ; ! "say (literary)"
 суу:суу Vinfl-IV ; ! "sit"
+оролц:оролц Vinfl-IV ; ! "catch up, step in"
+тогл:тогл Vinfl-IV ; ! "play"
 
 LEXICON Conjunctions
 
@@ -765,6 +773,7 @@ LEXICON Conjunctions
 хэрвээ:хэрвээ ConjCoo ; ! ~"if"
 хэрэв:хэрэв ConjCoo ; ! ~"if"
 болгон:болгон ConjCoo ; ! emphasiser?
+боловч:боловч ConjCoo ; ! "although"
 
 
 LEXICON Postpositions
@@ -868,6 +877,7 @@ LEXICON ProperNouns
 Иерусалим:Иерусалим NP-TOP ; ! "Jerusalem"
 
 Европ:Европ NP-TOP ; ! "Europe"
+Ази:Ази NP-TOP ; ! "Asia"
 
 !!!!!! Countries !!!!!!
 
@@ -875,6 +885,7 @@ LEXICON ProperNouns
 Монгол:Монгол NP-TOP ; ! "Mongolia"
 Америк:Америк NP-TOP ; ! "America"
 Хятад:Хятад NP-TOP ; ! "China"
+Англи:Англи NP-TOP ; ! "England"
 
 
 
