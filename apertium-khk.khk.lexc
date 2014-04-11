@@ -712,7 +712,7 @@ LEXICON Nouns
 эсрэг:эсрэг Ninfl ; ! "contradition"
 шүр:шүр Ninfl ; ! "coral"
 далан:далан Ninfl ; ! "barrier"
-хад:хад Ninfl ; ! "wall of stone, roof"
+хад:хад Ninfl-ExtraN ; ! "wall of stone, roof"
 эрэг:эр%{а%}г Ninfl ; ! "shore, coast"
 тогтоц:тогтоц Ninfl ; ! "formation"
 овоорго:овоорго Ninfl ; ! "accumulation"
@@ -867,6 +867,8 @@ LEXICON Adjectives
 бусад:бус%{а%}д Adj ; ! "other"
 үндсэн:үндс%{а%}н Adj ; ! "basic, fundamental"
 эсрэг:эсрэг Adj ; ! "reverse"
+алдартай:алдартай Adj ; ! "famous"
+
 
 зүүн:зүүн Adj ; ! "east"
 хойд:хойд Adj ; ! "north"
