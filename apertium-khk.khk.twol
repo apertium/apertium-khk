@@ -65,7 +65,8 @@ Rules
 %{I%}:0 <=>   :Vow :й/:0 _ ; ! нохойг, далайг
                  :Vow/:0 _ ; ! хүүг, дүүг, not ангийг
                %{ң%}:/:0 _ ; ! үзэсгэлэнг, санг
-      :Vow :й/:0 %{Н%}:н _ ; ! толгойн, мэлхийн, гахайн
+     ! :Vow :й/:0 %{Н%}:н _ ; ! толгойн, мэлхийн, гахайн
+     ! I don't think this is right ... e.g., цайны (c.f. гахайны?)
 
 "Deletion of stem-final 'short vowel' before %{I%} and %{А1%}"
 Vx:0 <=> :NonVow _ %>: (%{г%}:) %{I%}: ;
@@ -81,7 +82,7 @@ Vx:0 <=> :NonVow _ %>: (%{г%}:) %{I%}: ;
 "{й} should surface after {I} as и"
 %{й%}:й <=> %{I%}:и _ ;
 !      :и/:0 %{I%}:0 _ ;   ! ангийг
-              :и/:0 _ ;   ! ангийг, ангийн
+              :и/:0 _ ;   ! анги_йг, анги_йн
 
 !"final short vowel deletion before vowel-initial morpheme"
 !Vow:0 <=> _ %>: [ %{I%}: | %{А%}: ] ;
