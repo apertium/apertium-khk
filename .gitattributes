@@ -9,9 +9,11 @@
 /apertium-khk.khk.rlx -text
 /apertium-khk.khk.twol -text
 /apertium-khk.pc.in -text
+/apertium-khk.post-khk.dix -text
 /autogen.sh -text
 /configure.ac -text
 dev/countstems.sh -text
+/khk.prob -text svneol=unset#unset
 /modes.xml -text
 tests/aa.yaml -text
 tests/added-n[!!-~]forms[!!-~]-[!!-~]full[!!-~]added-n[!!-~]forms.yaml -text

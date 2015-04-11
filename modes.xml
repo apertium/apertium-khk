@@ -5,7 +5,7 @@
     <pipeline>
       <program name="hfst-strings2fst -S"/>
       <program name="hfst-compose-intersect">
-        <file name=".deps/khk.twol.bin"/>
+        <file name=".deps/khk.twol.hfst"/>
       </program>
       <program name="hfst-fst2strings"/>
     </pipeline>
@@ -21,12 +21,11 @@
 
   <mode name="khk-lexc">
     <pipeline>
-      <program name="lt-proc -g">
-        <file name=".deps/khk.lexc.bin"/>
+      <program name="hfst-lookup">
+        <file name=".deps/khk.LR.lexc.hfst"/>
       </program>
     </pipeline>
   </mode>
-
 
   <mode name="khk-gener">
     <pipeline>
@@ -52,12 +51,12 @@
       <program name="lt-proc -w">
         <file name="khk.automorf.bin"/>
       </program>
-      <program name="cg-conv -a -l"/>
+      <program name="cg-conv -a"/>
       <program name="vislcg3 --trace --grammar">
         <file name="khk.rlx.bin"/>
       </program>
     </pipeline>
   </mode>
 
-
 </modes>
+
