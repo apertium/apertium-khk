@@ -67,6 +67,7 @@ Multichar_Symbols
 %<abl%>       ! Ablative
 %<loc%>       ! Locative
 %<ins%>       ! Instrumental
+%<dir%>       ! Directional
 
 %<refl%>      ! Reflexive
 
@@ -147,6 +148,7 @@ Multichar_Symbols
 %<p2%>        ! Second person
 %<p3%>        ! Third person
 %<frm%>       ! Formality
+%<infm%>      ! Informal
 
 ! Modal particles
 %<qst%>       ! Modal question particle
@@ -184,9 +186,10 @@ Multichar_Symbols
 %{ң%}         ! for nouns ending in н that's /ŋ/ and not /n/→[ŋ]
 %{ъ%}         ! blocks voicing assimilation, mostly of Д for "irregular" locatives and Ж irregular verbal adverbs
 %{Ж%}
+%{Р%}
 
 %>            ! Morpheme boundary
-%             ! Space
+!%             ! Space
 %-            !
 %,            !
 %.            !
@@ -255,6 +258,8 @@ LEXICON Cases-Normal
 %<dat%>%<attr%>:% д%{А%}х%{ь%} Clit ;
 
 %<gens%>:%>%{а%}н # ;
+
+%<dir%>:%>% %{Р%}%{У%}%{У%} Clit ;
 
 
 LEXICON Cases-ExtraN
@@ -339,9 +344,9 @@ LEXICON Vinfl-Common
 
 %<past%>:%>с%{а%}н Clit ;
 %<past%>%<neg%>:%>%{г%}%{А1%}%{А2%}гүй Clit ;
-%<past%>:%>%{а%}в # ;  ! FIXME: figure this out
+%<past%>%<frm%>:%>%{а%}в # ;  ! FIXME: figure this out
 
-%<past%>%<evid%>:жээ # ;
+%<past%>%<evid%>:%{Ж%}ээ # ;
 
 %<ifi%>:%>л%{А1%}%{А2%} # ;
 %<hab%>:%>д%{а%}г Clit ;
@@ -354,8 +359,9 @@ LEXICON Vinfl-Common
 %<gna_imp%>:%>%{а%}н # ;
 %<gna_prf%>:%>%{г%}%{А1%}%{А2%}д # ;
 %<gna_cnd%>:%>%{В%}%{А%}л # ;
-%<gna_cnd%>:%>%{Т%}%{А%}л # ;
+%<gna_until%>:%>%{Т%}%{А%}л # ;
 
+%<imp%>%<infm%>: # ;
 %<imp%>:%>%{А1%}%{А2%}р%{А%}й # ;     ! simple imperative
 %<sug%>:%>%{А1%}%{А2%}ч # ;           ! suggestion
 
@@ -716,6 +722,53 @@ LEXICON Nouns
 эрэг:эр%{а%}г Ninfl ; ! "shore, coast"
 тогтоц:тогтоц Ninfl ; ! "formation"
 овоорго:овоорго Ninfl ; ! "accumulation"
+хир:хир Ninfl ; ! "dirt"
+хар:хар Ninfl ; ! ""
+хор:хор Ninfl ; ! "poison"
+хур:хур Ninfl ; ! ""
+хүүр:хүүр Ninfl ; ! ""
+хээр:хээр Ninfl ; ! ""
+хөөр:хөөр Ninfl ; ! ""
+хоор:хоор Ninfl ; ! ""
+хуур:хуур Ninfl ; ! "fiddle"
+хайр:хайр Ninfl ; ! "love"
+харь:харь Ninfl ; ! ""
+хорь:хорь Ninfl ; ! ""
+хил:хил Ninfl ; ! ""
+хэл:хэл Ninfl ; ! "tongue, language"
+хөл:хөл Ninfl ; ! "foot"
+хал:хал Ninfl ; ! ""
+хол:хол Ninfl ; ! "far away"
+хул:хул Ninfl ; ! ""
+хийл:хийл Ninfl ; ! ""
+хээл:хээл Ninfl ; ! ""
+хууль:хууль Ninfl ; ! ""
+ир:ир Ninfl ; ! ""
+үр:үр Ninfl ; ! ""
+эр:эр Ninfl ; ! "man"
+өр:өр Ninfl ; ! ""
+ар:ар Ninfl ; ! ""
+ор:ор Ninfl ; ! ""
+ур:ур Ninfl ; ! ""
+үүр:үүр Ninfl ; ! ""
+өөр:өөр Ninfl ; ! "other" FIXME: CHECK
+уур:уур Ninfl ; ! ""
+ойр:ойр Ninfl ; ! "one that's near"
+орь:орь Ninfl ; ! ""
+урь:урь Ninfl ; ! ""
+ил:ил Ninfl ; ! ""
+өл:өл Ninfl ; ! ""
+ал:ал Ninfl ; ! ""
+ул:ул Ninfl ; ! ""
+үүл:үүл Ninfl ; ! "cloud"
+ээл:ээл Ninfl ; ! ""
+үйл:үйл Ninfl ; ! "action"
+айл:айл Ninfl ; ! "settlement/camp"
+аль:аль Ninfl ; ! "which one" FIXME: CHECK
+ааль:ааль Ninfl ; ! ""
+ооль:ооль Ninfl ; ! ""
+ууль:ууль Ninfl ; ! ""
+
 
 
 LEXICON Verbs
@@ -770,6 +823,51 @@ LEXICON Verbs
 оролц:оролц Vinfl-IV ; ! "catch up, step in"
 тогл:тогл Vinfl-IV ; ! "play"
 бий% бол:бий% бол Vinfl-IV ; ! "come into being"
+хуур:хуур Vinfl-TV ; ! "fry"
+хорь:хорь Vinfl-TV ; ! "suppress"
+хүр:хүр Vinfl-IV ; ! "reach (+dat)"
+хэр:хэр Vinfl-IV ; ! ""
+хөр:хөр Vinfl-IV ; ! ""
+хор:хор Vinfl-IV ; ! ""
+хур:хур Vinfl-IV ; ! ""
+хөөр:хөөр Vinfl-IV ; ! ""
+хайр:хайр Vinfl-IV ; ! ""
+харь:харь Vinfl-IV ; ! "subside"
+хүл:хүл Vinfl-TV ; ! "tie up"
+хэл:хэл Vinfl-IV ; ! "speak"
+хал:хал Vinfl-IV ; ! "get hot"
+хийл:хийл Vinfl-TV ; ! "inflate"
+хүүл:хүүл Vinfl-TV ; ! "lend money"
+хээл:хээл Vinfl-TV ; ! "decorate"
+хөөл:хөөл Vinfl-TV ; ! "clean soot"
+хуул:хуул Vinfl-TV ; ! "copy"
+хайл:хайл Vinfl-IV ; ! "melt" TV:хайлуул-
+хуйл:хуйл Vinfl-TV ; ! "roll up"
+халь:халь Vinfl-IV ; ! "overflow"
+холь:холь Vinfl-TV ; ! "mix in"
+ир:ир Vinfl-IV ; ! "come"
+үр:үр Vinfl-TV ; ! "rub?"
+эр:эр Vinfl-TV ; ! "look for"
+өр:өр Vinfl-TV ; ! "arrange"
+ор:ор Vinfl-IV ; ! "enter"
+ур:ур Vinfl-TV ; ! "pull?"
+үүр:үүр Vinfl-TV ; ! "carry on the back"
+ээр:ээр Vinfl-IV ; ! "stammer"ш
+аар:аар Vinfl-IV ; ! "get dry (of mouth)"
+үйр:үйр Vinfl-IV ; ! "crumble" TV: үйрүүл
+урь:урь Vinfl-TV ; ! "invite"
+ил:ил Vinfl-TV ; ! "rub"
+эл:эл Vinfl-IV ; ! "get worn down"
+ал:ал Vinfl-TV ; ! "kill"
+ол:ол Vinfl-TV ; ! "find"
+өөл:өөл Vinfl-TV ; ! "criticise?"
+уйл:уйл Vinfl-IV ; ! "cry"
+оль:оль Vinfl-TV ; ! "gore"
+уль:уль Vinfl-IV ; ! "yawn, wail, moan"
+
+
+
+
 
 LEXICON Conjunctions
 
