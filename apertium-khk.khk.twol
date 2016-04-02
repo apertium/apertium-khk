@@ -28,6 +28,9 @@ BackVow = у а о
 Sonorant = в г р л н м
            В Г Р Л Н М ;
 
+Voiced = М Н Г Л Б В Р
+         м н г л б в р ; ! the "монгол бавар" letters
+
 NonVow = Б В Г Д Е Ж З Й К Л М Н П Р С Т Ф Х Ц Ч Ш Ь Ъ Я
          б в г д е ж з й к л м н п р с т ф х ц ч ш ь ъ я ; ! This is for surface forms only, so no archiphonemes
 
@@ -159,7 +162,7 @@ Vx:0 <=> :NonVow _ %>: (%{г%}:) %{I%}: ;
              :и/:0 _ ;
 
 "Vowel harmony for {А}"
-%{А%}:Vy <=> :Vx [ :NonVow* :NonVow ]/[ :0 | :%  ] _ ;
+%{А%}:Vy <=> :Vx [ :NonVow* :NonVow ]/[ :0 | :%  | ь:и* ] _ ;
          where Vx in ( ү э ө о )
                Vy in ( э э ө о )
          matched ;
@@ -303,8 +306,10 @@ Vx:0 <=> :NonVow _ %>: (%{г%}:) %{I%}: ;
     except
         _ [ %{А%}: | %{I%}: | %{У%}: ]/:0 ;
 
-"ь becomes и before {А1}"
+"ь becomes и before {А1} and мнглбвр"
 ь:и <=> _ [ %{А1%}: | %{I%}: | %{У%}: ]/:0 ;
+        _ :Voiced/:0 ;
+        
 
 !!!! MISC !!!!
 
