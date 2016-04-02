@@ -1,0 +1,21 @@
+Config:
+  hfst:
+      App: hfst-optimised-lookup
+      Gen: ../khk.autogen.hfst
+      Morph: ../khk.automorf.hfst
+
+Tests:
+
+ "[twol] some stems with ь, where it changes to и (мнглбвр)":
+    хорь<v><tv><ifi> : хорилоо
+    хорь<v><tv><aor> : хорино
+    хорь<v><tv><gna_imp> : хорин
+
+ "[twol] some stems with ь, where it changes to и (not мнглбвр)":
+    хорь<v><tv><ger><nom> : хорих
+
+ "[twol] some stems with ь, where it stays ь":
+    хорь<v><tv><past> : хорьсон
+    хорь<v><tv><hab> : хорьдог
+    хорь<v><tv><gna> : хорьж
+
