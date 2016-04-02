@@ -281,7 +281,7 @@ LEXICON Cases-ExtraN
 %<dat%>:%>%{а%}%{Н%}д Clit ;               ! (with exceptional forms in т)
 %<dat%>%<refl%>:%>%{Н%}д%{А1%}%{А2%} Clit ;  ! (with exceptional forms in т)
 
-%<dat%>%<attr%>:% д%{А%}х%{ь%} Clit ;
+%<dat%>%<attr%>:%{а%}%{Н%}% д%{А%}х%{ь%} Clit ;
 
 %<gens%>:%>%{а%}н # ;
 
@@ -723,11 +723,11 @@ LEXICON Nouns
 тогтоц:тогтоц Ninfl ; ! "formation"
 овоорго:овоорго Ninfl ; ! "accumulation"
 хир:хир Ninfl ; ! "dirt"
-хар:хар Ninfl ; ! ""
+хар:хар Ninfl ; ! "one that's black" ! FIXME: adj.subst?
 хор:хор Ninfl ; ! "poison"
 хур:хур Ninfl ; ! ""
-хүүр:хүүр Ninfl ; ! ""
-хээр:хээр Ninfl ; ! ""
+хүүр:хүүр Ninfl ; ! "dead body"
+хээр:хээр Ninfl ; ! "chestnut horse"
 хөөр:хөөр Ninfl ; ! ""
 хоор:хоор Ninfl ; ! ""
 хуур:хуур Ninfl ; ! "fiddle"
@@ -738,14 +738,16 @@ LEXICON Nouns
 хэл:хэл Ninfl ; ! "tongue, language"
 хөл:хөл Ninfl ; ! "foot"
 хал:хал Ninfl ; ! ""
-хол:хол Ninfl ; ! "far away"
+хол:хол Ninfl ; ! "far away" ! FIXME: adj.subst
 хул:хул Ninfl ; ! ""
-хийл:хийл Ninfl ; ! ""
+хийл:хийл Ninfl ; ! "karma"
+хийл:хийл Ninfl-ExtraN ; ! "deed"
 хээл:хээл Ninfl ; ! ""
 хууль:хууль Ninfl ; ! ""
+хөө:хөө Ninfl ; ! "soot"
 ир:ир Ninfl ; ! ""
 үр:үр Ninfl ; ! ""
-эр:эр Ninfl ; ! "man"
+эр:эр Ninfl ; ! "man" ! FIXME: adj.subst ?
 өр:өр Ninfl ; ! ""
 ар:ар Ninfl ; ! ""
 ор:ор Ninfl ; ! ""
@@ -754,7 +756,6 @@ LEXICON Nouns
 өөр:өөр Ninfl ; ! "other" FIXME: CHECK
 уур:уур Ninfl ; ! ""
 ойр:ойр Ninfl ; ! "one that's near"
-орь:орь Ninfl ; ! ""
 урь:урь Ninfl ; ! ""
 ил:ил Ninfl ; ! ""
 өл:өл Ninfl ; ! ""
