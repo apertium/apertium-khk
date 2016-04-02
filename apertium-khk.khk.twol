@@ -162,7 +162,7 @@ Vx:0 <=> :NonVow _ %>: (%{г%}:) %{I%}: ;
              :и/:0 _ ;
 
 "Vowel harmony for {А}"
-%{А%}:Vy <=> :Vx [ :NonVow* :NonVow ]/[ :0 | :%  | ь:и* ] _ ;
+%{А%}:Vy <=> :Vx [ :NonVow* :NonVow ]/[ :0 | :%  | ь:и ]* _ ;
          where Vx in ( ү э ө о )
                Vy in ( э э ө о )
          matched ;
@@ -317,7 +317,7 @@ Vx:0 <=> :NonVow _ %>: (%{г%}:) %{I%}: ;
 %{ь%}:ь <=> %{А%}:BackVow :NonVow (:NonVow*) _ ;
 
 "{В} surfaces as б after л, nasals, and в"
-%{В%}:б <=> [ :в | :Nasal | :л ]/[ :0 | %  ] _ ;
+%{В%}:б <=> [ :в | :Nasal | :л ]/[ :0 | %  | ь:и ]* _ ;
 
 "{Д} devoices after some stuff"
 %{Д%}:т <=> [ :г | :р | :в ]/[ :0 - %{ъ%}:0 ] _ ;
