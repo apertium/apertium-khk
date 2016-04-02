@@ -1,0 +1,26 @@
+Config:
+  hfst:
+      App: hfst-optimised-lookup
+      Gen: ../khk.autogen.hfst
+      Morph: ../khk.automorf.hfst
+
+Tests:
+
+ "[twol] dat.attr with preceding back unrounded vowel":
+    байр<n><dat><attr> : байр дахь
+    сав<n><dat><attr> : сав дахь
+    ах<n><dat><attr> : ах дахь
+
+ "[twol] dat.attr with preceding front unrounded vowel":
+    цэцэг<n><dat><attr> : цэцэг дэх
+    жил<n><dat><attr> : жил дэх
+
+ "[twol] dat.attr with preceding front rounded vowel":
+    өрөө<n><dat><attr> : өрөө дэх
+    үе<n><dat><attr> : үе дэх
+    зүрх<n><dat><attr> : зүрх дэх
+
+ "[twol] dat.attr with preceding back rounded vowel":
+    ногоо<n><dat><attr> : ногоо дахь
+    ёс<n><dat><attr> : ёс дахь
+    цус<n><dat><attr> : цус дахь

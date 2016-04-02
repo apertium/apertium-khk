@@ -34,6 +34,9 @@ Voiced = М Н Г Л Б В Р
 NonVow = Б В Г Д Е Ж З Й К Л М Н П Р С Т Ф Х Ц Ч Ш Ь Ъ Я
          б в г д е ж з й к л м н п р с т ф х ц ч ш ь ъ я ; ! This is for surface forms only, so no archiphonemes
 
+Cons = Б В Г Д Ж З К Л М Н П Р С Т Ф Х Ц Ч Ш Ь Ъ
+       б в г д ж з к л м н п р с т ф х ц ч ш ь ъ ; 
+
 !PalCons =  г ж ш ;
 PalConsA =  ч ж ш ;
 PalConsI =  ч ж ш г е;
@@ -161,19 +164,38 @@ Vx:0 <=> :NonVow _ %>: (%{г%}:) %{I%}: ;
              ь:/:0 _ ;
              :и/:0 _ ;
 
-"Vowel harmony for {А}"
-%{А%}:Vy <=> :Vx [ :NonVow* :NonVow ]/[ :0 | :%  | ь:и ]* _ ;
+"{А} vowel harmony"
+%{А%}:Vy <=> :Vx [ :NonVow* :Cons ]/[ :0 | ь:и ]* _ ;
+         except
+             :Vx [ :NonVow* :Cons ]/[ :0 | %  ]* _ ;
          where Vx in ( ү э ө о )
                Vy in ( э э ө о )
          matched ;
 
+"{А} vowel harmony across space" ! e.g., дахь/дэх, but not дөх/дохь
+%{А%}:Vy <=> :Vx [ :NonVow* :Cons ]/[ :0 | %  ]* _ ;
+         where Vx in ( ү э ө о у а )
+               Vy in ( э э э а а а )
+         matched ;
+
 "{А} vowel harmony for Y ''vowels''"
-%{А%}:Vy <=> .#. (:NonVow) :Vx [ [ :NonVow* :NonVow ]/[ :0 | :%  ] - Y: ] _ ;
+%{А%}:Vy <=> .#. (:Cons) :Vx [ [ :NonVow* :NonVow ]/[ :0 ]* - Y: ] _ ;
          except
-             :NonVow* :и [ :NonVow* :NonVow ]/[ :0 | :%  ] _ %{А2%}: ;
+             :Cons* :и [ :NonVow* :NonVow ]/[ :0 | :%  ] _ %{А2%}: ;
          where Vx in ( е ё и )  ! я ю
                Vy in ( э о э )  ! а а
          matched ;
+
+"{А} vowel harmony for Y ''vowels'' across space"
+%{А%}:Vy <=> .#. (:Cons) :Vx [ [ :NonVow* :NonVow ]/[ :0 | :%  ]* - Y: ] _ ;
+         except
+             :Cons* :и [ :NonVow* :NonVow ]/[ :0 | :%  ] _ %{А2%}: ;
+             .#. (:Cons) :Vx [ [ :NonVow* :NonVow ]/[ :0 ]* - Y: ] _ ;
+         where Vx in ( е ё и )  ! я ю
+               Vy in ( э а э )  ! а а
+         matched ;
+! үе дэх
+! ёс дах
 
 "{А1} vowel harmony for Y ''vowels''"
 %{А1%}:Vy <=> .#. (:NonVow) :Vx [ [ :NonVow* :NonVow ]/[ :0 | :%  ] - Y: ] _ ;
@@ -245,7 +267,7 @@ Vx:0 <=> :NonVow _ %>: (%{г%}:) %{I%}: ;
 "inserted {а} and its harmony"
 %{а%}:Vy <=> :Vx [ :NonVow* :NonVow ]/:0 _ [ :Sonorant | :х ] [ :NonVow/:0 | .#. | %  | %+: ] ;
              :Vx [ :NonVow* :Sonorant ]/:0 _ [ [ :Sonorant - :г ] :NonVow* ]/:0 [ :Vow | .#. ] ;
-             :Vx [ :NonVow* [ :NonVow - Y: ] ]/:0 _ [ :н :д ]/:0 .#. ;
+             :Vx [ :NonVow* :Cons ]/:0 _ [ :н :д ]/:0 .#. ;
                                                  ! хүнд, шашинд, оронд
              :Vx [ :NonVow* [ :ж | :ч | :т | :ц | :с | :ш | :х | :д ] ]/:0 _ :NonVow .#. ;
              :Vx [ :NonVow* :NonVow ]/:0 _ %{Ж%}:/:0 .#. ;
@@ -265,6 +287,7 @@ Vx:0 <=> :NonVow _ %>: (%{г%}:) %{I%}: ;
 !             _ :NonVow/:0 :Vow ;         ! хүүхдийг, but хүүхэд
 !             :NonVow :й/:0 _ ;           ! далайд, нохойд
              ! ь:/[ :0 - ь:0 ] _ х: ;
+                                                 ! but үенд, not үеэнд
              ь:/[ :0 - ь:0 ] _ [ х: | н: | в: ] ;
          where Vx in ( ү э ө а о у )
                Vy in ( э э ө а о а )
