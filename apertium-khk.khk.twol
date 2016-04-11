@@ -165,15 +165,19 @@ Vx:0 <=> :NonVow _ %>: (%{г%}:) %{I%}: ;
              :и/:0 _ ;
 
 "{А} vowel harmony"
-%{А%}:Vy <=> :Vx [ :NonVow* :Cons ]/[ :0 | ь:и ]* _ ;
+%{А%}:Vy <=> :Vx [ :NonVow* :Cons ]/[ :0 | ь:и | %{а%}:и ]* _ ;
          except
-             :Vx [ :NonVow* :Cons ]/[ :0 | %  ]* _ ;
+!             :Vx [ :NonVow* ]/[ :0 | ь:и | %{а%}:и ]* :%  [ :NonVow* :Cons ]/:0* _ ;
+!             :Vx [ :NonVow* :Cons ]/[ :0 | ь:и | %{а%}:и ]* :%  [ :NonVow* ]/:0* _ ;
+             :Vx [ :NonVow* :Cons ]/[ :0 | ь:и | %{а%}:и | :%  ]* :NonVow*/:0* _ ;
          where Vx in ( ү э ө о у а )
                Vy in ( э э ө о а а )
          matched ;
 
 "{А} vowel harmony across space" ! e.g., дахь/дэх, but not дөх/дохь
-%{А%}:Vy <=> :Vx [ :NonVow* :Cons ]/[ :0 | %  ]* _ ;
+%{А%}:Vy <=> :Vx [ :NonVow* :Cons ]/[ :0 | ь:и | %{а%}:и | :%  ]* :NonVow*/:0* _ ;
+!             :Vx [ :NonVow* ]/[ :0 | ь:и | %{а%}:и ]* :%  [ :NonVow* :Cons ]/:0* _ ;
+!             :Vx [ :NonVow* :Cons ]/[ :0 | ь:и | %{а%}:и ]* :%  [ :NonVow* ]/:0* _ ;
          where Vx in ( ү э ө о у а )
                Vy in ( э э э а а а )
          matched ;
@@ -195,7 +199,9 @@ Vx:0 <=> :NonVow _ %>: (%{г%}:) %{I%}: ;
                Vy in ( э а э )  ! а а
          matched ;
 ! үе дэх
+!@ ү:ү е:е _:_ д:д э:э х:х
 ! ёс дах
+!@ ё:ё с:с _:_ д:д а:а х:х
 
 "{А1} vowel harmony for Y ''vowels''"
 %{А1%}:Vy <=> .#. (:NonVow) :Vx [ [ :NonVow* :NonVow ]/[ :0 | :%  ] - Y: ] _ ;
@@ -279,7 +285,7 @@ Vx:0 <=> :NonVow _ %>: (%{г%}:) %{I%}: ;
              [ :Vow [ [ :Sonorant - :Nasal ] (:ь) ] ]/:0 _ [ %{Ж%}: ]/:0 .#. ;    ! ирж, явч
              [ :Vow :р ]/:0 _ [ [ :н | :в ] :Vow ]/:0 ;   ! орныг, дөрвөн
              :PalConsA/[ :0 - ь: ] _ ;   ! avoid conflict with after palcons
-             ь: _ :NonVow/:0 [ :Vow | .#. ] ;
+             ь:/[ :0 - ь:0 ] _ [ :NonVow* :NonVow ]/:0* [ :Vow | .#. | %  ] ;
              [ [ :Vow (:й) ] | %{а%}: ] [ [ :л (:ь) ] | :Nasal | :Y | :р | :г ]/:0 _ [ :д | %{Д%}: ] ;
              :NonVow _ :л [ :Vow | %{а%}: ] ;
              :Vow :й :0* _ ;             ! байв, далайд, нохойд
@@ -299,7 +305,7 @@ Vx:0 <=> :NonVow _ %>: (%{г%}:) %{I%}: ;
              !.#. (:NonVow) :Vx [ [ :NonVow - Y: ] ( [ :NonVow - Y: ] ) ]/:0 _ [ :д | :в | :н | :л | :г ] .#. ;
          except
              :PalConsA/[ :0 - ь: ] _ ;   ! avoid conflict with after palcons
-             ь: _ :NonVow/:0 [ :Vow | .#. ] ;
+             ь:/[ :0 - ь:0 ] _ [ :NonVow* :NonVow ]/:0* [ :Vow | .#. | %  ] ;
              !ь:/[ :0 - ь:0 ] _ х: ;
              ь:/[ :0 - ь:0 ] _ [ х: | н: | в: ] ;
              [ :Vow | %{а%}: ] [ :л | :Nasal | :Y | :р ]/:0 _ :д ;
@@ -318,10 +324,11 @@ Vx:0 <=> :NonVow _ %>: (%{г%}:) %{I%}: ;
 
 "{а} after palatal cons"
 %{а%}:и <=> :PalConsA/[ :0 - ь: ] _ ;
-            ь: _ :NonVow/:0 [ :Vow | .#. ] ;
+            ь:/[ :0 - ь:0 ] _ [ :NonVow* :NonVow ]/:0* [ :Vow | .#. | %  ] ;
             ь:/[ :0 - ь:0 ] _ [ х: | н: | в: ] ;
         except
             :PalConsA _ [ [ :л | :н ] :Vow ]/:0 ;
+!@ у:у р:р ь:0 {а}:и {Н}:н _:_ д:д {А}:а х:х {ь}:ь 
 
 "ь deletion before {а}"
 ь:0 <=> _ %{а%}:и/[:0 - [ %{А1%}: | %{I%}: | %{У%}: ] ] ;
@@ -333,6 +340,9 @@ Vx:0 <=> :NonVow _ %>: (%{г%}:) %{I%}: ;
 "ь becomes и before {А1} and мнглбвр"
 ь:и <=> _ [ %{А1%}: | %{I%}: | %{У%}: ]/:0 ;
         _ [ :Voiced ]/:0 ;
+    except
+        _ [ %{а%}: ]/[ :0 - [ %{а%}: ] ] ;
+        ! let things like урь>{а}{Н}д be taken care of by {а}:и not ь:и
         
 
 !!!! MISC !!!!
