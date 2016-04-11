@@ -168,8 +168,8 @@ Vx:0 <=> :NonVow _ %>: (%{г%}:) %{I%}: ;
 %{А%}:Vy <=> :Vx [ :NonVow* :Cons ]/[ :0 | ь:и ]* _ ;
          except
              :Vx [ :NonVow* :Cons ]/[ :0 | %  ]* _ ;
-         where Vx in ( ү э ө о )
-               Vy in ( э э ө о )
+         where Vx in ( ү э ө о у а )
+               Vy in ( э э ө о а а )
          matched ;
 
 "{А} vowel harmony across space" ! e.g., дахь/дэх, but not дөх/дохь
@@ -328,10 +328,11 @@ Vx:0 <=> :NonVow _ %>: (%{г%}:) %{I%}: ;
 !        _ %>: %{А%}: %{А%}: ;
     except
         _ [ %{А%}: | %{I%}: | %{У%}: ]/:0 ;
+        _ [ :Voiced ]/:0 ;
 
 "ь becomes и before {А1} and мнглбвр"
 ь:и <=> _ [ %{А1%}: | %{I%}: | %{У%}: ]/:0 ;
-        _ :Voiced/:0 ;
+        _ [ :Voiced ]/:0 ;
         
 
 !!!! MISC !!!!
