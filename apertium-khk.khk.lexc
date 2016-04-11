@@ -270,7 +270,7 @@ LEXICON Cases-ExtraN
 %<refl%>:%>%{г%}%{А1%}%{А2%} Clit ;  ! this is both nom and acc
 
 %<gen%>:%>%{Н%}%{I%}%{й%} Clit ;
-%<gen%>%<refl%>:%>%{Н%}%{I%}%{й%}нх%>%{А1%}%{А2%} Clit ;
+%<gen%>%<refl%>:%>%{Н%}%{I%}%{й%}х%>%{А1%}%{А2%} Clit ;
 
 %<abl%>:%>%{Н%}%{А1%}%{А2%}с Clit ;
 %<abl%>%<refl%>:%>%{Н%}%{А1%}%{А2%}с%>%{А1%}%{А2%} Clit ;
@@ -284,6 +284,8 @@ LEXICON Cases-ExtraN
 %<dat%>%<attr%>:%{а%}%{Н%}% д%{А%}х%{ь%} Clit ;
 
 %<gens%>:%>%{а%}н # ;
+
+%<dir%>:%>% %{Р%}%{У%}%{У%} Clit ;
 
 LEXICON PrnInfl
 
@@ -531,7 +533,7 @@ LEXICON Nouns
 дасгал Ninfl ; ! "exercise"
 аав Ninfl ; ! "father"
 цэцэг Ninfl ; ! "flower"
-хоол Ninfl ; ! "food"
+хоол:хоол Ninfl-ExtraN ; ! "food"
 сэрээ Ninfl ; ! "fork"
 найз Ninfl ; ! "friend"
 жимс Ninfl ; ! "fruit"
@@ -554,7 +556,8 @@ LEXICON Nouns
 мах Ninfl ; ! "meat"
 өглөө Ninfl ; ! "morning"
 ээж Ninfl ; ! "mother"
-уул Ninfl ; ! "mountain"
+уул:уул Ninfl ; ! "mountain" ! Dir/RL ! CHECK
+уул:уул Ninfl-ExtraN ; ! "mountain"
 хөгжим:хөгж%{а%}м Ninfl ; ! "music"
 нэр Ninfl ; ! "name"
 дэвтэр Ninfl ; ! "notebook"
@@ -722,14 +725,14 @@ LEXICON Nouns
 эрэг:эр%{а%}г Ninfl ; ! "shore, coast"
 тогтоц:тогтоц Ninfl ; ! "formation"
 овоорго:овоорго Ninfl ; ! "accumulation"
-хир:хир Ninfl ; ! "dirt"
+хир:хир Ninfl-ExtraN ; ! "dirt"
 хар:хар Ninfl ; ! "one that's black" ! FIXME: adj.subst?
-хор:хор Ninfl ; ! "poison"
-хур:хур Ninfl ; ! ""
-хүүр:хүүр Ninfl ; ! "dead body"
+хор:хор Ninfl-ExtraN ; ! "poison"
+хур:хур Ninfl ; ! "precipitation"
+хүүр:хүүр Ninfl-ExtraN ; ! "dead body"
 хээр:хээр Ninfl ; ! "chestnut horse"
 хөөр:хөөр Ninfl ; ! ""
-хоор:хоор Ninfl ; ! ""
+хоор:хоор Ninfl-ExtraN ; ! "choir (оросоор хор)"
 хуур:хуур Ninfl ; ! "fiddle"
 хайр:хайр Ninfl ; ! "love"
 харь:харь Ninfl ; ! ""
@@ -739,35 +742,39 @@ LEXICON Nouns
 хөл:хөл Ninfl ; ! "foot"
 хал:хал Ninfl ; ! ""
 хол:хол Ninfl ; ! "far away" ! FIXME: adj.subst
-хул:хул Ninfl ; ! ""
-хийл:хийл Ninfl ; ! "karma"
+хул:хул Ninfl-ExtraN ; ! "~beige"
+хийл:хийл Ninfl ; ! "karma?"
 хийл:хийл Ninfl-ExtraN ; ! "deed"
 хээл:хээл Ninfl ; ! ""
 хууль:хууль Ninfl ; ! ""
 хөө:хөө Ninfl ; ! "soot"
-ир:ир Ninfl ; ! ""
+ир:ир Ninfl-ExtraN ; ! ""
 үр:үр Ninfl ; ! ""
 эр:эр Ninfl ; ! "man" ! FIXME: adj.subst ?
-өр:өр Ninfl ; ! ""
+өр:өр Ninfl-ExtraN ; ! "debt"
+өр:өр Ninfl ; ! "kind of like debt, but more abstract?"
 ар:ар Ninfl ; ! ""
-ор:ор Ninfl ; ! ""
+ор:ор Ninfl-ExtraN ; ! ""
 ур:ур Ninfl ; ! ""
-үүр:үүр Ninfl ; ! ""
+үүр:үүр Ninfl ; ! "dawn"
+үүр:үүр Ninfl-ExtraN ; ! "nest"
 өөр:өөр Ninfl ; ! "other" FIXME: CHECK
-уур:уур Ninfl ; ! ""
+уур:уур Ninfl ; ! "anger"
+уур:уур Ninfl-ExtraN ; ! "fume?"
 ойр:ойр Ninfl ; ! "one that's near"
-урь:урь Ninfl ; ! ""
+урь:урь Ninfl-ExtraN ; ! ""
 ил:ил Ninfl ; ! ""
 өл:өл Ninfl ; ! ""
 ал:ал Ninfl ; ! ""
-ул:ул Ninfl ; ! ""
-үүл:үүл Ninfl ; ! "cloud"
+ул:ул Ninfl-ExtraN ; ! ""
+үүл:үүл Ninfl-ExtraN ; ! "cloud"
 ээл:ээл Ninfl ; ! ""
-үйл:үйл Ninfl ; ! "action"
+үйл:үйл Ninfl-ExtraN ; ! "sewing/action?"
+үйл:үйл Ninfl ; ! "karma/destiny?"
 айл:айл Ninfl ; ! "settlement/camp"
-аль:аль Ninfl ; ! "which one" FIXME: CHECK
+аль:аль Ninfl-ExtraN ; ! "which one" FIXME: CHECK ! probably PRON
 ааль:ааль Ninfl ; ! ""
-ооль:ооль Ninfl ; ! ""
+ооль:ооль Ninfl-ExtraN ; ! ""
 ууль:ууль Ninfl ; ! ""
 
 
