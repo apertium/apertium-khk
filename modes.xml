@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <modes>
 
-  <mode name="khk-twol">
+  <mode name="khk-twol" install="yes">
     <pipeline>
       <program name="hfst-strings2fst -S"/>
       <program name="hfst-compose-intersect">
@@ -11,7 +11,7 @@
     </pipeline>
   </mode>
 
-  <mode name="khk-morph">
+  <mode name="khk-morph" install="yes">
     <pipeline>
       <program name="lt-proc -w">
         <file name="khk.automorf.bin"/>
@@ -19,7 +19,7 @@
     </pipeline>
   </mode>
 
-  <mode name="khk-lexc">
+  <mode name="khk-lexc" install="yes">
     <pipeline>
       <program name="hfst-lookup">
         <file name=".deps/khk.LR.lexc.hfst"/>
@@ -27,7 +27,7 @@
     </pipeline>
   </mode>
 
-  <mode name="khk-gener">
+  <mode name="khk-gener" install="yes">
     <pipeline>
       <program name="lt-proc -g">
         <file name="khk.autogen.bin"/>
@@ -35,7 +35,7 @@
     </pipeline>
   </mode>
 
-  <mode name="khk-tagger">
+  <mode name="khk-tagger" install="yes">
     <pipeline>
       <program name="lt-proc -w">
         <file name="khk.automorf.bin"/>
@@ -46,7 +46,7 @@
     </pipeline>
   </mode>
 
-  <mode name="khk-disam">
+  <mode name="khk-disam" install="yes">
     <pipeline>
       <program name="lt-proc -w">
         <file name="khk.automorf.bin"/>
