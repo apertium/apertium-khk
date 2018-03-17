@@ -30,3 +30,8 @@ tests/variable[!!-~]forms[!!-~]-[!!-~]normal[!!-~]and[!!-~]added[!!-~]n.yaml -te
 tests/variable[!!-~]forms[!!-~]-[!!-~]underlying[!!-~]n[!!-~]and[!!-~]underlying[!!-~]ŋ.yaml -text
 tests/verbs.yaml -text
 tests/ь.yaml -text
+*.dix linguist-language=XML linguist-detectable=true
+*.lrx linguist-language=XML linguist-detectable=true
+*.lsx linguist-language=XML linguist-detectable=true
+*.tsx linguist-language=XML linguist-detectable=true
+*.t[[:digit:]]x linguist-language=XML linguist-detectable=true
