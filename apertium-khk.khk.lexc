@@ -135,6 +135,7 @@ Multichar_Symbols
 %<ger%>       ! future gerund
 %<ger_imp%>   ! imperfective gerund
 %<ger_prf%>   ! perfective gerund
+%<gpr_past%>  ! past tense verbal adjective
 
 !!! Participles
 
@@ -362,6 +363,7 @@ LEXICON Vinfl-Common
 %<gna_prf%>:%>%{г%}%{А1%}%{А2%}д # ;
 %<gna_cnd%>:%>%{В%}%{А%}л # ;
 %<gna_until%>:%>%{Т%}%{А%}л # ;
+%<gpr_past%>:%>с%{а%}н # ;
 
 %<imp%>%<infm%>: # ;
 %<imp%>:%>%{А1%}%{А2%}р%{А%}й # ;     ! simple imperative
