@@ -135,7 +135,6 @@ Multichar_Symbols
 %<ger%>       ! future gerund
 %<ger_imp%>   ! imperfective gerund
 %<ger_prf%>   ! perfective gerund
-%<gpr_past%>  ! past tense verbal adjective
 
 !!! Participles
 
@@ -330,14 +329,14 @@ LEXICON NP-COG-M
 
 LEXICON NP-ORG
 
-%<np%>%<org%>: Cases-Normal ; 
-%<np%>%<org%>%<attr%>: # ; 
+%<np%>%<org%>: Cases-Normal ;
+%<np%>%<org%>%<attr%>: # ;
 
 
 LEXICON NP-TOP
 
-%<np%>%<top%>: Cases-Normal ; 
-%<np%>%<top%>%<attr%>: # ; 
+%<np%>%<top%>: Cases-Normal ;
+%<np%>%<top%>%<attr%>: # ;
 
 LEXICON Vinfl-Common
 
@@ -363,7 +362,6 @@ LEXICON Vinfl-Common
 %<gna_prf%>:%>%{г%}%{А1%}%{А2%}д # ;
 %<gna_cnd%>:%>%{В%}%{А%}л # ;
 %<gna_until%>:%>%{Т%}%{А%}л # ;
-%<gpr_past%>:%>с%{а%}н # ;
 
 %<imp%>%<infm%>: # ;
 %<imp%>:%>%{А1%}%{А2%}р%{А%}й # ;     ! simple imperative
@@ -441,6 +439,8 @@ LEXICON Pronouns
 тийм:тийм PrnInfl ;      ! "one like that"
 ийм:ийм PrnInfl ;        ! "one like this"
 бүгд:бүгд PrnInfl ;      ! "everyone"
+нөгөө:нөг PrnInfl ;         ! "other one"
+
 
 LEXICON Determiners
 
@@ -760,7 +760,7 @@ LEXICON Nouns
 ур:ур Ninfl ; ! ""
 үүр:үүр Ninfl ; ! "dawn"
 үүр:үүр Ninfl-ExtraN ; ! "nest"
-өөр:өөр Ninfl ; ! "other" FIXME: CHECK
+өөр:өөр Ninfl ; ! "other"
 уур:уур Ninfl ; ! "anger"
 уур:уур Ninfl-ExtraN ; ! "fume?"
 ойр:ойр Ninfl ; ! "one that's near"
@@ -778,6 +778,11 @@ LEXICON Nouns
 ааль:ааль Ninfl ; ! ""
 ооль:ооль Ninfl-ExtraN ; ! ""
 ууль:ууль Ninfl ; ! ""
+дайсан:дайсан Ninfl ; ! "enemy, rival"
+өвчин:өвчин Ninfl ; ! "disease, illness"
+ариун цэвэр:ариун цэвэр Ninfl ; ! "sanitary"
+ажил хөдөлмөр:ажил хөдөлмөр Ninfl ; ! "labour"
+эрдэм ном:эрдэм ном Ninfl ; ! "knowledge, learning"
 
 
 
@@ -874,6 +879,10 @@ LEXICON Verbs
 уйл:уйл Vinfl-IV ; ! "cry"
 оль:оль Vinfl-TV ; ! "gore"
 уль:уль Vinfl-IV ; ! "yawn, wail, moan"
+эрхэмлэх:эрхэмлэх Vinfl-IV ; ! "value, prize"
+оролцох:оролцох Vinfl-IV ; ! "participate, take part in"
+суралцах:суралцах Vinfl-IV ; ! "study"
+сэргийлэх:сэргийлэх Vinfl-IV ; ! "be cautious, guard against, prevent"
 
 
 
@@ -910,7 +919,7 @@ LEXICON Postpositions
 тухай:тухай Postp ;    ! "about"
 гадна:гадна Postp ;    ! "outside"
 төлөө:төлөө Postp ;    !
-тулд:тулд Postp ;      ! 
+тулд:тулд Postp ;      !
 хүртэл:хүртэл Postp ;  ! "until"
 хойш:хойш Postp ;      ! "since"
 хувьд:хувьд Postp ;    ! "regarding"
@@ -941,6 +950,9 @@ LEXICON Adverbs
 хамгийн:хамгийн Adv ; ! "most"
 бүхий:бүхий Adv ; ! "entirely, fully"
 маш:маш Adv ; ! "very (with other adv)"
+үргэлж:үргэлж Adv ; ! "constant, always, constantly, continually"
+хэзээд:хэзээд Adv ; ! "all the time"
+
 
 
 LEXICON Adjectives
@@ -976,6 +988,12 @@ LEXICON Adjectives
 үндсэн:үндс%{а%}н Adj ; ! "basic, fundamental"
 эсрэг:эсрэг Adj ; ! "reverse"
 алдартай:алдартай Adj ; ! "famous"
+хэрэгтэй:хэрэгтэй Adj ; ! "necessary"
+залхуу:залхуу Adj ; ! "lazy, idly"
+эргүү:эргүү Adj ; ! "foolish, stupid"
+халшралгүй:халшралгүй Adj ; ! "without reluctanc"
+
+
 
 
 зүүн:зүүн Adj ; ! "east"
@@ -1045,4 +1063,3 @@ LEXICON ProperNouns
 %)%<rpar%>:%) # ;
 %\%<sent%>:%\ # ;
 %/%<sent%>:%/ # ;
-
