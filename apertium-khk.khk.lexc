@@ -783,7 +783,9 @@ LEXICON Nouns
 ариун% цэвэр:ариун% цэвэр Ninfl ; ! "sanitary"
 ажил% хөдөлмөр:ажил% хөдөлмөр Ninfl ; ! "labour"
 эрдэм% ном:эрдэм% ном Ninfl ; ! "knowledge, learning"
-
+хүн:хүн Ninfl ; ! ""
+баатар:баатар Ninfl ; ! "hero"
+зайрмаг:зайрмаг Ninfl ; ! "icecream"
 
 
 LEXICON Verbs
@@ -883,6 +885,8 @@ LEXICON Verbs
 оролцох:оролцох Vinfl-IV ; ! "participate, take part in"
 суралцах:суралцах Vinfl-IV ; ! "study"
 сэргийлэх:сэргийлэх Vinfl-IV ; ! "be cautious, guard against, prevent"
+идэх:идэх Vinfl-IV ; ! "to eat"
+дуртай:дуртай Vinfl-IV ; ! "to like"
 
 
 
