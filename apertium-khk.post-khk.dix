@@ -4,6 +4,16 @@
 
   <sdefs>
     <sdef n="n" c="Noun"/>
+
+    <sdef n="sg"/>
+    <sdef n="pl"/>
+    <sdef n="vblex"/>
+    <sdef n="pri"/>
+    <sdef n="prn"/>
+    <sdef n="subj"/>
+    <sdef n="p1"/>
+
+
   </sdefs>
 
   <pardefs>
@@ -24,7 +34,18 @@
         <i>u</i>
       </e>
     </pardef>
-  </pardefs>
+    <pardef n="дайсан__n">
+       <e><p><l/><r><s n="n"/><s n="sg"/></r></p></e>
+       <e><p><l>ууд</l><r><s n="n"/><s n="pl"/></r></p></e>
+    </pardef>
+    <pardef n="зайрмаг__n">
+        <e><p><l/><r><s n="n"/><s n="sg"/></r></p></e>
+        <e><p><l>ууд</l><r><s n="n"/><s n="pl"/></r></p></e>
+    </pardef>
+    <pardef n="сэргийл/эх__vblex">
+        <e><p><l>эх</l><r>эх<s n="vblex"/><s n="pri"/></r></p></e>
+    </pardef>
+</pardefs>
 
   <section id="main" type="standard">
     <!-- Define entries within <e> here. See http://wiki.apertium.org/wiki/Post-generator for more information.-->
@@ -35,6 +56,9 @@
       </p>
       <par n="vocals"/>
     </e>
+    <e lm="дайсан"><i>дайсан</i><par n="дайсан__n"/></e>
+    <e lm="зайрмаг"><i>зайрмаг</i><par n="зайрмаг__n"/></e>
+    <e lm="сэргийлэх"><i>сэргийл</i><par n="сэргийл/эх__vblex"/></e>
+
   </section>
 </dictionary>
-
