@@ -1,7 +1,0 @@
-prefix=/usr/local
-exec_prefix=${prefix}
-srcdir=${prefix}/share/apertium/apertium-khk
-
-Name: apertium-khk
-Description: Finite-state morphological transducer and constraint grammar for Khalkha (Mongolian)
-Version: 0.1.0
