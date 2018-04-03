@@ -13,3 +13,6 @@
 /.DS_Store
 /ap_include.am
 /apertium-khk.pc
+/.gz
+/.bin
+/.hfst
