@@ -11,3 +11,5 @@
 /install-sh
 /missing
 /.DS_Store
+/ap_include.am
+/apertium-khk.pc

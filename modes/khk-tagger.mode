@@ -1,0 +1,4 @@
+
+      
+    lt-proc -w '/Users/anarsaikhan/Desktop/V2/apertium-khk/khk.automorf.bin' | cg-proc -w '/Users/anarsaikhan/Desktop/V2/apertium-khk/khk.rlx.bin' 
+  
