@@ -1,4 +1,0 @@
-
-      
-    lt-proc -w '/Users/anarsaikhan/Desktop/V2/apertium-khk/khk.automorf.bin' | cg-conv -a| vislcg3 --trace --grammar '/Users/anarsaikhan/Desktop/V2/apertium-khk/khk.rlx.bin' 
-  
