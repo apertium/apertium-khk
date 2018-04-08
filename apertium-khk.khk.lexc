@@ -593,41 +593,41 @@ LEXICON Nouns
 бууз:бууз Ninfl ; ! "steamed meat dumpling"
 дэлгүүр:дэлгүүр Ninfl ; ! "store"
 ширээ:ширээ Ninfl-ExtraN ; ! "table"
-багш Ninfl ; ! "teacher"
-зангиа Ninfl ; ! "tie"
+багш:багш Ninfl ; ! "teacher"
+зангиа:зангиа Ninfl ; ! "tie"
 тоглоом:тоглоом Ninfl ; ! "toy, game"
-ногоо Ninfl ; ! "vegetable"
-ус Ninfl ; ! "water"
-эхнэр Ninfl ; ! "wife"
-цонх Ninfl ; ! "window"
-үг Ninfl ; ! "word"
+ногоо:ногоо Ninfl ; ! "vegetable"
+ус:ус Ninfl ; ! "water"
+эхнэр:эхнэр Ninfl ; ! "wife"
+цонх:цонх Ninfl ; ! "window"
+үг:үг Ninfl ; ! "word"
 ажил:аж%{а%}л Ninfl ; ! "work"
-жил Ninfl ; ! "year"
+жил:жил Ninfl ; ! "year"
 дүү:дүү Ninfl ; ! "younger sibling"
-тэмээ Ninfl-ExtraN ; ! "camel"
-илжиг Ninfl ; ! "donkey"
-буга Ninfl ; ! "deer"
-заан Ninfl ; ! "elephant"
-хулан Ninfl ; ! "wild asian ass / onager"
-цаас Ninfl ; ! "paper"
+тэмээ:тэмээ Ninfl-ExtraN ; ! "camel"
+илжиг:илжиг Ninfl ; ! "donkey"
+буга:буга Ninfl ; ! "deer"
+заан:заан Ninfl ; ! "elephant"
+хулан:хулан Ninfl ; ! "wild asian ass / onager"
+цаас:цаас Ninfl ; ! "paper"
 эзэн:эз%{а%}н Ninfl ; ! "master/lord"
 газар:газ%{а%}р Ninfl ; ! "place, land"
 хүн:хүн Ninfl-NoPl ; ! "person"
 хүн:хүмүүс Ninfl-Pl ; ! "person"
-үе Ninfl ; ! "time"
-үе Ninfl-ExtraN ; ! "joint"
-дуу Ninfl ; ! "song"
-нутаг Ninfl ; ! "homeland"
-гэр Ninfl ; ! "home"
-хот Ninfl ; ! "city"
-зүрх Ninfl ; ! "heart"
-ам Ninfl ; ! "mouth"
+үе:үе Ninfl ; ! "time"
+үе:үе Ninfl-ExtraN ; ! "joint"
+дуу:дуу Ninfl ; ! "song"
+нутаг:нутаг Ninfl ; ! "homeland"
+гэр:гэр Ninfl ; ! "home"
+хот:хот Ninfl ; ! "city"
+зүрх:зүрх Ninfl ; ! "heart"
+ам:ам Ninfl ; ! "mouth"
 бие:бие Ninfl ; ! "body"
-хэл Ninfl ; ! "tongue, language"
-толгой Ninfl-ExtraN ; ! "head"
+хэл:хэл Ninfl ; ! "tongue, language"
+толгой:толгой Ninfl-ExtraN ; ! "head"
 юм:юм Ninfl ; ! "thing"
 !учир Ninfl ; ! "cause, reason"
-ёс Ninfl ; ! "culture"?
+ёс:ёс Ninfl ; ! "culture"?
 баяр:баяр Ninfl ; ! "happiness/luck/fortune"
 мах:мах Ninfl-ExtraN ; ! "meat"
 цай:цай Ninfl-ExtraN ; ! "tea"
@@ -646,7 +646,7 @@ LEXICON Nouns
 сар:сар%{ъ%} Ninfl ; ! "month"
 сар:сар Ninfl-ExtraN ; ! "moon"
 мэлхий Ninfl-ExtraN ; ! "turtle"
-ажил Ninfl ; ! "work"
+ажил:ажил Ninfl ; ! "work"
 далай:далай Ninfl ; ! "sea"
 оршил:орш%{а%}л Ninfl ; ! "introduction"
 тойм Ninfl ; ! "report/review/summary?"
@@ -713,7 +713,6 @@ LEXICON Nouns
 байдал:байд%{а%}л Ninfl ; ! "character, degree"
 нутаг:нут%{а%}г Ninfl ; ! "homeland"
 тус:тус Ninfl ; ! "utility; same" CHECK
-аж% ахуй:аж% ахуй Ninfl ; ! "economy, economics"
 мөрөн:мөр%{а%}н Ninfl ; ! "мөрөн"
 хагас:хагас Ninfl ; ! "half"
 гүр:гүр Ninfl-ExtraN ; ! "magnet" CHECK
@@ -795,7 +794,6 @@ LEXICON Nouns
 дайн:дайн Ninfl ; ! "war"
 энх:энх Ninfl ; ! "peace"
 улирал:улирал Ninfl ; ! "season"
-аж ахуй:аж ахуй Ninfl ; ! "industry"
 суурь:суурь Ninfl ; ! "base"
 ааруул:ааруул Ninfl ; ! "dried curd"
 зуд:зуд Ninfl ; ! "disaster"
@@ -814,16 +812,10 @@ LEXICON Nouns
 гэм:гэм Ninfl ; ! "guilt"
 сургааль:сургааль Ninfl ; ! "life lesson"
 туслах:туслах Ninfl ; ! "help"
-
-
-
-
-
-
-
-
-
-
+гамшиг:гамшиг Ninfl ; ! "disaster"
+хуш:хуш Ninfl ; ! "tree spec"
+шийдвэр:шийдвэр Ninfl ; ! "decision"
+арга:арга Ninfl ; ! "method"
 
 
 LEXICON Verbs
@@ -926,9 +918,6 @@ LEXICON Verbs
 дуртай:дуртай Vinfl-IV ; ! "to like"
 
 
-
-
-
 LEXICON Conjunctions
 
 бөгөөд:бөгөөд ConjCoo ; ! "along with" ?
@@ -978,6 +967,8 @@ LEXICON Adverbs
 
 сайн:сайн Adv ; ! "well"
 их:их Adv ; ! "very"
+тун:тун Adv ; ! "very"
+онцгой:онцгой Adv ; ! "special"
 дахин:дахин Adv ; ! "again"
 одоо:одоо Adv ; ! "now"
 сая:сая Adv ; ! "just now"
@@ -993,7 +984,8 @@ LEXICON Adverbs
 маш:маш Adv ; ! "very (with other adv)"
 үргэлж:үргэлж Adv ; ! "constant, always, constantly, continually"
 хэзээд:хэзээд Adv ; ! "all the time"
-
+нэн:нэн Adv ; ! "very"
+удаан:удаан Adv ; ! "slowly"
 
 
 LEXICON Adjectives
@@ -1034,12 +1026,12 @@ LEXICON Adjectives
 эргүү:эргүү Adj ; ! "foolish, stupid"
 халшралгүй:халшралгүй Adj ; ! "without reluctanc"
 хайртай:хайртай Adj ; ! "loved"
-хүйтэн:хүйтэн Adj ; ! "cold’’
-
-
-
-
-
+хүйтэн:хүйтэн Adj ; ! "cold"
+сонирхолтой:сонирхолтой Adj ; ! "interesting"
+сонин:сонин Adj ; ! "interesting"
+ховор:ховор Adj ; ! "rare"
+балчир:балчир Adj ; ! "young"
+гайхалтай:гайхалтай Adj ; ! "amazing"
 зүүн:зүүн Adj ; ! "east"
 хойд:хойд Adj ; ! "north"
 баруун:баруун Adj ; ! "west"
