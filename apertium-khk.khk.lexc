@@ -595,7 +595,7 @@ LEXICON Nouns
 ширээ:ширээ Ninfl-ExtraN ; ! "table"
 багш Ninfl ; ! "teacher"
 зангиа Ninfl ; ! "tie"
-тоглоом Ninfl ; ! "toy, game"
+тоглоом:тоглоом Ninfl ; ! "toy, game"
 ногоо Ninfl ; ! "vegetable"
 ус Ninfl ; ! "water"
 эхнэр Ninfl ; ! "wife"
@@ -622,10 +622,10 @@ LEXICON Nouns
 хот Ninfl ; ! "city"
 зүрх Ninfl ; ! "heart"
 ам Ninfl ; ! "mouth"
-бие Ninfl ; ! "body"
+бие:бие Ninfl ; ! "body"
 хэл Ninfl ; ! "tongue, language"
 толгой Ninfl-ExtraN ; ! "head"
-юм Ninfl ; ! "thing"
+юм:юм Ninfl ; ! "thing"
 !учир Ninfl ; ! "cause, reason"
 ёс Ninfl ; ! "culture"?
 баяр:баяр Ninfl ; ! "happiness/luck/fortune"
@@ -791,6 +791,40 @@ LEXICON Nouns
 хавар:хавар Ninfl ; ! "spring"
 шавар:шавар Ninfl ; ! "mud"
 бөмбөрцөг:бөмбөрцөг Ninfl ; ! "globe"
+гариг:гариг Ninfl ; ! "planet"
+дайн:дайн Ninfl ; ! "war"
+энх:энх Ninfl ; ! "peace"
+улирал:улирал Ninfl ; ! "season"
+аж ахуй:аж ахуй Ninfl ; ! "industry"
+суурь:суурь Ninfl ; ! "base"
+ааруул:ааруул Ninfl ; ! "dried curd"
+зуд:зуд Ninfl ; ! "disaster"
+бүтээл:бүтээл Ninfl ; ! "invention"
+хуш:хуш Ninfl ; ! "cedar"
+амьдрал:амьдрал Ninfl ; ! "life"
+жүжиг:жүжиг Ninfl ; ! "drama"
+авьяас:авьяас Ninfl ; ! "talent"
+маргааш:маргааш Ninfl ; ! "tomorrow"
+өнөөдөр:өнөөдөр Ninfl ; ! "today"
+ямаа:ямаа Ninfl ; ! "goat"
+ургамал:ургамал Ninfl ; ! "plant"
+тэмдэг:тэмдэг Ninfl ; ! "sign"
+тараг:тараг Ninfl ; ! "yogurt"
+шөнө:шөнө Ninfl ; ! "night"
+гэм:гэм Ninfl ; ! "guilt"
+сургааль:сургааль Ninfl ; ! "life lesson"
+туслах:туслах Ninfl ; ! "help"
+
+
+
+
+
+
+
+
+
+
+
 
 LEXICON Verbs
 
@@ -799,7 +833,7 @@ LEXICON Verbs
 үз Vinfl-TV ; ! "see"
 хар:хар%{ъ%} Vinfl-TV ; ! "look at"
 гэ Vinfl-IV ; ! "say" / quotative marker
-ав Vinfl-TV ; ! "take"
+ав:ав Vinfl-TV ; ! "take"
 ир:ир%{ъ%} Vinfl-IV ; ! "come"
 яв:яв%{ъ%} Vinfl-IV ; ! "go"
 оч:оч Vinfl-IV ; ! "go"
@@ -1000,6 +1034,8 @@ LEXICON Adjectives
 эргүү:эргүү Adj ; ! "foolish, stupid"
 халшралгүй:халшралгүй Adj ; ! "without reluctanc"
 хайртай:хайртай Adj ; ! "loved"
+хүйтэн:хүйтэн Adj ; ! "cold’’
+
 
 
 
