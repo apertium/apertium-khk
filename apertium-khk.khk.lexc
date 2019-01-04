@@ -821,34 +821,34 @@ LEXICON Nouns
 LEXICON Verbs
 
 бол:бол Vinfl-IV ; ! "be"
-бай Vinfl-IV ; ! "be"
-үз Vinfl-TV ; ! "see"
+бай:бай Vinfl-IV ; ! "be"
+үз:үз Vinfl-TV ; ! "see"
 хар:хар%{ъ%} Vinfl-TV ; ! "look at"
-гэ Vinfl-IV ; ! "say" / quotative marker
+гэ:гэ Vinfl-IV ; ! "say" / quotative marker  ! FIXME: with э?
 ав:ав Vinfl-TV ; ! "take"
 ир:ир%{ъ%} Vinfl-IV ; ! "come"
 яв:яв%{ъ%} Vinfl-IV ; ! "go"
 оч:оч Vinfl-IV ; ! "go"
-өг Vinfl-TV ; ! "give"
-тэг Vinfl-IV ; ! "do such"
-ингэ Vinfl-IV ; ! "do thus"
+өг:өг Vinfl-TV ; ! "give"
+тэг:тэг Vinfl-IV ; ! "do such"
+ингэ:ингэ Vinfl-IV ; ! "do thus" ! FIXME: with э?
 барь:барь Vinfl-TV ; ! "grab"
-сонс Vinfl-IV ; ! "listen"  FIXME: IV/TV?
-бос Vinfl-IV ; ! "stand"
-чад Vinfl-IV ; ! "be able to" FIXME: IV/TV?
+сонс:сонс Vinfl-IV ; ! "listen"  FIXME: IV/TV?
+бос:бос Vinfl-IV ; ! "stand"
+чад:чад Vinfl-IV ; ! "be able to" FIXME: IV/TV?
 ярь:ярь Vinfl-IV ; ! "speak"
 гар:гар Vinfl-IV ; ! "leave"
-ол Vinfl-TV ; ! "find"
-хай Vinfl-TV ; ! "look for"
-март Vinfl-TV ; ! "forget"
+ол:ол Vinfl-TV ; ! "find"
+хай:хай Vinfl-TV ; ! "look for"
+март:март Vinfl-TV ; ! "forget"
 тавь:тавь Vinfl-TV ; ! "put"
-хий Vinfl-TV ; ! "do/make/put in"
-хэл Vinfl-IV ; ! "say"
+хий:хий Vinfl-TV ; ! "do/make/put in"
+хэл:хэл Vinfl-IV ; ! "say"
 хүр:хүр Vinfl-TV ; ! "reach"
-амьдрах:амьдрах Vinfl-IV ; ! "live"
-ажилл Vinfl-IV ; ! "work"
-эхэл Vinfl-IV ; ! "begin"
-дуус Vinfl-IV ; ! "finish"
+амьдр:амьдр Vinfl-IV ; ! "live"
+ажилл:ажилл Vinfl-IV ; ! "work"
+эхэл:эхэл Vinfl-IV ; ! "begin"
+дуус:дуус Vinfl-IV ; ! "finish"
 гар:гар Vinfl-IV ; ! "leave"
 ор:ор%{ъ%} Vinfl-IV ; ! "go/come in, enter"
 зар:зар%{ъ%} Vinfl-TV; ! "announce for sale" ??
@@ -899,7 +899,7 @@ LEXICON Verbs
 ор:ор Vinfl-IV ; ! "enter"
 ур:ур Vinfl-TV ; ! "pull?"
 үүр:үүр Vinfl-TV ; ! "carry on the back"
-ээр:ээр Vinfl-IV ; ! "stammer"ш
+ээр:ээр Vinfl-IV ; ! "stammer"
 аар:аар Vinfl-IV ; ! "get dry (of mouth)"
 үйр:үйр Vinfl-IV ; ! "crumble" TV: үйрүүл
 урь:урь Vinfl-TV ; ! "invite"
@@ -911,11 +911,11 @@ LEXICON Verbs
 уйл:уйл Vinfl-IV ; ! "cry"
 оль:оль Vinfl-TV ; ! "gore"
 уль:уль Vinfl-IV ; ! "yawn, wail, moan"
-эрхэмлэх:эрхэмлэх Vinfl-IV ; ! "value, prize"
-оролцох:оролцох Vinfl-IV ; ! "participate, take part in"
-суралцах:суралцах Vinfl-IV ; ! "study"
-сэргийлэх:сэргийлэх Vinfl-IV ; ! "be cautious, guard against, prevent"
-дуртай:дуртай Vinfl-IV ; ! "to like"
+эрхэмл:эрхэмл Vinfl-IV ; ! "value, prize"
+оролц:оролц Vinfl-IV ; ! "participate, take part in"  ! Der/Coop
+суралц:суралц Vinfl-IV ; ! "study"  ! Der/Coop
+сэргийлэх:сэргийл Vinfl-IV ; ! "be cautious, guard against, prevent"
+асуу:асуу Vinfl-TV ; ! "ask"
 
 
 LEXICON Conjunctions
