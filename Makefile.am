@@ -2,8 +2,6 @@
 ## Makefile for apertium-khk
 ###############################################################################
 
-RELEASE=0.1
-VERSION=0.1.0
 LANG1=khk
 BASENAME=apertium-$(LANG1)
 
@@ -141,7 +139,7 @@ if HAVE_HFSTOSPELL
 EXTRA_TARGETS += $(LANG1).zhfst
 endif # HAVE_HFSTOSPELL
 
-apertium_khk_DATA=$(TARGETS_COMMON) $(EXTRA_TARGETS)
+apertium_khk_DATA=$(TARGETS_COMMON) $(LANG1).prob $(EXTRA_TARGETS)
 
 pkgconfigdir = $(prefix)/share/pkgconfig
 pkgconfig_DATA = $(BASENAME).pc
@@ -149,7 +147,6 @@ pkgconfig_DATA = $(BASENAME).pc
 noinst_DATA=modes/$(LANG1)-morph.mode
 
 install-data-local: install-modes
-	test -d $(DESTDIR)$(apertium_khk_srcdir) || mkdir -p $(DESTDIR)$(apertium_khk_srcdir)
 	$(INSTALL_DATA) $(BASENAME).$(LANG1).lexc $(DESTDIR)$(apertium_khk_srcdir)
 	$(INSTALL_DATA) $(BASENAME).$(LANG1).twol $(DESTDIR)$(apertium_khk_srcdir)
 	$(INSTALL_DATA) $(BASENAME).$(LANG1).rlx $(DESTDIR)$(apertium_khk_srcdir)
@@ -172,4 +169,3 @@ test: all
 	@echo "TODO test analysis results" > .test-ref
 	@diff .test-ref .test-mt
 	@rm .test-ref .test-mt
-
