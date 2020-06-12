@@ -1,0 +1,174 @@
+
+Alphabet 
+
+ А:ɑ А:ː
+ Б:p
+ В:w
+ Г:k Г:q Г:ʁ
+ Д:t
+ Ж:ʤ
+ З:ʦ
+ И:i
+ Й:i Й:e Й:ː
+ К:k
+ Л:ɮ
+ М:m
+ Н:n Н:ŋ
+ О:ɔ О:ː
+ Ө:o Ө:ː
+ П:p
+ Р:ɾ
+ С:s
+ Т:t
+ У:ʊ У:ː
+ Ү:u Ү:ː
+ Ф:f
+ Х:x
+ Ч:ʧ
+ Ц:ʦ
+ Ш:ʃ
+ Ь:ʲ
+ Ы:i
+ Ъ:0
+ Э:e Э:ː
+ Я:ɑ
+ Е:e
+ Ё:o Ё:ɔ
+ Ю:u
+
+ а:ɑ а:ː
+ б:p
+ в:w
+ г:k г:q г:ʁ
+ д:t
+ ж:ʤ
+ з:ʦ
+ и:i
+ й:i й:e й:ː
+ к:k
+ л:ɮ
+ м:m
+ н:n н:ŋ
+ о:ɔ о:ː
+ ө:o ө:ː
+ п:p
+ р:ɾ
+ с:s
+ т:t
+ у:ʊ у:ː
+ ү:u ү:ː
+ ф:f
+ х:x
+ ч:ʧ
+ ц:ʦ
+ ш:ʃ
+ ь:ʲ
+ ы:i
+ ъ:0
+ э:e э:ː
+ я:ɑ
+ е:e
+ ё:o ё:ɔ
+ ю:u
+
+
+ %{j%}:j
+ %{ʰ%}:ʰ
+
+ %{ʲ%}:ʲ %{ʲ%}:0
+
+ %{ˈ%}:0    ! no stress for now
+! %{ˈ%}:ˈ
+ 
+ ;
+
+
+Sets 
+
+Vow = и ү е э ө а о у ы 
+      И Ү Е Э Ө А О У Ы ;
+
+IPAVow = ɑ e i ɔ o ʊ u ;
+
+backVow = а о у
+          А О У ;
+
+lowVow = а о э ө
+         А О Э Ө ;
+
+Cons = б в г д ж з й к л м н п р с т ф х ц ч ш щ я е ё
+       Б В Г Д Ж З Й К Л М Н П Р С Т Ф Х Ц Ч Ш Щ Я Е Ё ;
+
+IPACons = p w k ɣ ʁ q t ʧ ʦ j ɮ m n ŋ ɾ s f x ʃ ʰ ;
+
+frontConsCyr = к г
+               К Г ;
+
+Nasal = Н М
+        н м ;
+
+
+Rules 
+
+"long vowel only after identical vowel in first syllable"
+VowY:ː <=> .#. [ :IPACons* VowX: ]/[ :0 - VowX: ]* _ ;
+       where
+           VowX in ( а э о ө ү у и )
+           VowY in ( а э о ө ү у й )
+       matched ;
+
+"no long vowels except in first syllable"
+VowY:0 <=> VowX:/[ %{ˈ%}: ]* _ ;
+       except
+           .#. [ :IPACons* Vow: ]/[ :0 ]* _ ;
+       where
+           VowX in ( а э о ө ) ! ү у )
+           VowY in ( а э о ө ) ! ү у )
+       matched ;
+
+"no long i except in first syllable"
+й:0 <=> и:/[ %{ˈ%}: ]* _ ;
+    except
+        .#. [ :IPACons* и: ]/[ :0 ]* _ ;
+
+"diphthongs second element"
+й:VowY <=> :VowX/:0* _ ;
+       where
+           VowX in ( ɑ )
+           VowY in ( e )
+       matched ;
+
+"short vowels in non-initial syllables are ə"
+VowX:ə <=> :IPACons/[ %{ˈ%}: | %{ʰ%}: | %{ʲ%}: ] _ :IPACons/[ %{ˈ%}: | %{ʰ%}: | %{ʲ%}: ] ;
+       except
+           .#. [ :IPACons/[ %{ˈ%}: | %{ʰ%}: | %{ʲ%}: ]* ]* ( Vow:/[ :0 - Vow: ]* ) _ ;
+			  _ %{ˈ%}: й: ;
+!           VowX: :* [ :IPACons* :IPACons ]/:0* _ .#. ;
+       where
+           VowX in ( а э о ө и ) ;
+
+"Single short low vowels at end of words not pronounced"
+!lowVow:0 <=> :IPACons _ .#. ;
+VowX:0 <=> VowX: :* [ :IPACons* ]/:0* :IPACons/[ %{ˈ%}: ]* _ .#. ;
+       where
+           VowX in ( о а э ө ) ;
+
+"н is ŋ at end of word and before г"
+н:ŋ <=> _ .#. ;
+		  _ г:/[ %{ˈ%}: | %{ʲ%}: | %{ʰ%}: ] ;
+
+"no ʲ word-initially or before иV sequence or between vowels"
+%{ʲ%}:0 <=> .#. _ ;
+            _ :IPAVow/[ %{ˈ%}: ] ;
+!            _ [ и: :IPAVow ]/:0* ;  ! need to get иа:ɑː first
+
+
+! The following rules for г probably need some work
+"г as q only before back vowels"
+г:q <=> _ backVow:/[ %{ˈ%}: ] .#. ;
+    except
+        backVow:/[ %{ˈ%}: | %{ʰ%}: | %{ʲ%}: ] _ backVow:/[ %{ˈ%}: ]  ;
+
+"г as ʁ only between back vowels"
+г:ʁ <=> backVow:/[ %{ˈ%}: | %{ʰ%}: | %{ʲ%}: ] _ backVow:/[ %{ˈ%}: ]  ;
+
