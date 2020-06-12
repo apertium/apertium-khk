@@ -1,7 +1,7 @@
 
 Alphabet 
 
- А:ɑ А:ː
+ А:ɑ А:ː А:a
  Б:p
  В:w
  Г:k Г:q Г:ʁ
@@ -14,7 +14,7 @@ Alphabet
  Л:ɮ
  М:m
  Н:n Н:ŋ
- О:ɔ О:ː
+ О:ɔ О:ː О:ɶ
  Ө:o Ө:ː
  П:p
  Р:ɾ
@@ -36,7 +36,7 @@ Alphabet
  Ё:o Ё:ɔ
  Ю:u
 
- а:ɑ а:ː
+ а:ɑ а:ː а:a
  б:p
  в:w
  г:k г:q г:ʁ
@@ -49,7 +49,7 @@ Alphabet
  л:ɮ
  м:m
  н:n н:ŋ
- о:ɔ о:ː
+ о:ɔ о:ː о:ɶ
  ө:o ө:ː
  п:p
  р:ɾ
@@ -96,6 +96,9 @@ backVow = а о у
 lowVow = а о э ө
          А О Э Ө ;
 
+Jot = ё я ю
+      Ё Я Ю ;
+
 Cons = б в г д ж з й к л м н п р с т ф х ц ч ш щ я е ё
        Б В Г Д Ж З Й К Л М Н П Р С Т Ф Х Ц Ч Ш Щ Я Е Ё ;
 
@@ -111,10 +114,12 @@ Nasal = Н М
 Rules 
 
 "long vowel only after identical vowel in first syllable"
-VowY:ː <=> .#. [ :IPACons* VowX: ]/[ :0 - VowX: ]* _ ;
+VowY:ː <=> .#. [ :IPACons* VowX: ]/[ :0 - Vow: ]* _ ;
+       except
+           _ й:/:0* ;
        where
-           VowX in ( а э о ө и ү у )
-           VowY in ( а э о ө й ү у )
+           VowX in ( а э о ө и ү у я ё ю )
+           VowY in ( а э о ө й ү у а о у )
        matched ;
 
 "let's give non-σ1 long у|ү a half length mark, since there can be short ones there too that aren't really reduced to ə"
@@ -130,6 +135,7 @@ VowY:ˑ <=> VowX:/[ %{ˈ%}: ]* _ ;
 VowY:0 <=> VowX:/[ %{ˈ%}: ]* _ ;
        except
            .#. [ :IPACons* Vow: ]/[ :0 ]* _ ;
+           _ й:/:0* ;
        where
            VowX in ( а э о ө ) ! ү у )
            VowY in ( а э о ө ) ! ү у )
@@ -143,9 +149,16 @@ VowY:0 <=> VowX:/[ %{ˈ%}: ]* _ ;
 "diphthongs second element"
 й:VowY <=> :VowX/:0* _ ;
        where
-           VowX in ( ɑ )
-           VowY in ( e )
+           VowX in ( a ɶ )
+           VowY in ( e e )
        matched ;
+
+"diphthongs first element"
+VowX:VowY <=> _ й:/:0* ;
+          where
+              VowX in ( а о )
+              VowY in ( a ɶ )
+          matched ;
 
 "short vowels in non-initial syllables are ə"
 VowX:ə <=> :IPACons/[ %{ˈ%}: | %{ʰ%}: | %{ʲ%}: ] _ :IPACons/[ %{ˈ%}: | %{ʰ%}: | %{ʲ%}: ] ;
@@ -174,10 +187,12 @@ VowX:0 <=> VowX: :* [ :IPACons* ]/:0* :IPACons/[ %{ˈ%}: ]* _ .#. ;
 
 ! The following rules for г probably need some work
 "г as q only before back vowels"
-г:q <=> _ backVow:/[ %{ˈ%}: ] .#. ;
+г:q <=> _ backVow:/[ %{ˈ%}: | %{ʰ%}: | %{ʲ%}: ] ;
+        backVow:/[ %{ˈ%}: | %{ʰ%}: | %{ʲ%}: ] _ backVow:/[ %{ˈ%}: ] .#. ;
     except
         backVow:/[ %{ˈ%}: | %{ʰ%}: | %{ʲ%}: ] _ backVow:/[ %{ˈ%}: ]  ;
 
 "г as ʁ only between back vowels"
 г:ʁ <=> backVow:/[ %{ˈ%}: | %{ʰ%}: | %{ʲ%}: ] _ backVow:/[ %{ˈ%}: ]  ;
-
+    except
+        backVow:/[ %{ˈ%}: | %{ʰ%}: | %{ʲ%}: ] _ backVow:/[ %{ˈ%}: ] .#. ;
