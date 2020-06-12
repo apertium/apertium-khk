@@ -113,8 +113,17 @@ Rules
 "long vowel only after identical vowel in first syllable"
 VowY:ː <=> .#. [ :IPACons* VowX: ]/[ :0 - VowX: ]* _ ;
        where
-           VowX in ( а э о ө ү у и )
-           VowY in ( а э о ө ү у й )
+           VowX in ( а э о ө и ү у )
+           VowY in ( а э о ө й ү у )
+       matched ;
+
+"let's give non-σ1 long у|ү a half length mark, since there can be short ones there too that aren't really reduced to ə"
+VowY:ˑ <=> VowX:/[ %{ˈ%}: ]* _ ;
+       except
+           .#. [ :IPACons* Vow: ]/[ :0 ]* _ ;
+       where
+           VowX in ( ү у )
+           VowY in ( ү у )
        matched ;
 
 "no long vowels except in first syllable"
@@ -159,7 +168,7 @@ VowX:0 <=> VowX: :* [ :IPACons* ]/:0* :IPACons/[ %{ˈ%}: ]* _ .#. ;
 
 "no ʲ word-initially or before иV sequence or between vowels"
 %{ʲ%}:0 <=> .#. _ ;
-            _ :IPAVow/[ %{ˈ%}: ] ;
+            :IPAVow/[ %{ˈ%}: ] _ :IPAVow/[ %{ˈ%}: ] ;
 !            _ [ и: :IPAVow ]/:0* ;  ! need to get иа:ɑː first
 
 
