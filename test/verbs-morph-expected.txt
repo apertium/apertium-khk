@@ -1,0 +1,36 @@
+[2-OWia4Y2cdJ#0] ^болохгүй/бол<v><iv><aor><neg>$
+[/2-OWia4Y2cdJ]
+[2-i3aGatjRfa#0] ^гардаг/гар<v><iv><hab>/гар<v><iv><ger_imp><nom>$
+[/2-i3aGatjRfa]
+[9cROJLqAy9sJ#0] ^гарлаа/гар<v><iv><ifi>$
+[/9cROJLqAy9sJ]
+[D4nEdivSNzhL#0] ^гараарай/гар<v><iv><imp>$
+[/D4nEdivSNzhL]
+[DMoLW0mJ4WAh#0] ^болно/*болно$
+[/DMoLW0mJ4WAh]
+[K1Dk1bk022_G#0] ^гарна/гар<v><iv><aor>$
+[/K1Dk1bk022_G]
+[MbBY9t5e8Eod#0] ^гаржээ/*гаржээ$
+[/MbBY9t5e8Eod]
+[SEjKQOwSagOs#0] ^болжээ/бол<v><iv><past><evid>$
+[/SEjKQOwSagOs]
+[VMM5Tu_ALxCv#0] ^болооч/бол<v><iv><sug>$
+[/VMM5Tu_ALxCv]
+[XPRXSfHBN6FD#0] ^гарч/гар<v><iv><gna>$
+[/XPRXSfHBN6FD]
+[XybhbUn5P-FQ#0] ^болж/бол<v><iv><gna>$
+[/XybhbUn5P-FQ]
+[fXVykJqN45a0#0] ^болов/бол<v><iv><past><frm>$
+[/fXVykJqN45a0]
+[gZKoQxwtJfxL#0] ^болоорой/*болоорой$
+[/gZKoQxwtJfxL]
+[gdOZ6pYJd0LE#0] ^боллоо/бол<v><iv><ifi>$
+[/gdOZ6pYJd0LE]
+[phtxNq01UO-t#0] ^гараач/гар<v><iv><sug>$
+[/phtxNq01UO-t]
+[qRCRULnVCsZK#0] ^болдог/бол<v><iv><hab>/бол<v><iv><ger_imp><nom>$
+[/qRCRULnVCsZK]
+[rm3fyBYboJJ1#0] ^гарав/гар<v><iv><past><frm>$
+[/rm3fyBYboJJ1]
+[tR1ZfmAt9KiV#0] ^гарахгүй/гар<v><iv><aor><neg>$
+[/tR1ZfmAt9KiV]

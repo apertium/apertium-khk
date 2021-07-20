@@ -1,0 +1,44 @@
+[-vLzo300pJBo#0] ^хүү/хүү<n><nom>$
+[/-vLzo300pJBo]
+[5xRoMPrZ1HoM#0] ^далайгаас/далай<n><abl>$
+[/5xRoMPrZ1HoM]
+[9-1qY4tk4CmZ#0] ^хүүгээс/хүү<n><abl>$
+[/9-1qY4tk4CmZ]
+[9UrGZD6wiJ2H#0] ^дүүгээс/дүү<n><abl>$
+[/9UrGZD6wiJ2H]
+[COJbzjoZR6aT#0] ^далай/далай<n><nom>$
+[/COJbzjoZR6aT]
+[D0po6f5TFnog#0] ^нохойг/нохой<n><acc>$
+[/D0po6f5TFnog]
+[GfnObPnZebkz#0] ^нохойгоос/нохой<n><abl>$
+[/GfnObPnZebkz]
+[LLWJtYtqH9cg#0] ^дүү/дүү<n><nom>$
+[/LLWJtYtqH9cg]
+[NMWKb3SgwHq2#0] ^далайнууд/далай<n><pl><nom>$
+[/NMWKb3SgwHq2]
+[QUJnYN3SrSRX#0] ^нохой/нохой<n><nom>$
+[/QUJnYN3SrSRX]
+[T5NFw5VyuK9z#0] ^хүүхдүүд/хүүхэд<n><pl><nom>$
+[/T5NFw5VyuK9z]
+[TxtuNyvl3S8C#0] ^нохойд/нохой<n><dat>$
+[/TxtuNyvl3S8C]
+[VkDxlt_6Penu#0] ^далайд/далай<n><dat>$
+[/VkDxlt_6Penu]
+[XCmK6dJc-HVC#0] ^дүүг/дүү<n><acc>$
+[/XCmK6dJc-HVC]
+[_aT4ki48tjCs#0] ^хүүд/хүү<n><dat>$
+[/_aT4ki48tjCs]
+[bL3l97cuBD8X#0] ^дүүд/дүү<n><dat>$
+[/bL3l97cuBD8X]
+[mLDBX1syRrgs#0] ^хүүгийн/хүү<n><gen>$
+[/mLDBX1syRrgs]
+[onkLumNdQSKQ#0] ^далайг/далай<n><acc>$
+[/onkLumNdQSKQ]
+[p-vHLcdQr-CZ#0] ^нохойн/нохой<n><gens>/нохой<n><gen>$
+[/p-vHLcdQr-CZ]
+[tNLWuiWb2IKm#0] ^дүү нар/дүү<n><pl><nom>$
+[/tNLWuiWb2IKm]
+[wCF6uS3pUzx8#0] ^дүүгийн/дүү<n><gen>$
+[/wCF6uS3pUzx8]
+[xq2eBJdm_zvp#0] ^хүүг/хүү<n><acc>$
+[/xq2eBJdm_zvp]

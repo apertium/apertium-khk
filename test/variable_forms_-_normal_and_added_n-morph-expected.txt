@@ -1,0 +1,60 @@
+[3jeMHbptVAOS#0] ^хэлнүүд/*хэлнүүд$
+[/3jeMHbptVAOS]
+[43W-m9Go7aa7#0] ^хотны/*хотны$
+[/43W-m9Go7aa7]
+[5KaabXNF1sKO#0] ^хотноос/*хотноос$
+[/5KaabXNF1sKO]
+[7gqDepltvB1V#0] ^өнгөний/*өнгөний$
+[/7gqDepltvB1V]
+[8L4dOQxGxNoO#0] ^хэлэнд/*хэлэнд$
+[/8L4dOQxGxNoO]
+[GC81jP5V5_0u#0] ^хэлийг/хэл<n><acc>$
+[/GC81jP5V5_0u]
+[HKwfRxf_carz#0] ^үнэ/үнэ<n><nom>$
+[/HKwfRxf_carz]
+[Hcqdre2hpgcF#0] ^хотонд/*хотонд$
+[/Hcqdre2hpgcF]
+[K-isEhhGFqEI#0] ^юмыг/юм<n><acc>$
+[/K-isEhhGFqEI]
+[Lk1WmRPHRdZ6#0] ^хэл/хэл<n><nom>/хэл<v><iv><imp><infm>$
+[/Lk1WmRPHRdZ6]
+[N5wK5D0PnB_j#0] ^үнэнүүд/үнэн<n><pl><nom>$
+[/N5wK5D0PnB_j]
+[OrJU8FUrCUoQ#0] ^юманд/*юманд$
+[/OrJU8FUrCUoQ]
+[RAVvXyqw2-es#0] ^хотнууд/*хотнууд$
+[/RAVvXyqw2-es]
+[Sfe2RgEmZs-k#0] ^өнгөнөөс/*өнгөнөөс$
+[/Sfe2RgEmZs-k]
+[T8OIAEPt90RH#0] ^юмнаас/*юмнаас$
+[/T8OIAEPt90RH]
+[TTAktk-UKKDT#0] ^үнэнээс/үнэн<n><abl>$
+[/TTAktk-UKKDT]
+[UK9yj85Y-uWB#0] ^юмнууд/*юмнууд$
+[/UK9yj85Y-uWB]
+[Vf5OrMkaK2gR#0] ^өнгө/*өнгө$
+[/Vf5OrMkaK2gR]
+[XsY4P09VMc2A#0] ^хэлнээс/*хэлнээс$
+[/XsY4P09VMc2A]
+[_5ZtUMHq-sq5#0] ^юм/юм<n><nom>$
+[/_5ZtUMHq-sq5]
+[cErAjBA5hpvj#0] ^үнийг/үнэ<n><acc>$
+[/cErAjBA5hpvj]
+[dgoYrNDdy2kV#0] ^өнгөнүүд/*өнгөнүүд$
+[/dgoYrNDdy2kV]
+[hKY_j_eRCrzE#0] ^үнийн/үнэ<n><gen>$
+[/hKY_j_eRCrzE]
+[hpxzG69U93Iz#0] ^өнгийг/*өнгийг$
+[/hpxzG69U93Iz]
+[jJLqbsi0JgkH#0] ^өнгөнд/*өнгөнд$
+[/jJLqbsi0JgkH]
+[jVlGY26DcGgr#0] ^хот/хот<n><nom>$
+[/jVlGY26DcGgr]
+[kG0M_cq6rECP#0] ^хотыг/хот<n><acc>$
+[/kG0M_cq6rECP]
+[ka6eKqn5PdSJ#0] ^үнэнд/үнэн<n><dat>$
+[/ka6eKqn5PdSJ]
+[w5Xn5twyHeye#0] ^хэлний/*хэлний$
+[/w5Xn5twyHeye]
+[y4x1rFBuT30b#0] ^юмны/*юмны$
+[/y4x1rFBuT30b]

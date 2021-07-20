@@ -1,0 +1,200 @@
+[-1uTSyAaMeIf#0] ^ангийг/анги<n><acc>$
+[/-1uTSyAaMeIf]
+[-C05Jsy7kzsw#0] ^оршлоос/оршил<n><abl>$
+[/-C05Jsy7kzsw]
+[-ZrjdBQu_V8P#0] ^өгүүлэлд/өгүүлэл<n><dat>$
+[/-ZrjdBQu_V8P]
+[030tUaJNTstE#0] ^номд/ном<n><dat>$
+[/030tUaJNTstE]
+[0OV3-F51j1Rh#0] ^гэрт/гэр<n><dat>$
+[/0OV3-F51j1Rh]
+[4eyOIXyQG3fG#0] ^хотод/хот<n><dat>$
+[/4eyOIXyQG3fG]
+[4ljAu7qs1u7n#0] ^ажлын/ажил<n><gen>$
+[/4ljAu7qs1u7n]
+[6BNSaz4Aoum0#0] ^ажлууд/ажил<n><pl><nom>$
+[/6BNSaz4Aoum0]
+[7buaEg53t1gZ#0] ^гэрээс/гэр<n><abl>$
+[/7buaEg53t1gZ]
+[7ux4HQuIw91C#0] ^гарын/гар<n><gen>$
+[/7ux4HQuIw91C]
+[85fFneRxtz0T#0] ^цаг/цаг<n><nom>$
+[/85fFneRxtz0T]
+[8jXTy4qnnewS#0] ^тойм/тойм<n><nom>$
+[/8jXTy4qnnewS]
+[9XxYcTAOfPe6#0] ^сард/сар<n><dat>$
+[/9XxYcTAOfPe6]
+[AWyu0Tm-tU1W#0] ^улсад/улс<n><dat>$
+[/AWyu0Tm-tU1W]
+[Ae7X5JUEBIV8#0] ^ажил/ажил<n><nom>/ажил<n><nom>$
+[/Ae7X5JUEBIV8]
+[B3YI9TiCCCGG#0] ^гэр/гэр<n><nom>$
+[/B3YI9TiCCCGG]
+[BF-C--ylLW_Z#0] ^тоймын/тойм<n><gen>$
+[/BF-C--ylLW_Z]
+[BFeYebZIGXrF#0] ^цагийн/цаг<n><gen>$
+[/BFeYebZIGXrF]
+[BTFa33fnLclY#0] ^гэрийн/гэр<n><gen>$
+[/BTFa33fnLclY]
+[D2YwhcRmamrV#0] ^номоос/ном<n><abl>$
+[/D2YwhcRmamrV]
+[FB-v2Dnox0NN#0] ^тоймоос/тойм<n><abl>$
+[/FB-v2Dnox0NN]
+[FgJON3QotaKc#0] ^ажлаар/ажил<n><ins>$
+[/FgJON3QotaKc]
+[G10ZTZjySsQd#0] ^сар/сар<n><nom>/сар<n><nom>$
+[/G10ZTZjySsQd]
+[HpSYjwuKzbIK#0] ^хотууд/хот<n><pl><nom>$
+[/HpSYjwuKzbIK]
+[Jowd5C0II5M7#0] ^гар/гар<n><nom>/гар<v><iv><imp><infm>$
+[/Jowd5C0II5M7]
+[LJ5sD8W2Xn45#0] ^сэдвийг/сэдэв<n><acc>$
+[/LJ5sD8W2Xn45]
+[MBUHgdtbK3Av#0] ^сараас/сар<n><abl>$
+[/MBUHgdtbK3Av]
+[MNgV01PiNtCf#0] ^долоо/долоо<num><nom>$ ^хоногийг/*хоногийг$
+[/MNgV01PiNtCf]
+[MgOEaD_1Q-Tr#0] ^долоо/долоо<num><nom>$ ^хоног/*хоног$
+[/MgOEaD_1Q-Tr]
+[N9BIaS68eidB#0] ^улсууд/улс<n><pl><nom>$
+[/N9BIaS68eidB]
+[Npk2FPZnF9MN#0] ^долоо/долоо<num><nom>$ ^хоногоос/*хоногоос$
+[/Npk2FPZnF9MN]
+[O9vle6cwhzbA#0] ^оршил/оршил<n><nom>/оршил<n><nom>$
+[/O9vle6cwhzbA]
+[ObzoC0szLlfu#0] ^үед/үе<n><dat>$
+[/ObzoC0szLlfu]
+[PhDpv7txI-Kw#0] ^улс/улс<n><nom>$
+[/PhDpv7txI-Kw]
+[PiHk_bV5_wNx#0] ^тоймыг/тойм<n><acc>$
+[/PiHk_bV5_wNx]
+[PxhwqIfn1eJE#0] ^үеийг/үе<n><acc>$
+[/PxhwqIfn1eJE]
+[R5kKPlmpEGA5#0] ^хотын/хот<n><gen>$
+[/R5kKPlmpEGA5]
+[Rk718cFQoE_w#0] ^гэрийг/гэр<n><acc>$
+[/Rk718cFQoE_w]
+[S3DxbjxVS9o6#0] ^хүүхдийн/хүүхэд<n><gen>$
+[/S3DxbjxVS9o6]
+[Si9a2U7l0CJ6#0] ^улсаас/улс<n><abl>$
+[/Si9a2U7l0CJ6]
+[Sm6_uUu8-hwY#0] ^ангийн/анги<n><gen>$
+[/Sm6_uUu8-hwY]
+[SrgtpL5PnmT1#0] ^оршлууд/оршил<n><pl><nom>$
+[/SrgtpL5PnmT1]
+[T5NFw5VyuK9z#0] ^хүүхдүүд/хүүхэд<n><pl><nom>$
+[/T5NFw5VyuK9z]
+[TGFJq1QsNxX1#0] ^сургуульд/*сургуульд$
+[/TGFJq1QsNxX1]
+[TSnlWbaTHiG5#0] ^үеүүд/үе<n><pl><nom>$
+[/TSnlWbaTHiG5]
+[T_1fwWZzoDIZ#0] ^ангиас/анги<n><abl>$
+[/T_1fwWZzoDIZ]
+[TgoHXWUU8tuH#0] ^сэдэвт/сэдэв<n><dat>$
+[/TgoHXWUU8tuH]
+[TomaAlx0NV1a#0] ^ажлаас/ажил<n><abl>$
+[/TomaAlx0NV1a]
+[V2E6krvkfZgp#0] ^гарууд/гар<n><pl><nom>$
+[/V2E6krvkfZgp]
+[V7_v4S0RNBgg#0] ^сарыг/сар<n><acc>/сар<n><acc>$
+[/V7_v4S0RNBgg]
+[VA_vzvBj-rPO#0] ^үе/үе<n><nom>$
+[/VA_vzvBj-rPO]
+[VhauTO-gh3l6#0] ^гэрүүд/гэр<n><pl><nom>$
+[/VhauTO-gh3l6]
+[W82ahpNNBucJ#0] ^өгүүллийг/өгүүлэл<n><acc>$
+[/W82ahpNNBucJ]
+[XGjUARWwqUPH#0] ^хүүхдийг/хүүхэд<n><acc>$
+[/XGjUARWwqUPH]
+[YdTcNhfNcKEr#0] ^долоо/долоо<num><nom>$ ^хоногууд/*хоногууд$
+[/YdTcNhfNcKEr]
+[ZOTtma3DzeFP#0] ^хотоос/хот<n><abl>$
+[/ZOTtma3DzeFP]
+[ZRhAYt0bmZ7W#0] ^улсыг/улс<n><acc>$
+[/ZRhAYt0bmZ7W]
+[Zu_-Wo1rKBhQ#0] ^тоймууд/тойм<n><pl><nom>$
+[/Zu_-Wo1rKBhQ]
+[Zyq3ZMRaqfRp#0] ^гараас/гар<n><abl>$
+[/Zyq3ZMRaqfRp]
+[b1j3RjZem0LC#0] ^сарын/сар<n><gen>$
+[/b1j3RjZem0LC]
+[b9rpE35aKnWA#0] ^өгүүллүүд/өгүүлэл<n><pl><nom>$
+[/b9rpE35aKnWA]
+[cZ1F9lGgCBkJ#0] ^сэдвээс/сэдэв<n><abl>$
+[/cZ1F9lGgCBkJ]
+[dI-o7T2tZiBf#0] ^оршилд/оршил<n><dat>/оршил<n><dat>$
+[/dI-o7T2tZiBf]
+[dQSpzfkReNRj#0] ^тоймд/тойм<n><dat>$
+[/dQSpzfkReNRj]
+[dZhG5LXIezME#0] ^цагаас/цаг<n><abl>$
+[/dZhG5LXIezME]
+[dp_Wb_mli47g#0] ^цагийг/цаг<n><acc>$
+[/dp_Wb_mli47g]
+[dy_d7Upqt6tA#0] ^сэдвүүд/сэдэв<n><pl><nom>$
+[/dy_d7Upqt6tA]
+[eSPlpIyMSLu3#0] ^оршлыг/оршил<n><acc>$
+[/eSPlpIyMSLu3]
+[en4dBcLJp-h4#0] ^өгүүлэл/өгүүлэл<n><nom>$
+[/en4dBcLJp-h4]
+[g9lxnf0U5GTR#0] ^өгүүллээс/өгүүлэл<n><abl>$
+[/g9lxnf0U5GTR]
+[gl12d8iorL5l#0] ^цагт/цаг<n><dat>$
+[/gl12d8iorL5l]
+[gmURQkOAMXSq#0] ^гарт/гар<n><dat>$
+[/gmURQkOAMXSq]
+[hKkoUTKMBOyM#0] ^ажилд/ажил<n><dat>/ажил<n><dat>$
+[/hKkoUTKMBOyM]
+[hh_g35iJqNE4#0] ^сургуулийн/сургууль<n><gen>$
+[/hh_g35iJqNE4]
+[iTJEVIaZzzTH#0] ^номын/ном<n><gen>$
+[/iTJEVIaZzzTH]
+[jVlGY26DcGgr#0] ^хот/хот<n><nom>$
+[/jVlGY26DcGgr]
+[jotbQQNq_wXT#0] ^долоо/долоо<num><nom>$ ^хоногийн/*хоногийн$
+[/jotbQQNq_wXT]
+[kG0M_cq6rECP#0] ^хотыг/хот<n><acc>$
+[/kG0M_cq6rECP]
+[lL6e3Ap8y__0#0] ^сургуулийг/сургууль<n><acc>$
+[/lL6e3Ap8y__0]
+[m-vZ0esDCvdu#0] ^ном/ном<n><nom>$
+[/m-vZ0esDCvdu]
+[mOHPuFSZYmhz#0] ^ажлыг/ажил<n><acc>$
+[/mOHPuFSZYmhz]
+[mVEOPDS-2aWI#0] ^номыг/ном<n><acc>$
+[/mVEOPDS-2aWI]
+[nPKVqycG-4wD#0] ^сэдэв/сэдэв<n><nom>$
+[/nPKVqycG-4wD]
+[oGx1OfAStJF2#0] ^улсын/улс<n><gen>$
+[/oGx1OfAStJF2]
+[owgETselYaDY#0] ^сургуулиас/сургууль<n><abl>$
+[/owgETselYaDY]
+[p4Rx6cICgdcR#0] ^үеийн/үе<n><gen>$
+[/p4Rx6cICgdcR]
+[pH2ucat0NpJF#0] ^сарууд/сар<n><pl><nom>$
+[/pH2ucat0NpJF]
+[psLo-tRkX2mq#0] ^оршлын/оршил<n><gen>$
+[/psLo-tRkX2mq]
+[q2lN6uBVI-FE#0] ^анги/анги<n><nom>$
+[/q2lN6uBVI-FE]
+[qBJbcZjY-SH4#0] ^өгүүллийн/өгүүлэл<n><gen>$
+[/qBJbcZjY-SH4]
+[rft2xxnOxIzb#0] ^үеээс/үе<n><abl>$
+[/rft2xxnOxIzb]
+[sQcOV8k8-KNz#0] ^сургуулиуд/сургууль<n><pl><nom>$
+[/sQcOV8k8-KNz]
+[sTX03hC6sAls#0] ^хүүхдээс/хүүхэд<n><abl>$
+[/sTX03hC6sAls]
+[tnlV4eiN-aOB#0] ^гарыг/гар<n><acc>$
+[/tnlV4eiN-aOB]
+[ueDJ7EaXXDP1#0] ^ангид/анги<n><dat>$
+[/ueDJ7EaXXDP1]
+[x9_GMI_RgiPC#0] ^хүүхдэд/хүүхэд<n><dat>$
+[/x9_GMI_RgiPC]
+[yK5MdmQY3_4x#0] ^хүүхэд/хүүхэд<n><nom>$
+[/yK5MdmQY3_4x]
+[ymDADiMM9pMA#0] ^долоо/долоо<num><nom>$ ^хоногд/*хоногд$
+[/ymDADiMM9pMA]
+[ytNBRPDEmp-L#0] ^сургууль/сургууль<n><nom>$
+[/ytNBRPDEmp-L]
+[zpYBvs_9BSYg#0] ^сэдвийн/сэдэв<n><gen>$
+[/zpYBvs_9BSYg]

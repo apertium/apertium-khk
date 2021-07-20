@@ -1,0 +1,28 @@
+# [twol] epenthetic vowel surfaces in some verbforms
+гарахгүй
+болохгүй
+гарах
+болох
+явах
+ирэх
+идэж
+санаж
+# [twol] epenthetic vowel doesn't surface in some verbforms
+гарч
+болж
+ирж
+явж
+ярьж
+тавьж
+больж
+барьж
+хийж
+хийх
+# [twol] epenthetic vowel surfaces as и in some verbforms after palatal cons
+ярих
+тавих
+болих
+барих
+очих
+шинжих
+очиж

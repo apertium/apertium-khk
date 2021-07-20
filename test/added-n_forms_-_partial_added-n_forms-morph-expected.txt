@@ -1,0 +1,34 @@
+[1JHAIUfwMhz8#0] ^толгойноос/толгой<n><abl>$
+[/1JHAIUfwMhz8]
+[Hdko6iGWAQPY#0] ^толгой/толгой<n><nom>$
+[/Hdko6iGWAQPY]
+[PaS0yvnyS23U#0] ^гахайнаас/гахай<n><abl>$
+[/PaS0yvnyS23U]
+[Rw2S8vj9_LQn#0] ^толгойн/толгой<n><gens>$
+[/Rw2S8vj9_LQn]
+[TFXm7IPpP2GA#0] ^толгойнууд/толгой<n><pl><nom>$
+[/TFXm7IPpP2GA]
+[VxHtAo7xn1Ln#0] ^толгойд/толгой<n><dat>$
+[/VxHtAo7xn1Ln]
+[XYJ6aJWy4OpG#0] ^гахайг/гахай<n><acc>$
+[/XYJ6aJWy4OpG]
+[cjCnN-iAI5Rw#0] ^гахайд/гахай<n><dat>$
+[/cjCnN-iAI5Rw]
+[evfl5OdsU2x4#0] ^мэлхийнээс/мэлхий<n><abl>$
+[/evfl5OdsU2x4]
+[gv_HrxKoxfm0#0] ^гахайн/гахай<n><gens>$
+[/gv_HrxKoxfm0]
+[ncvLN-uB_pwO#0] ^мэлхийн/мэлхий<n><gens>$
+[/ncvLN-uB_pwO]
+[oqQq7b5C9S52#0] ^гахай/гахай<n><nom>$
+[/oqQq7b5C9S52]
+[ru2vUwYbRgIH#0] ^толгойг/толгой<n><acc>$
+[/ru2vUwYbRgIH]
+[sBeIdjCxAhjl#0] ^мэлхийг/мэлхий<n><acc>$
+[/sBeIdjCxAhjl]
+[xCAk_mSYsWkl#0] ^мэлхийнүүд/*мэлхийнүүд$
+[/xCAk_mSYsWkl]
+[xVtlCDnNxAZV#0] ^мэлхийд/мэлхий<n><dat>$
+[/xVtlCDnNxAZV]
+[x_wdIvvVMisH#0] ^мэлхий/мэлхий<n><nom>$
+[/x_wdIvvVMisH]

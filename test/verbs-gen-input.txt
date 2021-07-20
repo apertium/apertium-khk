@@ -1,0 +1,20 @@
+# бол = be
+^бол<v><iv><aor>$
+^бол<v><iv><aor><neg>$
+^бол<v><iv><ifi>$
+^бол<v><iv><past>$
+^бол<v><iv><past><evid>$
+^бол<v><iv><imp>$
+^бол<v><iv><sug>$
+^бол<v><iv><hab>$
+^бол<v><iv><gna>$
+# гар = leave
+^гар<v><iv><aor>$
+^гар<v><iv><aor><neg>$
+^гар<v><iv><ifi>$
+^гар<v><iv><past>$
+^гар<v><iv><past><evid>$
+^гар<v><iv><imp>$
+^гар<v><iv><sug>$
+^гар<v><iv><hab>$
+^гар<v><iv><gna>$

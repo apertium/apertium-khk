@@ -1,0 +1,34 @@
+[0QjClxS-ZN9b#0] ^сан/сан<n><nom>/сан<v><tv><imp><infm>$
+[/0QjClxS-ZN9b]
+[155JvoXybLVn#0] ^номын сангийн/номын сан<n><gen>$
+[/155JvoXybLVn]
+[56_i5DXwUu9w#0] ^үзэсгэлэнгээс/үзэсгэлэн<n><abl>$
+[/56_i5DXwUu9w]
+[6dAsxDc4VVMF#0] ^санг/сан<n><acc>$
+[/6dAsxDc4VVMF]
+[6efwAngigpdz#0] ^үзэсгэлэн/үзэсгэлэн<n><nom>$
+[/6efwAngigpdz]
+[7fOHZR-pnryp#0] ^сангийн/сан<n><gen>$
+[/7fOHZR-pnryp]
+[A0K3IBQ_uONN#0] ^үзэсгэлэнгийн/үзэсгэлэн<n><gen>$
+[/A0K3IBQ_uONN]
+[Andpra4cSn8d#0] ^номын сан/номын сан<n><nom>$
+[/Andpra4cSn8d]
+[Ky6YxQRUZHOb#0] ^номын сангаас/номын сан<n><abl>$
+[/Ky6YxQRUZHOb]
+[Rg4ROXBGUYxG#0] ^үзэсгэлэнгүүд/үзэсгэлэн<n><pl><nom>$
+[/Rg4ROXBGUYxG]
+[WvXNjZx6szqn#0] ^номын сангууд/номын сан<n><pl><nom>$
+[/WvXNjZx6szqn]
+[dpNxogwoOzU8#0] ^үзэсгэлэнг/үзэсгэлэн<n><acc>$
+[/dpNxogwoOzU8]
+[oCOgg4w6Xfgo#0] ^номын санг/номын сан<n><acc>$
+[/oCOgg4w6Xfgo]
+[omdvZAXC6qX0#0] ^сангаас/сан<n><abl>$
+[/omdvZAXC6qX0]
+[smGjos9Qgbt8#0] ^үзэсгэлэнд/үзэсгэлэн<n><dat>$
+[/smGjos9Qgbt8]
+[wf8Ji6WnA-k2#0] ^санд/сан<n><dat>$
+[/wf8Ji6WnA-k2]
+[xphbukAueS3J#0] ^номын санд/номын сан<n><dat>$
+[/xphbukAueS3J]

@@ -1,0 +1,28 @@
+# [twol] epenthetic vowel surfaces in some verbforms
+^гар<v><iv><aor><neg>$
+^бол<v><iv><aor><neg>$
+^гар<v><iv><ger><nom>$
+^бол<v><iv><ger><nom>$
+^яв<v><iv><ger><nom>$
+^ир<v><iv><ger><nom>$
+^ид<v><tv><gna>$
+^сан<v><tv><gna>$
+# [twol] epenthetic vowel doesn't surface in some verbforms
+^гар<v><iv><gna>$
+^бол<v><iv><gna>$
+^ир<v><iv><gna>$
+^яв<v><iv><gna>$
+^ярь<v><iv><gna>$
+^тавь<v><tv><gna>$
+^боль<v><tv><gna>$
+^барь<v><tv><gna>$
+^хий<v><tv><gna>$
+^хий<v><tv><ger><nom>$
+# [twol] epenthetic vowel surfaces as и in some verbforms after palatal cons
+^ярь<v><iv><ger><nom>$
+^тавь<v><tv><ger><nom>$
+^боль<v><tv><ger><nom>$
+^барь<v><tv><ger><nom>$
+^оч<v><iv><ger><nom>$
+^шинж<v><tv><ger><nom>$
+^оч<v><iv><gna>$

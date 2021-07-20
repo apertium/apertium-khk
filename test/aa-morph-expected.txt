@@ -1,0 +1,60 @@
+[-yoho5-9E3Y5#0] ^өмдөөсөө/өмд<n><abl><refl>$
+[/-yoho5-9E3Y5]
+[1PybOQyiqrdO#0] ^ирээрэй/ир<v><iv><imp>/ир<v><iv><imp>$
+[/1PybOQyiqrdO]
+[2CJ3P0OzcFeW#0] ^ирээд/ир<v><iv><gna_prf>/ир<v><iv><gna_prf>$
+[/2CJ3P0OzcFeW]
+[2_7YGIA_P6Ey#0] ^болоод/бол<v><iv><gna_prf>$
+[/2_7YGIA_P6Ey]
+[2aw3HlSQfvid#0] ^гэрээсээ/гэр<n><abl><refl>$
+[/2aw3HlSQfvid]
+[3HJOyhK3Vsgx#0] ^мориос/морь<n><abl>$
+[/3HJOyhK3Vsgx]
+[4XXM6SO1GZMT#0] ^тоймоосоо/тойм<n><abl><refl>$
+[/4XXM6SO1GZMT]
+[6NHGM_Sb8YN6#0] ^өмдийнхөө/өмд<n><gen><refl>$
+[/6NHGM_Sb8YN6]
+[7buaEg53t1gZ#0] ^гэрээс/гэр<n><abl>$
+[/7buaEg53t1gZ]
+[8vCsG6TZxDZV#0] ^ярьлаа/*ярьлаа$
+[/8vCsG6TZxDZV]
+[B3L25PGk55mT#0] ^нүднийнхээ/*нүднийнхээ$
+[/B3L25PGk55mT]
+[EYSWeUPkynlZ#0] ^тоймынхоо/тойм<n><gen><refl>$
+[/EYSWeUPkynlZ]
+[F1x5hUrhow7E#0] ^гарынхаа/гар<n><gen><refl>$
+[/F1x5hUrhow7E]
+[FB-v2Dnox0NN#0] ^тоймоос/тойм<n><abl>$
+[/FB-v2Dnox0NN]
+[GnhBy_i4gj4z#0] ^яриад/ярь<v><iv><gna_prf>$
+[/GnhBy_i4gj4z]
+[L9UgMPzrdZ5J#0] ^морийнхоо/морь<n><gen><refl>$
+[/L9UgMPzrdZ5J]
+[NrKcW3o2V3iE#0] ^ирээч/ир<v><iv><sug>/ир<v><iv><sug>$
+[/NrKcW3o2V3iE]
+[VAQcUwbXgqxp#0] ^нүднээс/нүд<n><abl>$
+[/VAQcUwbXgqxp]
+[VMM5Tu_ALxCv#0] ^болооч/бол<v><iv><sug>$
+[/VMM5Tu_ALxCv]
+[VoNR7O-Um-5I#0] ^нүднээсээ/нүд<n><abl><refl>$
+[/VoNR7O-Um-5I]
+[Zyq3ZMRaqfRp#0] ^гараас/гар<n><abl>$
+[/Zyq3ZMRaqfRp]
+[gZKoQxwtJfxL#0] ^болоорой/*болоорой$
+[/gZKoQxwtJfxL]
+[gdOZ6pYJd0LE#0] ^боллоо/бол<v><iv><ifi>$
+[/gdOZ6pYJd0LE]
+[hmA7tj9OOH1Q#0] ^ирлээ/ир<v><iv><ifi>/ир<v><iv><ifi>$
+[/hmA7tj9OOH1Q]
+[ja9PP2yvJC5r#0] ^гараасаа/гар<n><abl><refl>$
+[/ja9PP2yvJC5r]
+[lkD6GfQgD6ka#0] ^яриарай/ярь<v><iv><imp>$
+[/lkD6GfQgD6ka]
+[snoytvfURsnT#0] ^мориосоо/морь<n><abl><refl>$
+[/snoytvfURsnT]
+[udu4b0as8QJb#0] ^өмдөөс/өмд<n><abl>$
+[/udu4b0as8QJb]
+[zCEQFlh6ggEE#0] ^гэрийнхээ/гэр<n><gen><refl>$
+[/zCEQFlh6ggEE]
+[zQZW2mUzUJW9#0] ^яриач/ярь<v><iv><sug>$
+[/zQZW2mUzUJW9]

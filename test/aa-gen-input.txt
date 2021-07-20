@@ -1,0 +1,36 @@
+# оо
+^бол<v><iv><ifi>$
+^бол<v><iv><imp>$
+^бол<v><iv><sug>$
+^бол<v><iv><gna_prf>$
+^тойм<n><abl>$
+^тойм<n><abl><refl>$
+^тойм<n><gen><refl>$
+# аа
+^гар<n><abl>$
+^гар<n><abl><refl>$
+^гар<n><gen><refl>$
+# ээ
+^гэр<n><abl>$
+^гэр<n><abl><refl>$
+^гэр<n><gen><refl>$
+^нүд<n><abl>$
+^нүд<n><abl><refl>$
+^нүд<n><gen><refl>$
+^ир<v><iv><ifi>$
+^ир<v><iv><imp>$
+^ир<v><iv><sug>$
+^ир<v><iv><gna_prf>$
+# өө
+^өмд<n><abl>$
+^өмд<n><abl><refl>$
+^өмд<n><gen><refl>$
+# иа
+^ярь<v><iv><ifi>$
+^ярь<v><iv><imp>$
+^ярь<v><iv><sug>$
+^ярь<v><iv><gna_prf>$
+# ио
+^морь<n><abl>$
+^морь<n><abl><refl>$
+^морь<n><gen><refl>$

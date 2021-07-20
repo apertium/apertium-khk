@@ -1,0 +1,14 @@
+# [twol] some stems with ь, where it changes to и (мнглбвр)
+^хорь<v><tv><ifi>$
+^хорь<v><tv><aor>$
+^хорь<v><tv><gna_imp>$
+^урь<v><tv><gna_cnd>$
+^урь<v><tv><aor>$
+# [twol] some stems with ь, where it changes to и (not мнглбвр)
+^хорь<v><tv><ger><nom>$
+# [twol] some stems with ь, where it stays ь
+^хорь<v><tv><past>$
+^хорь<v><tv><hab>$
+^хорь<v><tv><gna>$
+# [twol] ь intervening in {B}:б phonology
+^холь<v><tv><gna_cnd>$

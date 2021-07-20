@@ -1,0 +1,142 @@
+[-2RHHeF75NLq#0] ^саранд/сар<n><dat>$
+[/-2RHHeF75NLq]
+[2B21pO6knyOY#0] ^тэмээний/тэмээ<n><gen>$
+[/2B21pO6knyOY]
+[2vYJq6eUweP3#0] ^ширээнд/ширээ<n><dat>$
+[/2vYJq6eUweP3]
+[3PQD1pCoa5tb#0] ^цайнаас/цай<n><abl>$
+[/3PQD1pCoa5tb]
+[3diMM5XH9yq6#0] ^дуунаас/дуу<n><abl>$
+[/3diMM5XH9yq6]
+[4Zc7PivPNn0D#0] ^өрөөг/өрөө<n><acc>$
+[/4Zc7PivPNn0D]
+[4v4lflcdHZD0#0] ^нүдэнд/нүд<n><dat>$
+[/4v4lflcdHZD0]
+[5TAlu5qcaA0W#0] ^модны/мод<n><gen>$
+[/5TAlu5qcaA0W]
+[5XXztH8cpakC#0] ^үенд/*үенд$
+[/5XXztH8cpakC]
+[6Buh4zPFUwSH#0] ^дуу/дуу<n><nom>$
+[/6Buh4zPFUwSH]
+[6JYFXwsSwjtl#0] ^ширээ/ширээ<n><nom>$
+[/6JYFXwsSwjtl]
+[7WvjvRZ_CwOR#0] ^дуунууд/дуу<n><pl><nom>$
+[/7WvjvRZ_CwOR]
+[85fFneRxtz0T#0] ^цаг/цаг<n><nom>$
+[/85fFneRxtz0T]
+[8UVIAk8cHwZf#0] ^үений/үе<n><gen>$
+[/8UVIAk8cHwZf]
+[CNne932M6Xwv#0] ^алганууд/алга<n><pl><nom>$
+[/CNne932M6Xwv]
+[Do1RtVKnWyNn#0] ^модноос/мод<n><abl>$
+[/Do1RtVKnWyNn]
+[G10ZTZjySsQd#0] ^сар/сар<n><nom>/сар<n><nom>$
+[/G10ZTZjySsQd]
+[Hw5KN-j6DRGY#0] ^тэмээнд/тэмээ<n><dat>$
+[/Hw5KN-j6DRGY]
+[JD0mQsd0EVj6#0] ^алгыг/алга<n><acc>$
+[/JD0mQsd0EVj6]
+[K0idxBL9VFwW#0] ^сарны/сар<n><gen>$
+[/K0idxBL9VFwW]
+[LXfdMzizNU4o#0] ^алганаас/алга<n><abl>$
+[/LXfdMzizNU4o]
+[LghwCL09DE9C#0] ^тэмээ/тэмээ<n><nom>$
+[/LghwCL09DE9C]
+[PxhwqIfn1eJE#0] ^үеийг/үе<n><acc>$
+[/PxhwqIfn1eJE]
+[QDiZIJswHVi6#0] ^ширээний/ширээ<n><gen>$
+[/QDiZIJswHVi6]
+[Rjq094n7zTh8#0] ^мод/мод<n><nom>$
+[/Rjq094n7zTh8]
+[RqurD8Tzj7wc#0] ^гөрөөсний/гөрөөс<n><gen>$
+[/RqurD8Tzj7wc]
+[UM-KXwlwPZRV#0] ^гөрөөснүүд/гөрөөс<n><pl><nom>$
+[/UM-KXwlwPZRV]
+[UNOZw25puwMk#0] ^мах/мах<n><nom>$
+[/UNOZw25puwMk]
+[UzzZqsnOOqRA#0] ^модыг/мод<n><acc>$
+[/UzzZqsnOOqRA]
+[V7_v4S0RNBgg#0] ^сарыг/сар<n><acc>/сар<n><acc>$
+[/V7_v4S0RNBgg]
+[VAQcUwbXgqxp#0] ^нүднээс/нүд<n><abl>$
+[/VAQcUwbXgqxp]
+[VA_vzvBj-rPO#0] ^үе/үе<n><nom>$
+[/VA_vzvBj-rPO]
+[Vtiwa5EbgvJI#0] ^модод/мод<n><pl><nom>$
+[/Vtiwa5EbgvJI]
+[W6ktzS62wyWI#0] ^гөрөөсөнд/гөрөөс<n><dat>$
+[/W6ktzS62wyWI]
+[WjKfdLS2JQ7E#0] ^махны/мах<n><gen>$
+[/WjKfdLS2JQ7E]
+[X1S7833w_BsS#0] ^тэмээнээс/тэмээ<n><abl>$
+[/X1S7833w_BsS]
+[Y9JK1Z6oXYC1#0] ^алга/алга<n><nom>$
+[/Y9JK1Z6oXYC1]
+[aYc56a07y3xq#0] ^өрөөнд/өрөө<n><dat>$
+[/aYc56a07y3xq]
+[bgxHD7EP9NFP#0] ^алганы/алга<n><gen>$
+[/bgxHD7EP9NFP]
+[bw3fqCJVWhiD#0] ^цайнд/*цайнд$
+[/bw3fqCJVWhiD]
+[c1FUW509ICRy#0] ^маханд/мах<n><dat>$
+[/c1FUW509ICRy]
+[dp_Wb_mli47g#0] ^цагийг/цаг<n><acc>$
+[/dp_Wb_mli47g]
+[dvzYZIoCMWK0#0] ^цагнууд/цаг<n><pl><nom>$
+[/dvzYZIoCMWK0]
+[ePwRpv9DZJ-W#0] ^махнаас/мах<n><abl>$
+[/ePwRpv9DZJ-W]
+[gwK1xrCpJeSx#0] ^нүд/нүд<n><nom>$
+[/gwK1xrCpJeSx]
+[i91RYP9mbRMz#0] ^цай/цай<n><nom>$
+[/i91RYP9mbRMz]
+[iMnyS_8Zguk0#0] ^дуунд/дуу<n><dat>$
+[/iMnyS_8Zguk0]
+[ioFMZNBsFJGl#0] ^гөрөөснөөс/гөрөөс<n><abl>$
+[/ioFMZNBsFJGl]
+[ja_rzSEWjTYi#0] ^сарнаас/сар<n><abl>$
+[/ja_rzSEWjTYi]
+[kYU85P2t1mPA#0] ^цаганд/цаг<n><dat>$
+[/kYU85P2t1mPA]
+[lclOYFq6g9RU#0] ^ширээг/ширээ<n><acc>$
+[/lclOYFq6g9RU]
+[lh8FLnQQvchd#0] ^нүдний/нүд<n><gen>$
+[/lh8FLnQQvchd]
+[m1a-2kC_ENRf#0] ^дууны/дуу<n><gen>$
+[/m1a-2kC_ENRf]
+[mAqzjDFZ41-M#0] ^цайг/цай<n><acc>$
+[/mAqzjDFZ41-M]
+[mBEDTHrRBCUR#0] ^гөрөөс/гөрөөс<n><nom>$
+[/mBEDTHrRBCUR]
+[mQg4W-JaxDez#0] ^цайны/цай<n><gen>$
+[/mQg4W-JaxDez]
+[oGxHZ5bcIZrc#0] ^алганд/алга<n><dat>$
+[/oGxHZ5bcIZrc]
+[pCfCCsliS58M#0] ^махыг/мах<n><acc>$
+[/pCfCCsliS58M]
+[tFpmcZBy6fZt#0] ^өрөө/өр<n><nom><refl>/өр<n><refl>/өрөө<n><nom>$
+[/tFpmcZBy6fZt]
+[tf5TKhrTMh5F#0] ^үенээс/үе<n><abl>$
+[/tf5TKhrTMh5F]
+[tpGFWWoW9pK-#0] ^өрөөний/өрөө<n><gen>$
+[/tpGFWWoW9pK-]
+[tu7mUylEOArn#0] ^тэмээг/тэмээ<n><acc>$
+[/tu7mUylEOArn]
+[uBoXlkVyULX_#0] ^цагны/цаг<n><gen>$
+[/uBoXlkVyULX_]
+[uhlxpjfYqYcE#0] ^нүдийг/нүд<n><acc>$
+[/uhlxpjfYqYcE]
+[ukI485VBUxJX#0] ^нүднүүд/нүд<n><pl><nom>$
+[/ukI485VBUxJX]
+[unU3iSMsx6Sx#0] ^ширээнээс/ширээ<n><abl>$
+[/unU3iSMsx6Sx]
+[unWHIstq5qiN#0] ^модонд/мод<n><dat>$
+[/unWHIstq5qiN]
+[wZvk-fGMgJ-i#0] ^дууг/дуу<n><acc>$
+[/wZvk-fGMgJ-i]
+[z0w5nZQCveof#0] ^цагнаас/цаг<n><abl>$
+[/z0w5nZQCveof]
+[zmsXtJmTMD0k#0] ^өрөөнөөс/өрөө<n><abl>$
+[/zmsXtJmTMD0k]
+[ztE-OnhhPriF#0] ^гөрөөсийг/гөрөөс<n><acc>$
+[/ztE-OnhhPriF]

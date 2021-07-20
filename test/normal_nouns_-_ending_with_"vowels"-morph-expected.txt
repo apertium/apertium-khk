@@ -1,0 +1,10 @@
+[JPA23bofbJTL#0] ^Кубад/Куба<n><dat>$
+[/JPA23bofbJTL]
+[RtZKgNooj1R8#0] ^Кубын/Куба<n><gen>$
+[/RtZKgNooj1R8]
+[UqJN1QYQv1c8#0] ^Кубыг/Куба<n><acc>$
+[/UqJN1QYQv1c8]
+[d83EOtirY4uB#0] ^Кубаас/Куба<n><abl>$
+[/d83EOtirY4uB]
+[vpgoZaQPJ-oT#0] ^Куба/Куба<n><nom>$
+[/vpgoZaQPJ-oT]

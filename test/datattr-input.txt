@@ -1,0 +1,15 @@
+# [twol] dat.attr with preceding back unrounded vowel
+байр дахь
+сав дахь
+ах дахь
+# [twol] dat.attr with preceding front unrounded vowel
+цэцэг дэх
+жил дэх
+# [twol] dat.attr with preceding front rounded vowel
+өрөө дэх
+үе дэх
+зүрх дэх
+# [twol] dat.attr with preceding back rounded vowel
+ногоо дахь
+ёс дахь
+цус дахь

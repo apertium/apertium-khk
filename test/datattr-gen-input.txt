@@ -1,0 +1,15 @@
+# [twol] dat.attr with preceding back unrounded vowel
+^байр<n><dat><attr>$
+^сав<n><dat><attr>$
+^ах<n><dat><attr>$
+# [twol] dat.attr with preceding front unrounded vowel
+^цэцэг<n><dat><attr>$
+^жил<n><dat><attr>$
+# [twol] dat.attr with preceding front rounded vowel
+^өрөө<n><dat><attr>$
+^үе<n><dat><attr>$
+^зүрх<n><dat><attr>$
+# [twol] dat.attr with preceding back rounded vowel
+^ногоо<n><dat><attr>$
+^ёс<n><dat><attr>$
+^цус<n><dat><attr>$

@@ -1,0 +1,35 @@
+# үнэ = price
+^үнэ<n><nom>$
+^үнэ<n><acc>$
+^үнэ<n><gen>$
+^үнэ<n><abl>$
+^үнэ<n><dat>$
+^үнэ<n><pl><nom>$
+# хот = herd animal pen
+^хот<n><nom>$
+^хот<n><acc>$
+^хот<n><gen>$
+^хот<n><abl>$
+^хот<n><dat>$
+^хот<n><pl><nom>$
+# хэл = tongue/language
+^хэл<n><nom>$
+^хэл<n><acc>$
+^хэл<n><gen>$
+^хэл<n><abl>$
+^хэл<n><dat>$
+^хэл<n><pl><nom>$
+# юм = thing
+^юм<n><nom>$
+^юм<n><acc>$
+^юм<n><gen>$
+^юм<n><abl>$
+^юм<n><dat>$
+^юм<n><pl><nom>$
+# өнгө = colour
+^өнгө<n><nom>$
+^өнгө<n><acc>$
+^өнгө<n><gen>$
+^өнгө<n><abl>$
+^өнгө<n><dat>$
+^өнгө<n><pl><nom>$

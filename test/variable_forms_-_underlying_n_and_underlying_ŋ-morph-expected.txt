@@ -1,0 +1,24 @@
+[-7LFqNWqFrHu#0] ^сонины/*сонины$
+[/-7LFqNWqFrHu]
+[6Wz3H7d0uDAX#0] ^сонинд/сонин<adj><subst><dat>$
+[/6Wz3H7d0uDAX]
+[Bttd5u98tYm5#0] ^сониннууд/*сониннууд$
+[/Bttd5u98tYm5]
+[MlSaTJz_VIjR#0] ^үнэн/үнэ<n><gens>/үнэн<n><nom>$
+[/MlSaTJz_VIjR]
+[N5wK5D0PnB_j#0] ^үнэнүүд/үнэн<n><pl><nom>$
+[/N5wK5D0PnB_j]
+[QqZ_U72eTDS5#0] ^үнэнийг/үнэн<n><acc>$
+[/QqZ_U72eTDS5]
+[TTAktk-UKKDT#0] ^үнэнээс/үнэн<n><abl>$
+[/TTAktk-UKKDT]
+[jemN-Vjv7Y5P#0] ^сонин/сонин<adj>/сонин<adj><subst><nom>$
+[/jemN-Vjv7Y5P]
+[ka6eKqn5PdSJ#0] ^үнэнд/үнэн<n><dat>$
+[/ka6eKqn5PdSJ]
+[oYxjsc8XHdb7#0] ^үнэний/үнэн<n><gen>$
+[/oYxjsc8XHdb7]
+[z_jdS1hHBvZ0#0] ^сониноос/сонин<adj><subst><abl>$
+[/z_jdS1hHBvZ0]
+[zxux74ZZ0iKH#0] ^сонинг/*сонинг$
+[/zxux74ZZ0iKH]

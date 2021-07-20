@@ -1,0 +1,50 @@
+[0YER7iSNZ0G0#0] ^барих/барь<v><tv><ger><nom>$
+[/0YER7iSNZ0G0]
+[1Qq-aPtuvdqm#0] ^ярьж/*ярьж$
+[/1Qq-aPtuvdqm]
+[2-OWia4Y2cdJ#0] ^болохгүй/бол<v><iv><aor><neg>$
+[/2-OWia4Y2cdJ]
+[6abWM6iLNABS#0] ^болох/бол<v><iv><ger><nom>$
+[/6abWM6iLNABS]
+[KKE_M4bG7o5H#0] ^тавьж/*тавьж$
+[/KKE_M4bG7o5H]
+[OW6vkcMPbSA-#0] ^гарах/гар<v><iv><ger><nom>$
+[/OW6vkcMPbSA-]
+[REPZRrsYFsJz#0] ^ярих/ярь<v><iv><ger><nom>$
+[/REPZRrsYFsJz]
+[TlVFUW5EQ5s_#0] ^идэж/ид<v><tv><gna>$
+[/TlVFUW5EQ5s_]
+[WvGiCN3z6MIu#0] ^болих/боль<v><tv><ger><nom>$
+[/WvGiCN3z6MIu]
+[XPRXSfHBN6FD#0] ^гарч/гар<v><iv><gna>$
+[/XPRXSfHBN6FD]
+[XybhbUn5P-FQ#0] ^болж/бол<v><iv><gna>$
+[/XybhbUn5P-FQ]
+[ZR3-dU9YIEzY#0] ^явах/яв<v><iv><ger><nom>$
+[/ZR3-dU9YIEzY]
+[Za-PRsavpsT0#0] ^ирж/ир<v><iv><gna>$
+[/Za-PRsavpsT0]
+[_5LijBaPRws7#0] ^санаж/сан<v><tv><gna>$
+[/_5LijBaPRws7]
+[_aHyLJM7oNBu#0] ^очих/оч<v><iv><ger><nom>$
+[/_aHyLJM7oNBu]
+[b2IPNkXDTxfM#0] ^явж/яв<v><iv><gna>$
+[/b2IPNkXDTxfM]
+[lT5UXiIcxgHA#0] ^хийж/хий<v><tv><gna>$
+[/lT5UXiIcxgHA]
+[q5jS71z93g8J#0] ^барьж/*барьж$
+[/q5jS71z93g8J]
+[snVtt2oeR9Vv#0] ^ирэх/ир<v><iv><ger><nom>/ир<v><iv><ger><nom>$
+[/snVtt2oeR9Vv]
+[so3aUOeCDxNF#0] ^очиж/оч<v><iv><gna>$
+[/so3aUOeCDxNF]
+[tR1ZfmAt9KiV#0] ^гарахгүй/гар<v><iv><aor><neg>$
+[/tR1ZfmAt9KiV]
+[vzpZZf7T_-5G#0] ^шинжих/шинж<v><tv><ger><nom>$
+[/vzpZZf7T_-5G]
+[wBDTJRw_DP8-#0] ^тавих/тавь<v><tv><ger><nom>$
+[/wBDTJRw_DP8-]
+[yAwY_GBBttKL#0] ^хийх/хий<v><tv><ger><nom>$
+[/yAwY_GBBttKL]
+[zd52J-KCnx69#0] ^больж/*больж$
+[/zd52J-KCnx69]

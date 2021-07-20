@@ -1,0 +1,68 @@
+[24VfFGvyMgqh#0] ^хүнийг/хүн<n><acc>$
+[/24VfFGvyMgqh]
+[4XORDVhZWy-t#0] ^шашинд/шашин<n><dat>$
+[/4XORDVhZWy-t]
+[5CnvY_E8Gjwn#0] ^шашны/шашин<n><gen>$
+[/5CnvY_E8Gjwn]
+[5ijjkAiYmpYm#0] ^орноос/ор<n><abl>/орон<n><abl>$
+[/5ijjkAiYmpYm]
+[8mNrCC6Awxoa#0] ^амьтны/амьтан<n><gen>$
+[/8mNrCC6Awxoa]
+[BRK-K4k0seAS#0] ^сэхээтэн/сэхээтэн<n><nom>$
+[/BRK-K4k0seAS]
+[DQKxKKjE8z-O#0] ^орныг/орон<n><acc>$
+[/DQKxKKjE8z-O]
+[FdqOrMnrAeZX#0] ^сэхээтнээс/сэхээтэн<n><abl>$
+[/FdqOrMnrAeZX]
+[IwvuxBGT-G0F#0] ^шашнаас/шашин<n><abl>$
+[/IwvuxBGT-G0F]
+[LPqA-uoI63hN#0] ^орон/ор<n><gens>/ор<v><iv><gna_imp>/ор<v><iv><gna_imp>/орон<n><nom>$
+[/LPqA-uoI63hN]
+[LXLoj8ZbQBTc#0] ^оныг/он<n><acc>$
+[/LXLoj8ZbQBTc]
+[Lxv3jWbjbcV0#0] ^хүний/хүн<n><gen>$
+[/Lxv3jWbjbcV0]
+[NCIAUqX1mrPT#0] ^хүнээс/хүн<n><abl>$
+[/NCIAUqX1mrPT]
+[N_pzf68jbtB4#0] ^оны/он<n><gen>$
+[/N_pzf68jbtB4]
+[Q_M59lNn-z-Q#0] ^амьтныг/амьтан<n><acc>$
+[/Q_M59lNn-z-Q]
+[SEUYNk_bqQ6I#0] ^он/он<n><nom>$
+[/SEUYNk_bqQ6I]
+[UMUEwTuFvyIL#0] ^орны/ор<n><gen>/орон<n><gen>$
+[/UMUEwTuFvyIL]
+[X0x5tm9yBnK_#0] ^сэхээтнийг/сэхээтэн<n><acc>$
+[/X0x5tm9yBnK_]
+[X5SPrlmAohhN#0] ^оронд/ор<n><dat>/орон<n><dat>$
+[/X5SPrlmAohhN]
+[ZbFJ4dvxW8me#0] ^хүнд/хүн<n><dat>$
+[/ZbFJ4dvxW8me]
+[ZbfltEH0iqCX#0] ^хүмүүс/хүн<n><pl><nom>$
+[/ZbfltEH0iqCX]
+[aSertvTpSHA1#0] ^онд/он<n><dat>$
+[/aSertvTpSHA1]
+[bZtU2DtOuP8F#0] ^сэхээтнүүд/сэхээтэн<n><pl><nom>$
+[/bZtU2DtOuP8F]
+[bsfcyDVj8sRE#0] ^хүн/хүн<n><nom>$
+[/bsfcyDVj8sRE]
+[cT_k824vyi7k#0] ^амьтнаас/амьтан<n><abl>$
+[/cT_k824vyi7k]
+[eR5QWqQ1pXay#0] ^шашнууд/шашин<n><pl><nom>$
+[/eR5QWqQ1pXay]
+[kRWM4bQZ_7a0#0] ^амьтад/амьтан<n><pl><nom>$
+[/kRWM4bQZ_7a0]
+[lfq66AJSFXCh#0] ^шашныг/шашин<n><acc>$
+[/lfq66AJSFXCh]
+[lsgqCmi84CZq#0] ^оноос/он<n><abl>$
+[/lsgqCmi84CZq]
+[tusfBV5BmX_S#0] ^сэхээтний/сэхээтэн<n><gen>$
+[/tusfBV5BmX_S]
+[xVZu6pCjlFD-#0] ^амьтанд/амьтан<n><dat>$
+[/xVZu6pCjlFD-]
+[yb_Oo41ueP6T#0] ^шашин/шашин<n><nom>$
+[/yb_Oo41ueP6T]
+[yqz1KY--F6im#0] ^амьтан/амьтан<n><nom>$
+[/yqz1KY--F6im]
+[zrtmzYgeDLBX#0] ^сэхээтэнд/сэхээтэн<n><dat>$
+[/zrtmzYgeDLBX]

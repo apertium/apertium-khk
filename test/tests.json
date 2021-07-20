@@ -1,0 +1,114 @@
+{
+  "aa": {
+    "input": "aa-input.txt",
+    "mode": "khk-morph"
+  },
+  "aa-gen": {
+    "input": "aa-gen-input.txt",
+    "mode": "khk-gener"
+  },
+  "added-n_forms_-_full_added-n_forms": {
+    "input": "added-n_forms_-_full_added-n_forms-input.txt",
+    "mode": "khk-morph"
+  },
+  "added-n_forms_-_full_added-n_forms-gen": {
+    "input": "added-n_forms_-_full_added-n_forms-gen-input.txt",
+    "mode": "khk-gener"
+  },
+  "added-n_forms_-_partial_added-n_forms": {
+    "input": "added-n_forms_-_partial_added-n_forms-input.txt",
+    "mode": "khk-morph"
+  },
+  "added-n_forms_-_partial_added-n_forms-gen": {
+    "input": "added-n_forms_-_partial_added-n_forms-gen-input.txt",
+    "mode": "khk-gener"
+  },
+  "datattr": {
+    "input": "datattr-input.txt",
+    "mode": "khk-morph"
+  },
+  "datattr-gen": {
+    "input": "datattr-gen-input.txt",
+    "mode": "khk-gener"
+  },
+  "epenthetic": {
+    "input": "epenthetic-input.txt",
+    "mode": "khk-morph"
+  },
+  "epenthetic-gen": {
+    "input": "epenthetic-gen-input.txt",
+    "mode": "khk-gener"
+  },
+  "normal_nouns_-_ending_with_\"vowels\"": {
+    "input": "normal_nouns_-_ending_with_\"vowels\"-input.txt",
+    "mode": "khk-morph"
+  },
+  "normal_nouns_-_ending_with_\"vowels\"-gen": {
+    "input": "normal_nouns_-_ending_with_\"vowels\"-gen-input.txt",
+    "mode": "khk-gener"
+  },
+  "normal_nouns_-_ending_with_consonants": {
+    "input": "normal_nouns_-_ending_with_consonants-input.txt",
+    "mode": "khk-morph"
+  },
+  "normal_nouns_-_ending_with_consonants-gen": {
+    "input": "normal_nouns_-_ending_with_consonants-gen-input.txt",
+    "mode": "khk-gener"
+  },
+  "normal_nouns_-_ending_with_n": {
+    "input": "normal_nouns_-_ending_with_n-input.txt",
+    "mode": "khk-morph"
+  },
+  "normal_nouns_-_ending_with_n-gen": {
+    "input": "normal_nouns_-_ending_with_n-gen-input.txt",
+    "mode": "khk-gener"
+  },
+  "normal_nouns_-_ending_with_vowels": {
+    "input": "normal_nouns_-_ending_with_vowels-input.txt",
+    "mode": "khk-morph"
+  },
+  "normal_nouns_-_ending_with_vowels-gen": {
+    "input": "normal_nouns_-_ending_with_vowels-gen-input.txt",
+    "mode": "khk-gener"
+  },
+  "normal_nouns_-_ending_with_ŋ": {
+    "input": "normal_nouns_-_ending_with_ŋ-input.txt",
+    "mode": "khk-morph"
+  },
+  "normal_nouns_-_ending_with_ŋ-gen": {
+    "input": "normal_nouns_-_ending_with_ŋ-gen-input.txt",
+    "mode": "khk-gener"
+  },
+  "variable_forms_-_normal_and_added_n": {
+    "input": "variable_forms_-_normal_and_added_n-input.txt",
+    "mode": "khk-morph"
+  },
+  "variable_forms_-_normal_and_added_n-gen": {
+    "input": "variable_forms_-_normal_and_added_n-gen-input.txt",
+    "mode": "khk-gener"
+  },
+  "variable_forms_-_underlying_n_and_underlying_ŋ": {
+    "input": "variable_forms_-_underlying_n_and_underlying_ŋ-input.txt",
+    "mode": "khk-morph"
+  },
+  "variable_forms_-_underlying_n_and_underlying_ŋ-gen": {
+    "input": "variable_forms_-_underlying_n_and_underlying_ŋ-gen-input.txt",
+    "mode": "khk-gener"
+  },
+  "verbs": {
+    "input": "verbs-input.txt",
+    "mode": "khk-morph"
+  },
+  "verbs-gen": {
+    "input": "verbs-gen-input.txt",
+    "mode": "khk-gener"
+  },
+  "ь": {
+    "input": "ь-input.txt",
+    "mode": "khk-morph"
+  },
+  "ь-gen": {
+    "input": "ь-gen-input.txt",
+    "mode": "khk-gener"
+  }
+}
